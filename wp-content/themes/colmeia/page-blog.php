@@ -11,6 +11,7 @@
 </section>
 
 <section class="container blog mt-5 pt-3">
+  <h2>Notícia destaque</h2>
    <?php $catquery = new WP_Query( 'cat=11&posts_per_page=1' ); ?>
     <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
     <div class="row featurette">
@@ -45,6 +46,7 @@
       $args = array(
           'posts_per_page' => 6,
           'paged' => $paged,
+          'category__not_in' => array(11),
       );
        $wp_query = new WP_Query( $args );   
       if ( $wp_query->have_posts() ) : ?>
