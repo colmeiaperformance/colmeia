@@ -11,11 +11,8 @@
 </section>
 
 <section class="container blog mt-5 pt-3">
-    <?php 
-    $header_args = array( 'posts_per_page' => 1 ); 
-    $header_query = new WP_Query( $header_args ); 
-    if ( $header_query->have_posts() ) : 
-    while ( $header_query->have_posts() ) : $header_query->the_post(); ?>
+   <?php $catquery = new WP_Query( 'cat=11&posts_per_page=1' ); ?>
+    <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
         <h1 class="featurette-heading"><?php the_title(); ?></h1>
@@ -36,11 +33,7 @@
      </div>
         </div>
     </div>
-    <?php endwhile; 
-    else: ?>
-    <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-    <?php endif;
-    wp_reset_postdata();  ?>
+     <?php endwhile;  wp_reset_postdata(); ?>
     <hr>
 </section>
 
