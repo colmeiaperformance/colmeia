@@ -1,55 +1,55 @@
 <?php get_header(); ?>
-<?php get_template_part('template-parts/header-blog'); ?>
-<main class="blog__content">
-  <section class="blog__post">
-     <h3>Resultado da pesquisa</h3>
-          <?php if (have_posts()) : ?>
+<?php get_template_part('template-parts/header-home'); ?>
+
+<main>
+<section>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">Blog</h1>
+    </div>
+  </div>
+</section>
+
+<section class="mt-5 pt-2">
+  <div class="container">
+      <h3>
+          Resultado da pesquisa
+        </h3>
+   </div>  
+</section>
+
+<section class="container border-bottom">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-2">
+        <?php if (have_posts()) : ?>
           <?php while (have_posts()) : the_post(); ?>
-            <a class="notice-card-img" href="<?php the_permalink(); ?>">
-              <div class="item-media"
-                style="background-image:url('<?php 
-                  if ( has_post_thumbnail() ) { 
-                      echo the_post_thumbnail_url();
-                  }
-                      else { 
-                          echo get_template_directory_uri() . '/images/blog-media.jpg';
-                          } ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
-                <div class="item-content ica-the the-highlight">
-                  <p class="notice-card-title">
-                    <?php if (strlen($post->post_title) > 70) {echo substr(the_title($before = '', $after = '', FALSE), 0, 70) . '...'; } else {the_title();} ?>
-                  </p>
-                </div>
-              </div>
-            </a>
-              <p><?php the_excerpt(); ?></p>
-              <a href="<?php the_permalink(); ?>" class="ica-but but-conversion">Leia mais</a>
-  
-          <?php endwhile; ?>
-          <div class="pagination">
-            <?php 
-              echo paginate_links( array(
-                  'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
-                  'current'      => max( 1, get_query_var( 'paged' ) ),
-                  'format'       => '?paged=%#%',
-                  'show_all'     => false,
-                  'total'        => $wp_query->max_num_pages,
-                  'type'         => 'plain',
-                  'end_size'     => 2,
-                  'mid_size'     => 1,
-                  'prev_next'    => false,
-                  'prev_text'    => sprintf( '<i></i> %1$s', __( 'Newer Posts', 'text-domain' ) ),
-                  'next_text'    => sprintf( '%1$s <i></i>', __( 'Older Posts', 'text-domain' ) ),
-                  'add_args'     => false,
-                  'add_fragment' => '',
-              ) );
-              ?>
+      <div class="col">
+        <div class="card shadow-smard">
+          <div class="card-img-top bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height:225px;width:100%;background-image:url('<?php 
+            if ( has_post_thumbnail() ) { 
+                echo the_post_thumbnail_url();
+            }
+            else { 
+                echo get_template_directory_uri() . '/images/blog-media.jpg';
+                } ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
+         </div>
+          <div class="card-body">
+            <h5 class="card-title"><?php if (strlen($post->post_title) > 60) {echo substr(the_title($before = '', $after = '', FALSE), 0, 60) . '[...]'; } else {the_title();} ?></h5>
+            <p class="card-text"><?php the_excerpt(); ?></p>
+            <a href="<?php the_permalink(); ?>" class="btn btn-primary">Leia mais</a>
           </div>
-          <?php else : ?>
-          <div class="blog-alert">
-            <?php _e( 'Desculpe, nenhum post foi encontrado.' ); ?>
-          </div>
-          <?php endif; ?>
-      <?php get_template_part( '/template-parts/aside-blog' ) ?>
+        </div>
+      </div>
+    <?php endwhile; ?>
+    <!-- End of the main loop -->
+    </div> 
+
+    <!-- Add the pagination functions here. -->
+    <?php  wp_boostrap_4_pagination();?>
+    <?php else : ?>
+    <div class="blog-alert">
+      <?php _e( 'Desculpe, nenhum post foi encontrado.' ); ?>
+    </div>
+    <?php endif; ?>
   </section>
 </main>
 <?php get_footer() ?>
