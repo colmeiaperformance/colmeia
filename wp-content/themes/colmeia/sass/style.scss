@@ -13,10 +13,14 @@
 /************************************/
 /********** DEFAULT COLMEIA ***************/
 /************************************/
-@import "parts/_default-colmeia";
+@import "parts/_default";
 
 /************************************/
-/********* icare STYLES *************/
+/********* COLMEIA STYLES *************/
 /************************************/
-@import "colmeia/_variables";
-@import "colmeia/_typography";
+@import "styles/_variables";
+@import "styles/_typography";
+@import "styles/_themes";
+@import "styles/_header";
+@import "styles/_menu";
+@import "styles/_footer";

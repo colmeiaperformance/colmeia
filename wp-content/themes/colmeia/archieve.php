@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part('template-parts/menu-home'); ?>
+<?php get_template_part('template-parts/header-home'); ?>
 
 <main>
 <section>

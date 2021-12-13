@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part('template-parts/header-home'); ?>
+<?php get_template_part('template-parts/menu-home'); ?>
 <main>
     <section class="container error text-center pt-5 mt-5">
 			<h1>

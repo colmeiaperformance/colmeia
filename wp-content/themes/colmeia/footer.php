@@ -1,5 +1,5 @@
-<footer class="container">
-  <div class="py-5">
+<footer class="footer">
+  <div class="container py-5 text-white">
     <div class="row">
       <div class="col-lg-2">
         <h5>Section</h5>
@@ -40,26 +40,26 @@
 
       <div class="col-lg-4 offset-lg-1">
         <form>
-          <h5>Subscribe to our newsletter</h5>
+          <h5>Assine a nossa newsletter</h5>
           <p>Monthly digest of whats new and exciting from us.</p>
           <div class="d-flex w-100 gap-2">
-            <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-            <button class="btn btn-primary" type="button">Subscribe</button>
+            <label for="newsletter1" class="visually-hidden">Email</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email">
+            <button class="btn btn-primary" type="button">Cadastrar</button>
           </div>
         </form>
       </div>
     </div>
 
-    <div class="d-flex justify-content-between py-4 my-4 border-top">
-      <p>© 2021 Company, Inc. All rights reserved.</p>
+    <div class="d-flex justify-content-between py-4 my-4 border-top border-secondary">
+      <p>© 2021 Colmeia. Todos os direitos reservados.</p>
       <ul class="list-unstyled d-flex">
         <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter"></i></a></li> 
         <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook"></i></a></li>
         <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram"></i></a></li>
       </ul>
     </div>
-   <p class="float-end"><a href="#">Back to top</a></p>
+   <p class="float-end"><a href="#">Ir ao topo</a></a></p>
   </div>
 </footer>
 <?php wp_footer(); ?>
