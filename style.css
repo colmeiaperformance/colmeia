@@ -11,32 +11,224 @@ Description: Tema elaborado para servir como base de outros temas WP
 Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, featured-images, translation-ready
 
 */
-/************************************/
-/************ RESET *****************/
-/************************************/
-/************************************/
-/********** NORMALIZE ***************/
-/************************************/
-/************************************/
-/********** DEFAULT COLMEIA ***************/
-/************************************/
-/************************************/
-/********* COLMEIA STYLES *************/
-/************************************/
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+
+:root {
+  accent-color: #799b9e;
+}
+
+/*
+
+Theme Name: Colmeia
+Version: 1.0
+Author: Colmeia
+Author URI: www.colmeiaperformance.com.br
+URI: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Description: Tema elaborado para servir como base de outros temas WP
+Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, featured-images, translation-ready
+
+*/
 /*
 /////////////
 ////THEMES//
 ///////////
 */
+.background-green-dark {
+  background-color: #20585e !important;
+}
+
+.background-green-medium {
+  background-color: #4d797e;
+}
+
+.background-green-light {
+  background-color: #799b9e;
+}
+
+.background-mustard-dark {
+  background-color: #a37a39;
+}
+
+.background-mustard-medium {
+  background-color: #b59561;
+}
+
+.background-mustard-light {
+  background-color: #c8af88;
+}
+
+.background-black-secondary {
+  background-color: #0f0f0f;
+}
+
+.background-off-white {
+  background-color: #e4ece3;
+}
+
+.background-grey-medium {
+  background-color: #9b9b9b;
+}
+
+.background-grey-light {
+  background-color: #c9c9c9;
+}
+
+.background-black {
+  background-color: #000000;
+}
+
+.background-white {
+  background-color: #FFFFFF;
+}
+
+/************************************/
+/********* Colmeia STYLES *************/
+/************************************/
 .header__home {
-  background: #00a59d;
+  background: #00D0C5;
+}
+
+/************************************/
+/********* Colmeia PAGES *************/
+/************************************/
+/************************************/
+/********* Colmeia COMPONENTS *************/
+/************************************/
+.carousel {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+@media (max-width: 991.98px) {
+  footer p {
+    font-size: 14px;
+  }
+}
+
+footer p strong {
+  font-weight: 600;
+}
+
+footer .menu .nav-link {
+  color: #20585e;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 0;
+}
+
+@media (max-width: 991.98px) {
+  footer .social {
+    text-align: center;
+  }
+}
+
+footer .social ul {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991.98px) {
+  footer .social ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  footer .social ul img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  footer .social .colmeia {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+footer .social .colmeia p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  footer .infos img {
+    width: 90px;
+  }
+}
+
+footer .infos ul li p {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 991.98px) {
+  footer .infos ul li p {
+    margin-bottom: 0;
+  }
+}
+
+footer .infos ul li p i {
+  color: #20585e;
+}
+
+footer .copyright {
+  background-color: #20585e;
+  padding: 21px;
+}
+
+@media (max-width: 991.98px) {
+  footer .copyright {
+    padding: 12px;
+  }
+}
+
+footer .copyright p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.25em;
+  color: #c8af88;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  footer .copyright p {
+    font-size: 12px;
+  }
+}
+
+footer .copyright .float-end a {
+  color: #c8af88;
+  font-size: 24px;
+  display: inline;
+  position: fixed;
+  bottom: 0.8rem;
+  right: 1rem;
+}
+
+#cookie-law-info-bar #wt-cli-accept-all-btn {
+  background-color: #20585e !important;
 }
 
 .menu .nav-link {
-  color: #8a8a8a;
-}
-
-.footer {
-  background: #353c42;
+  color: #c9c9c9;
 }
 /*# sourceMappingURL=style.css.map */

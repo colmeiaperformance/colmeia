@@ -3,7 +3,7 @@
 //Stylesheets
 function loading_styles(){
     wp_enqueue_style( 'swiper-css', get_template_directory_uri() . '/vendor/swiper-js/swiper-bundle.min.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
-    wp_enqueue_style( 'opensans-font', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap', array(), wp_get_theme()->get( 'Version' ), 'all' );
+    wp_enqueue_style( 'source-sans-pro-font', 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap', array(), wp_get_theme()->get( 'Version' ), 'all' );
     wp_enqueue_style( 'map-css', get_template_directory_uri() . '/vendor/jqvmap/jqvmap.min.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
     wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
     wp_enqueue_style( 'style-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
@@ -15,10 +15,12 @@ function loading_scripts(){
     wp_register_script( 'swiper-js', get_template_directory_uri() . '/vendor/swiper-js/swiper-bundle.min.js', array( 'jquery-core' ), wp_get_theme()->get( 'Version' ), true  );
     wp_register_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery-core' ), wp_get_theme()->get( 'Version' ), true  );
     wp_register_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array( 'jquery-core' ), wp_get_theme()->get( 'Version' ), true  );
+    wp_register_script( 'jquery-touchSwipe-js', get_template_directory_uri() . '/js/jquery.touchSwipe.min.js', array( 'jquery-core' ), wp_get_theme()->get( 'Version' ), true  );
 
     wp_enqueue_script( 'swiper-js');
     wp_enqueue_script( 'main-js');
     wp_enqueue_script( 'bootstrap-js');
+    wp_enqueue_script( 'jquery-touchSwipe-js');
 }
 
 add_action( 'wp_enqueue_scripts', 'loading_styles' );
@@ -256,28 +258,28 @@ add_theme_support( 'custom-spacing' );
 add_action( 'after_setup_theme', 'base_setup' );
 
 // Allow SVG
-add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
+// add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
 
-  global $wp_version;
-  if ( $wp_version !== '4.7.1' ) {
-     return $data;
-  }
+//   global $wp_version;
+//   if ( $wp_version !== '4.7.1' ) {
+//      return $data;
+//   }
 
-  $filetype = wp_check_filetype( $filename, $mimes );
+//   $filetype = wp_check_filetype( $filename, $mimes );
 
-  return [
-      'ext'             => $filetype['ext'],
-      'type'            => $filetype['type'],
-      'proper_filename' => $data['proper_filename']
-  ];
+//   return [
+//       'ext'             => $filetype['ext'],
+//       'type'            => $filetype['type'],
+//       'proper_filename' => $data['proper_filename']
+//   ];
 
-}, 10, 4 );
+// }, 10, 4 );
 
-function cc_mime_types( $mimes ){
-  $mimes['svg'] = 'image/svg+xml';
-  return $mimes;
-}
-add_filter( 'upload_mimes', 'cc_mime_types' );
+// function cc_mime_types( $mimes ){
+//   $mimes['svg'] = 'image/svg+xml';
+//   return $mimes;
+// }
+// add_filter( 'upload_mimes', 'my_custom_mime_types' );
 
 function fix_svg() {
   echo '<style type="text/css">
@@ -289,7 +291,7 @@ function fix_svg() {
 }
 add_action( 'admin_head', 'fix_svg' );
 
-/* Criação das páginas de opções do ACF */
+/* Creating option pages on ACF plugin */
 add_action('acf/init', 'my_acf_op_init');
 function my_acf_op_init() {
 
@@ -298,21 +300,39 @@ function my_acf_op_init() {
 
         // Add parent.
         $parent = acf_add_options_page(array(
-            'page_title'  => __('Opções Gerais'),
-            'menu_title'  => __('Opções Gerais'),
+            'page_title'  => __('Theme General Settings'),
+            'menu_title'  => __('Theme Settings'),
+            'icon_url'    => 'dashicons-welcome-write-blog',
+            'position'    => 60,
             'redirect'    => false,
         ));
 
         // Add sub page.
         $child = acf_add_options_page(array(
-            'page_title'  => __('Rodapé'),
-            'menu_title'  => __('Rodapé'),
+          'page_title'  => __('Logo Settings'),
+          'menu_title'  => __('Logo'),
+          'parent_slug' => $parent['menu_slug'],
+        ));
+
+        // Add sub page.
+        $child = acf_add_options_page(array(
+            'page_title'  => __('Social Settings'),
+            'menu_title'  => __('Social Media'),
             'parent_slug' => $parent['menu_slug'],
         ));
+
+        // Add sub page.
+        $child = acf_add_options_page(array(
+          'page_title'  => __('Footer Settings'),
+          'menu_title'  => __('Footer'),
+          'parent_slug' => $parent['menu_slug'],
+      ));
+
+
     }
 }
 
-/* Remoção do editor do WP */
+/* Removing WP editor */
 add_action('init', 'remove_guttenberg_from_pages', 10);
 function remove_guttenberg_from_pages()
 {
@@ -590,6 +610,3 @@ function mytheme_custom_excerpt_length( $length ) {
     return 20;
 }
 add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
-
-
-
