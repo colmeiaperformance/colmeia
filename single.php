@@ -58,7 +58,7 @@
         ?>
         </div>
 
-        <?php get_template_part( '/template-parts/aside-blog' ) ?>
+        <?php get_template_part( '/template-parts/sidebar/aside-blog' ) ?>
     </div>
 </section>
 
