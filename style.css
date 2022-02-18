@@ -230,6 +230,132 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   }
 }
 
+.products {
+  background-color: #4F98A6;
+}
+
+.products::before {
+  content: '';
+  position: absolute;
+  background-image: url(images/produtos/produtos.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.25;
+}
+
+.products .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 991.98px) {
+  .products .container {
+    padding-top: 20px;
+    padding-bottom: 33px;
+  }
+}
+
+.products h2 {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.products h2::before {
+  content: '';
+  position: absolute;
+  background: #FFFFFF;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  top: calc(50% - 1.5px);
+  margin-left: -75px;
+}
+
+@media (max-width: 991.98px) {
+  .products h2::before {
+    width: 40px;
+    margin-left: -50px;
+  }
+}
+
+.products h2::after {
+  content: '';
+  position: absolute;
+  border-radius: 20px;
+  background: #FFFFFF;
+  height: 3px;
+  width: 50px;
+  top: calc(50% - 1.5px);
+  margin-left: 25px;
+}
+
+@media (max-width: 991.98px) {
+  .products h2::after {
+    width: 40px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .products h2 {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    margin-bottom: 30px;
+  }
+}
+
+.products .card h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.products .card h4::after {
+  content: '';
+  position: absolute;
+  background: url(images/produtos/title.svg) top center no-repeat;
+  width: 22px;
+  height: 22px;
+  top: calc(100% + 10px);
+  left: calc(50% - 11px);
+}
+
+.products .card .icon-square {
+  margin-bottom: 15px;
+}
+
+.products .card p {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .products .card p {
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.015em;
+  }
+}
+
 /************************************/
 /********* Colmeia PAGES *************/
 /************************************/
