@@ -1,6 +1,6 @@
 <section class="products">
   <div class="container">
-  <h2 class="pb-2">Products</h2>
+  <h2>Produtos</h2>
   <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
