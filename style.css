@@ -15,11 +15,16 @@ html,
 body {
   overflow-x: hidden;
   /* Prevent scroll on narrow devices */
-  font-family: "Source Sans Pro", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 :root {
-  accent-color: #799b9e;
+  accent-color: #FF702E;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 /*
@@ -35,13 +40,8 @@ Description: Tema elaborado para servir como base de outros temas WP
 Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, featured-images, translation-ready
 
 */
-/*
-/////////////
-////THEMES//
-///////////
-*/
 .background-green-dark {
-  background-color: #20585e !important;
+  background-color: #00A69D;
 }
 
 .background-green-medium {
@@ -49,35 +49,19 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 }
 
 .background-green-light {
-  background-color: #799b9e;
+  background-color: #71C3BD;
 }
 
 .background-mustard-dark {
-  background-color: #a37a39;
-}
-
-.background-mustard-medium {
-  background-color: #b59561;
-}
-
-.background-mustard-light {
-  background-color: #c8af88;
-}
-
-.background-black-secondary {
-  background-color: #0f0f0f;
-}
-
-.background-off-white {
-  background-color: #e4ece3;
-}
-
-.background-grey-medium {
-  background-color: #9b9b9b;
+  background-color: #FF702E;
 }
 
 .background-grey-light {
-  background-color: #c9c9c9;
+  background-color: #E7E7E7;
+}
+
+.background-grey-dark {
+  background-color: #353C42;
 }
 
 .background-black {
@@ -95,12 +79,168 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   background: #00D0C5;
 }
 
+.metodology {
+  background-color: #E7E7E7;
+}
+
+.metodology .container {
+  padding-top: 50px;
+  padding-bottom: 67px;
+}
+
+@media (max-width: 991.98px) {
+  .metodology .container {
+    padding-top: 20px;
+    padding-bottom: 33px;
+  }
+}
+
+.metodology h2 {
+  color: #FF702E;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.metodology h2::before {
+  content: '';
+  position: absolute;
+  background: #FF702E;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  top: calc(50% - 1.5px);
+  margin-left: -75px;
+}
+
+@media (max-width: 991.98px) {
+  .metodology h2::before {
+    width: 40px;
+    margin-left: -50px;
+  }
+}
+
+.metodology h2::after {
+  content: '';
+  position: absolute;
+  border-radius: 20px;
+  background: #FF702E;
+  height: 3px;
+  width: 50px;
+  top: calc(50% - 1.5px);
+  margin-left: 25px;
+}
+
+@media (max-width: 991.98px) {
+  .metodology h2::after {
+    width: 40px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .metodology h2 {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    margin-bottom: 20px;
+  }
+}
+
+.metodology p {
+  color: #FFFFFF;
+  width: calc(100% - 256px - 55px);
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.015em;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .metodology p {
+    width: 100%;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.015em;
+  }
+}
+
+.metodology .btn {
+  border: 0;
+  border-radius: 0;
+  width: 256px;
+  height: 53px;
+  padding: 13px 16px;
+  color: #FF702E;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 27px;
+  letter-spacing: -0.015em;
+}
+
+.metodology .btn:hover {
+  opacity: 1;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+}
+
+.metodology .btn:focus {
+  opacity: 1;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+}
+
+@media (max-width: 991.98px) {
+  .metodology .btn {
+    width: auto;
+    height: 38px;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.015em;
+    padding: 11px 16px;
+  }
+}
+
+.metodology .cta {
+  padding: 24px;
+  background-color: #FF702E;
+}
+
+@media (max-width: 991.98px) {
+  .metodology .cta {
+    padding: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .metodology .video iframe {
+    height: 184.79px;
+  }
+}
+
 /************************************/
 /********* Colmeia PAGES *************/
 /************************************/
 /************************************/
 /********* Colmeia COMPONENTS *************/
 /************************************/
+.btn {
+  border: 0;
+  border-radius: 0;
+}
+
 .carousel {
   cursor: -webkit-grab;
   cursor: grab;
@@ -123,7 +263,7 @@ footer p strong {
 }
 
 footer .menu .nav-link {
-  color: #20585e;
+  color: #00A69D;
   font-weight: 600;
   line-height: 30px;
   padding: 0;
@@ -186,11 +326,11 @@ footer .infos ul li p {
 }
 
 footer .infos ul li p i {
-  color: #20585e;
+  color: #00A69D;
 }
 
 footer .copyright {
-  background-color: #20585e;
+  background-color: #00A69D;
   padding: 21px;
 }
 
@@ -205,7 +345,7 @@ footer .copyright p {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.25em;
-  color: #c8af88;
+  color: red;
   margin-bottom: 0;
 }
 
@@ -216,7 +356,7 @@ footer .copyright p {
 }
 
 footer .copyright .float-end a {
-  color: #c8af88;
+  color: red;
   font-size: 24px;
   display: inline;
   position: fixed;
@@ -225,10 +365,10 @@ footer .copyright .float-end a {
 }
 
 #cookie-law-info-bar #wt-cli-accept-all-btn {
-  background-color: #20585e !important;
+  background-color: #00A69D !important;
 }
 
 .menu .nav-link {
-  color: #c9c9c9;
+  color: #E7E7E7;
 }
 /*# sourceMappingURL=style.css.map */

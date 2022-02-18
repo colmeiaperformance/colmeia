@@ -8,15 +8,15 @@
 html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
-  font-family: 'Source Sans Pro', sans-serif!important;
+  font-family: 'Montserrat', sans-serif!important;
 }
 
 :root {
-	accent-color: #799b9e;
+	accent-color: #FF702E;
 }
 
-// .form-control {
-//   &:focus {
-//       box-shadow: none!important;
-//   }
-// }
+.form-control {
+  &:focus {
+      box-shadow: none!important;
+  }
+}

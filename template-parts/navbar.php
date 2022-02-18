@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top memu">
+<nav class="navbar navbar-expand-md navbar-light bg-white">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">  
        <img src=<?php echo get_template_directory_uri() . '/images/logo.png' ?> alt="Logotipo Colmeia Performance" width="200px" height="auto">
