@@ -75,6 +75,156 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 /************************************/
 /********* Colmeia STYLES *************/
 /************************************/
+.cases {
+  background-color: #353C42;
+}
+
+.cases .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 991.98px) {
+  .cases .container {
+    padding-top: 30px;
+    padding-bottom: -30px;
+  }
+}
+
+.cases h2 {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  margin-bottom: 110px;
+  position: relative;
+}
+
+.cases h2::before {
+  content: '';
+  position: absolute;
+  background: #FFFFFF;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  top: calc(50% - 1.5px);
+  margin-left: -75px;
+}
+
+@media (max-width: 991.98px) {
+  .cases h2::before {
+    width: 40px;
+    margin-left: -50px;
+  }
+}
+
+.cases h2::after {
+  content: '';
+  position: absolute;
+  border-radius: 20px;
+  background: #FFFFFF;
+  height: 3px;
+  width: 50px;
+  top: calc(50% - 1.5px);
+  margin-left: 25px;
+}
+
+@media (max-width: 991.98px) {
+  .cases h2::after {
+    width: 40px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cases h2 {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    margin-bottom: 110px;
+  }
+}
+
+.cases .card {
+  border: 2px solid #FFFFFF;
+  padding: 35px 45px;
+}
+
+@media (max-width: 991.98px) {
+  .cases .card {
+    margin-bottom: 100px;
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cases .card .card:nth-last-child(n) {
+    margin-bottom: 50px;
+  }
+}
+
+.cases .card h4 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .cases .card h4 {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    margin-bottom: 25px;
+  }
+}
+
+.cases .card p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  margin-bottom: 0px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 991.98px) {
+  .cases .card p {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.015em;
+  }
+}
+
+.cases .card .icon {
+  margin-top: calc(-110px);
+  margin-bottom: 30px;
+}
+
+.cases .card .icon img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 100%;
+  padding: 20px;
+  border: 2px solid #FFFFFF;
+  background-color: #353C42;
+}
+
+@media (max-width: 991.98px) {
+  .cases .card .icon img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+.cases .card .fw-bold p {
+  font-weight: bold;
+}
+
 .header__home {
   background: #00D0C5;
 }

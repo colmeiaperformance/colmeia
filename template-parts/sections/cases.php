@@ -1,59 +1,57 @@
-
 <section class="cases">
-  <div class="album py-5 bg-light">
+  <div class="container">
+    <h2>Cases</h2>
+    <div class="row row-cols-1 row-cols-lg-3 gy-3 gy-lg-0 gx-5 text-center">
 
-    <div class="container">
-      <h2 class="pb-2">Cases</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+      <div class="col">
+        <div class="card rounded-0 bg-transparent text-white">
+            <div class="icon">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/cases/case.png" alt="Diagnóstico">
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+            <h4>Uma agência para chamar de parceira</h4>
+            <div class="mb-3">
+              <p>“A metodologia Inbound integra as ações de marketing digital, fazendo com que elas convivam de forma otimizada para o resultado final.”</p>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+            <div class="fw-bold">
+              <p>André Marques</p>
             </div>
+            <p>Diretor de Marketing na Hiléia</p>
           </div>
-        </div>
       </div>
+
+       <div class="col">
+        <div class="card rounded-0 bg-transparent text-white">
+            <div class="icon">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/cases/case.png" alt="Diagnóstico">
+            </div>
+            <h4>Uma agência para chamar de parceira</h4>
+            <div class="mb-3">
+              <p>“A metodologia Inbound integra as ações de marketing digital, fazendo com que elas convivam de forma otimizada para o resultado final.”</p>
+            </div>
+            <div class="fw-bold">
+              <p>André Marques</p>
+            </div>
+            <p>Diretor de Marketing na Hiléia</p>
+          </div>
+      </div>
+
+       <div class="col">
+        <div class="card rounded-0 bg-transparent text-white">
+            <div class="icon">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/cases/case.png" alt="Diagnóstico">
+            </div>
+            <h4>Uma agência para chamar de parceira</h4>
+            <div class="mb-3">
+              <p>“A metodologia Inbound integra as ações de marketing digital, fazendo com que elas convivam de forma otimizada para o resultado final.”</p>
+            </div>
+            <div class="fw-bold">
+              <p>André Marques</p>
+            </div>
+            <p>Diretor de Marketing na Hiléia</p>
+          </div>
+      </div>
+
     </div>
+  <div>
   </div>
 </section>
