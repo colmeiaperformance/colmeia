@@ -1,9 +1,8 @@
 <hr class="m-0">
 <footer>
   <div class="container text-center text-lg-start text-black"> 
-    <div class="py-4 py-lg-5">
-      <div class="row">
-        <div class="col-lg-4 d-none d-lg-block order-0 menu">
+      <div class="row align-items-center">
+        <div class="col-lg-3 order-1 menu mb-4 mb-lg-0">
           <?php
               wp_nav_menu(array(
                   'theme_location' => 'footer-menu',
@@ -17,45 +16,55 @@
               ?>
         </div>
 
-        <div class="col-lg-4 order-2 order-lg-1 social">
-          <p class="mb-0">Want to know more?</p>
-          <p class=""><strong>Follow us on social media!</strong></p>
-          <ul class="list-unstyled d-flex">
+        <div class="col-lg-6 order-0 order-lg-1 social mb-2 mb-lg-0">
+          <div class="logo text-center mb-4">
+            <a href="/"><img src="<?php echo get_template_directory_uri() . '/images/footer/logo-colmeia.svg' ?>" alt="Logo Colmeia"></a>
+          </div>
+
+          <ul class="redes list-unstyled d-flex align-items-center justify-content-center">
             <li><a href="#">      
-                <img src="<?php echo get_template_directory_uri() . '/images/icon-facebook.svg' ?>" alt="Logo Facebook">
+                <img src="<?php echo get_template_directory_uri() . '/images/footer/icon-facebook.svg' ?>" alt="Logo Facebook">
             </a></li>
              <li class="ms-3"><a href="#">      
-                <img src="<?php echo get_template_directory_uri() . '/images/icon-instagram.png' ?>" alt="Logo Instagram">
+                <img src="<?php echo get_template_directory_uri() . '/images/footer/icon-instagram.svg' ?>" alt="Logo Instagram">
+            </a></li>
+             <li class="ms-3"><a href="#">      
+                <img src="<?php echo get_template_directory_uri() . '/images/footer/icon-linkedin.svg' ?>" alt="Logo Linkedin">
+            </a></li>
+             <li class="ms-3"><a href="#">      
+                <img src="<?php echo get_template_directory_uri() . '/images/footer/icon-whatsapp.svg' ?>" alt="Logo Whatsapp">
             </a></li>
           </ul>
-          <div class="colmeia d-flex align-items-center">
-            <p>Powered by</p>  <a href=""><img src="<?php echo get_template_directory_uri() . '/images/logo-colmeia.svg' ?>" alt="Logo Colmeia"></a>
+          <div class="d-none copyright d-lg-flex justify-content-center align-items-center">
+            <p>Colmeia Performance Digital Copyright © 2022</p>  
           </div>
         </div>
 
-        <div class="col-lg-4 order-1 order-lg-2 infos">
-          <img class="d-block mx-auto mb-3 mb-lg-4" src="<?php echo get_template_directory_uri() . '/images/logo-footer.svg' ?>" alt="Logo" >
-          <ul class="list-unstyled">
-            <li><p><i class="bi bi-geo-alt-fill"></i>  1290 Weston Road, Suit 310, Weston, FL 33326</p></li>
-            <li><p><i class="bi bi-telephone-fill"></i> 333-333-3333</p></li>
-            <li><p><i class="bi bi-envelope-fill"></i> contact@revitta.com</p></li>
-          </ul>
+        <div class="col-lg-3 order-2 order-lg-2 infos text-center text-lg-start mb-2 mb-lg-0">
+            <div class="mb-4"> 
+              <div class="title d-flex align-items-center justify-content-center justify-content-lg-start text-uppercase color-primary-dark">
+                 <i class="bi bi-geo-alt"></i> <p>Endereço</p>
+              </div>
+              <p>Rua Eugênio Hussak, 13, Laranjeiras</p>
+              <p>Rio de Janeiro – RJ</p> 
+             </div>
+
+             <div>
+              <div class="title d-flex align-items-center justify-content-center justify-content-lg-start text-uppercase color-primary-dark">
+                <i class="bi bi-telephone"></i><p>Telefone</p></div>
+               <p>21 2225-6110</p>
+             </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="copyright"> 
-    <div class="text-center text-uppercase">
-        <p>© 2022 revitta medical & aesthetic. All Rights Reserved.</p>
-        <p class="float-end top">
+        <div class="copyright d-lg-flex justify-content-center align-items-center d-lg-none">
+            <p>Colmeia Performance Digital Copyright © 2022</p>  
+          </div>
+       <p class="float-end top">
           <a href="#">
             <i class="bi bi-arrow-up-circle-fill"></i>
           </a>
          </p> 
-    </div>
-    </div>
-
-
+  </div>
 </footer>
 <?php wp_footer(); ?>
 <script src="js/main.js"></script>

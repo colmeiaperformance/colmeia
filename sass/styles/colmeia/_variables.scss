@@ -12,6 +12,7 @@ $color-secondary-dark: #FF702E;
 $color-grey-dark: #353C42;
 $color-grey-light: #E7E7E7;
 $color-water-blue: #4F98A6;
+$color-grey: #727272;
 
 //Default colors
 $color-black: #000000;
@@ -48,4 +49,8 @@ $color-white: #FFFFFF;
 
 .background-white {
   background-color: $color-white;
+}
+
+.color-primary-dark {
+  color: $color-primary-dark;
 }
