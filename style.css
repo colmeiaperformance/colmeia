@@ -513,23 +513,23 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 /************************************/
 /********* Colmeia PAGES *************/
 /************************************/
-.blog {
+.page-blog {
   background-color: #00A59E;
 }
 
-.blog .container {
+.page-blog .container {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 @media (max-width: 991.98px) {
-  .blog .container {
+  .page-blog .container {
     padding-top: 20px;
     padding-bottom: 33px;
   }
 }
 
-.blog h2 {
+.page-blog h2 {
   color: #FFFFFF;
   text-align: center;
   font-weight: bold;
@@ -540,7 +540,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   position: relative;
 }
 
-.blog h2::before {
+.page-blog h2::before {
   content: '';
   position: absolute;
   background: #FFFFFF;
@@ -552,13 +552,13 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 }
 
 @media (max-width: 991.98px) {
-  .blog h2::before {
+  .page-blog h2::before {
     width: 40px;
     margin-left: -50px;
   }
 }
 
-.blog h2::after {
+.page-blog h2::after {
   content: '';
   position: absolute;
   border-radius: 20px;
@@ -570,14 +570,14 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 }
 
 @media (max-width: 991.98px) {
-  .blog h2::after {
+  .page-blog h2::after {
     width: 40px;
     margin-left: 15px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .blog h2 {
+  .page-blog h2 {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: -0.015em;
