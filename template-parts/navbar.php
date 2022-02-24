@@ -1,13 +1,13 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">  
-       <img src=<?php echo get_template_directory_uri() . '/images/logo.png' ?> alt="Logotipo Colmeia Performance" width="200px" height="auto">
+<nav class="navbar navbar-expand-lg bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="/">  
+       <img src=<?php echo get_template_directory_uri() . '/images/logo.png' ?> alt="Logotipo Colmeia Performance" width="194px" height="auto">
     </a>
-    <a class="btn btn-md btn-primary" href="#">Agências</a> <a class="btn btn-md btn-outline-primary" href="#">Clientes</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+       <img src=<?php echo get_template_directory_uri() . '/images/toggler.svg' ?> alt="Logotipo Colmeia Performance">
     </button>
     <div class="collapse navbar-collapse ms-auto" id="navbarCollapse">
+      <div class="d-flex align-items-center my-3 m-lg-0"><a class="btn" href="#">Agências</a> <a class="btn" href="#">Clientes</a></div>
            <?php
             wp_nav_menu(array(
                 'theme_location' => 'main-menu',

@@ -1,5 +1,102 @@
-.menu {
-    .nav-link {
-      color: $color-grey-light;
+.navbar {
+  .nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.015em;
+    color: $grey-menu-link;
+    padding: 0 10px!important;
+    @media (max-width: 991.98px) {
+      padding: .5rem 0!important;
     }
+    
+    &:hover {
+      color: $color-primary-dark;
+    }
+    &:focus {
+      color: $color-primary-dark;
+    }
+  }
+  .dropdown-menu {
+    border-radius: 0;
+    border: 0;
+    background: $color-primary-dark;
+  }
+  .dropdown-item {
+    color: $color-white;
+  }
+  
+  .dropdown-item.active, .dropdown-item:active {
+    background: transparent;
+    color:  $color-white;
+  }
+  
+  .navbar-toggler {
+    &:hover {
+      outline: 0;
+      box-shadow: none;
+    }
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  .navbar-brand {
+    margin-right: 45px;
+    padding: 13px 0;
+    @media (max-width: 991.98px) {
+      margin-right: 0;
+      padding: 0;
+      width: 50%;
+    }
+  }
+  .btn {
+    padding: 9px 21px;
+    width: 105px;
+    height: 35px;
+    background-color:$color-primary-dark;
+    border: 2px solid $color-primary-dark;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.015em;
+    color: $color-white;
+    border-radius: 0;
+    margin-right: 30px;
+    
+    &:hover {
+      outline: 0;
+      box-shadow: none;
+      color: $color-primary-dark;
+      background-color: transparent;
+    }
+    
+    .btn-check:focus + &,
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+      color: $color-primary-dark;
+      background-color: transparent;
+    }
+    
+    .btn-check:checked + &,
+    .btn-check:active + &,
+    &:active,
+    &.active {
+      outline: 0;
+      box-shadow: none;
+      color: $color-primary-dark;
+      background-color: transparent;
+      
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+        color: $color-primary-dark;
+        background-color: transparent;
+      }
+    }
+  }
 }

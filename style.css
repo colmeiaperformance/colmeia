@@ -730,7 +730,124 @@ footer .float-end a {
   background-color: #00A69D !important;
 }
 
-.menu .nav-link {
-  color: #E7E7E7;
+.navbar .nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.015em;
+  color: #606060;
+  padding: 0 10px !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .nav-link {
+    padding: 0.5rem 0 !important;
+  }
+}
+
+.navbar .nav-link:hover {
+  color: #00A69D;
+}
+
+.navbar .nav-link:focus {
+  color: #00A69D;
+}
+
+.navbar .dropdown-menu {
+  border-radius: 0;
+  border: 0;
+  background: #00A69D;
+}
+
+.navbar .dropdown-item {
+  color: #FFFFFF;
+}
+
+.navbar .dropdown-item.active, .navbar .dropdown-item:active {
+  background: transparent;
+  color: #FFFFFF;
+}
+
+.navbar .navbar-toggler:hover {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar .navbar-toggler:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar .navbar-brand {
+  margin-right: 45px;
+  padding: 13px 0;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-brand {
+    margin-right: 0;
+    padding: 0;
+    width: 50%;
+  }
+}
+
+.navbar .btn {
+  padding: 9px 21px;
+  width: 105px;
+  height: 35px;
+  background-color: #00A69D;
+  border: 2px solid #00A69D;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  border-radius: 0;
+  margin-right: 30px;
+}
+
+.navbar .btn:hover {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #00A69D;
+  background-color: transparent;
+}
+
+.btn-check:focus + .navbar .btn, .navbar .btn:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #00A69D;
+  background-color: transparent;
+}
+
+.btn-check:checked + .navbar .btn,
+.btn-check:active + .navbar .btn, .navbar .btn:active, .navbar .btn.active {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #00A69D;
+  background-color: transparent;
+}
+
+.btn-check:checked + .navbar .btn:focus,
+.btn-check:active + .navbar .btn:focus, .navbar .btn:active:focus, .navbar .btn.active:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #00A69D;
+  background-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
