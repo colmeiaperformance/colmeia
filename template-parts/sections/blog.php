@@ -35,13 +35,13 @@
 
     </div>
     
-    <div class="news row mt-5 border py-4">
+    <div class="news row mt-5 border py-4 m-1">
         <form class="d-flex justify-content-center align-items-center flex-column flex-md-row">
           <div class="text-center col-12 col-md-4"><h3>Assine a nossa newsletter</h3></div>
           <div class="col-12 col-md-6 px-3">
             <input type="email" placeholder="E-mail" class="form-control" >
           </div>
-          <button type="submit" class="btn mt-3">Cadastrar</button>
+          <button type="submit" class="btn mt-3 mt-md-0">Cadastrar</button>
         </form>
       </div>
   </div>
