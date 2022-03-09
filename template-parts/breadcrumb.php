@@ -1,3 +1,5 @@
-<section class="breadcrumb">
-    <?php get_breadcrumb(); ?>
+<section id="breadcrumb" class="breadcrumb">
+    <div class="container">
+       <?php the_breadcrumb(); ?>
+    </div>
 </section>

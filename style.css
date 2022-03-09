@@ -584,6 +584,45 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 /************************************/
 /********* Colmeia COMPONENTS *************/
 /************************************/
+.breadcrumb {
+  padding: 16px;
+  background: #00D0C5;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  margin-bottom: 0 !important;
+  padding: 16px !important;
+}
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: #FFFFFF;
+  content: var(--bs-breadcrumb-divider, ">");
+}
+
+.breadcrumb a {
+  color: #FFFFFF;
+  border: 0;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.breadcrumb ol {
+  padding: 0 !important;
+}
+
 .btn {
   border: 0;
   border-radius: 0;
