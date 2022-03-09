@@ -11,7 +11,6 @@
         "sass/styles/_about.scss",
         "sass/styles/_cases.scss",
         "sass/styles/_featured.scss",
-        "sass/styles/_header.scss",
         "sass/styles/_hero.scss",
         "sass/styles/_metodology.scss",
         "sass/styles/_products.scss",
@@ -24,6 +23,7 @@
         "sass/styles/components/_button.scss",
         "sass/styles/components/_carousel.scss",
         "sass/styles/components/_footer.scss",
+        "sass/styles/components/_header.scss",
         "sass/styles/components/_lgpd.scss",
         "sass/styles/components/_navbar.scss",
         "sass/styles/components/_pagination.scss"
