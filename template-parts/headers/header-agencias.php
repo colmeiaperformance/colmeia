@@ -6,7 +6,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-7 order-2 order-lg-1 carousel-caption position-relative text-center text-lg-start start-0 end-0 pe-lg-5">
-              <h1>Complete seu <strong>portfólio</strong>, garanta os <strong>melhores resultados</strong> e <strong>fidelize seus clientes</strong>>, sem aumentar seus custos fixos</h1>           
+              <h1>Complete seu <strong>portfólio</strong>, garanta os <strong>melhores resultados</strong> e <strong>fidelize seus clientes</strong>, sem aumentar seus custos fixos</h1>           
               <p>Temos experiências de sucesso em parcerias com agências e resultados comprovados neste modelo de negócios.</p>
               <div><a class="btn btn-md btn-primary btn-active" href="#">Saiba mais</a> <a class="btn btn-md btn-outline-primary" href="#">Contato</a></div>
             </div>
@@ -31,7 +31,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-7 order-2 order-lg-1 carousel-caption position-relative text-center text-lg-start start-0 end-0 pe-lg-5">
-              <h1>Complete seu <strong>portfólio</strong>, garanta os <strong>melhores resultados</strong> e <strong>fidelize seus clientes</strong>>, sem aumentar seus custos fixos</h1>
+              <h1>Complete seu <strong>portfólio</strong>, garanta os <strong>melhores resultados</strong> e <strong>fidelize seus clientes</strong>, sem aumentar seus custos fixos</h1>
               <p>Temos experiências de sucesso em parcerias com agências e resultados comprovados neste modelo de negócios.</p>
               <div><a class="btn btn-md btn-primary btn-active" href="#">Saiba mais</a> <a class="btn btn-md btn-outline-primary" href="#">Contato</a></div>
             </div>
@@ -56,7 +56,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-7 order-2 order-lg-1 carousel-caption position-relative text-center text-lg-start start-0 end-0 pe-lg-5">
-              <h1>Complete seu <strong>portfólio</strong>, garanta os <strong>melhores resultados</strong> e <strong>fidelize seus clientes</strong>>, sem aumentar seus custos fixos</h1>
+              <h1>Complete seu <strong>portfólio</strong>, garanta os <strong>melhores resultados</strong> e <strong>fidelize seus clientes</strong>, sem aumentar seus custos fixos</h1>
               <p>Temos experiências de sucesso em parcerias com agências e resultados comprovados neste modelo de negócios.</p>
               <div><a class="btn btn-md btn-primary btn-active" href="#">Saiba mais</a> <a class="btn btn-md btn-outline-primary" href="#">Contato</a></div>
             </div>
