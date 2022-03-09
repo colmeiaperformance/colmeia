@@ -1,4 +1,3 @@
-<?php get_template_part('template-parts/breadcrumb'); ?>
 <header class="header">
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
