@@ -522,11 +522,36 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   padding-bottom: 50px;
 }
 
+.page-blog .container .btn {
+  background-color: #FF702E;
+  color: #FFFFFF;
+}
+
 @media (max-width: 991.98px) {
   .page-blog .container {
     padding-top: 20px;
     padding-bottom: 33px;
   }
+}
+
+.page-blog .post {
+  color: #FFFFFF;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog .post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.page-blog .news {
+  color: #FFFFFF;
 }
 
 .page-blog h2 {
