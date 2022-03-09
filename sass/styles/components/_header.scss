@@ -4,16 +4,38 @@
 	@media (max-width: 991.98px) { 
 		padding: 18px 0;
 	}
-	
-	.carousel-indicators [data-bs-target] {
-		width: 12px;
-		height: 12px;
-		border-radius: 50%;
-		margin-right: 4px;
-		margin-left: 4px;
+	.row {
+		padding-bottom: 60px;
+		@media (max-width: 991.98px)  { 
+			padding-bottom: 15px;
+		}
 	}
-	
-	
+	.agencia {
+		margin-top: 60px;
+		@media (max-width: 991.98px)  {
+			margin-top: 15px;
+		}
+	}
+	.carousel-indicators {
+		margin-bottom: 170px;
+		height: 15px;
+		@media (max-width: 991.98px) {
+			margin-bottom: calc(180px / 2);
+		}
+		[data-bs-target] {
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			margin-right: 4px;
+			margin-left: 4px;
+			@media (max-width: 991.98px) {
+				width: 7px;
+				height: 7px;
+				margin-right: 2px;
+				margin-left: 2px;
+			}
+		}
+	}
 	h1 {
 		font-weight: normal;
 		font-size: 28px;
@@ -36,9 +58,7 @@
 			font-size: 11px;
 			line-height: 13px;
 		}
-		
 	}
-	
 	.btn {
 		border-radius: 0;
 		padding: 15px 34px;
@@ -62,7 +82,6 @@
 			box-shadow: 0;
 			border-color: $color-white;
 		}
-		
 		&:focus {
 			background-color: transparent;
 			color: $color-white;
@@ -70,7 +89,6 @@
 			border-color: $color-white;
 		}
 	}
-	
 	.btn-outline-primary {
 		background-color: transparent;
 		border-color: $color-white;
@@ -82,7 +100,6 @@
 			box-shadow: 0;
 			border-color: $color-white;
 		}
-		
 		&:focus {
 			background-color: $color-white;
 			color: $color-primary-dark;

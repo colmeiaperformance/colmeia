@@ -772,12 +772,52 @@ footer .float-end a {
   }
 }
 
+.header .row {
+  padding-bottom: 60px;
+}
+
+@media (max-width: 991.98px) {
+  .header .row {
+    padding-bottom: 15px;
+  }
+}
+
+.header .agencia {
+  margin-top: 60px;
+}
+
+@media (max-width: 991.98px) {
+  .header .agencia {
+    margin-top: 15px;
+  }
+}
+
+.header .carousel-indicators {
+  margin-bottom: 170px;
+  height: 15px;
+}
+
+@media (max-width: 991.98px) {
+  .header .carousel-indicators {
+    margin-bottom: calc(180px / 2);
+  }
+}
+
 .header .carousel-indicators [data-bs-target] {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   margin-right: 4px;
   margin-left: 4px;
+}
+
+@media (max-width: 991.98px) {
+  .header .carousel-indicators [data-bs-target] {
+    width: 7px;
+    height: 7px;
+    margin-right: 2px;
+    margin-left: 2px;
+  }
 }
 
 .header h1 {
