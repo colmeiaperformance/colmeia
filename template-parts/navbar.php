@@ -7,7 +7,7 @@
        <img src=<?php echo get_template_directory_uri() . '/images/toggler.svg' ?> alt="Logotipo Colmeia Performance">
     </button>
     <div class="collapse navbar-collapse ms-auto" id="navbarCollapse">
-      <div class="d-flex align-items-center my-3 m-lg-0"><a class="btn" href="/agencias">Agências</a> <a class="btn" href="/empresas">Empresas</a></div>
+      <div class="d-flex align-items-center my-3 m-lg-0"><a class="btn" href="/colmeia/agencias">Agências</a> <a class="btn" href="/colmeia/empresas">Empresas</a></div>
            <?php
             wp_nav_menu(array(
                 'theme_location' => 'main-menu',
