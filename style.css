@@ -84,12 +84,29 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 /********* Colmeia STYLES *************/
 /************************************/
 .sec-blog {
-  background-color: #00A59E;
+  background: #00A59E;
+}
+
+.sec-blog::after {
+  content: '';
+  background: url(images/blog/blog-bg.png) bottom left no-repeat;
+  position: absolute;
+  width: 341px;
+  height: 508px;
+  margin-top: -508px;
+}
+
+@media (max-width: 991.98px) {
+  .sec-blog::after {
+    display: none;
+  }
 }
 
 .sec-blog .container {
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
+  z-index: 11111;
 }
 
 @media (max-width: 991.98px) {
