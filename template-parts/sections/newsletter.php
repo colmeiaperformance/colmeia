@@ -1,4 +1,4 @@
-<section class="newsletter blog">
+<section class="newsletter">
   <div class="container">
     <div class="row border m-2 my-lg-4 mx-lg-5 background-blog">
       <div class="d-flex justify-content-lg-between align-items-center flex-column flex-lg-row p-3 p-lg-4">
