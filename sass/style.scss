@@ -13,10 +13,12 @@
 /************************************/
 
 @import "styles/_about";
+@import "styles/_blog";
 @import "styles/_cases";
 @import "styles/_featured";
 @import "styles/_hero";
 @import "styles/_metodology";
+@import "styles/_newsletter";
 @import "styles/_products";
 @import "styles/_services";
 @import "styles/_testmonials";
@@ -24,7 +26,7 @@
 /************************************/
 /********* Colmeia PAGES *************/
 /************************************/
-@import "styles/pages/_blog";
+@import "styles/pages/_page-blog";
 @import "styles/pages/_page";
 @import "styles/pages/_single";
 

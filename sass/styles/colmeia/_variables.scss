@@ -34,7 +34,7 @@ $color-white: #FFFFFF;
 }
 
 .background-mustard-dark {
-  background-color: $color-secondary-dark;
+  background-color: $color-secondary-dark!important;
 }
 
 .background-grey-light{
@@ -54,5 +54,9 @@ $color-white: #FFFFFF;
 }
 
 .color-primary-dark {
-  color: $color-primary-dark;
+  color: $color-primary-dark!important;
+}
+
+.background-blog{
+  background-color: $color-primary-blog;
 }

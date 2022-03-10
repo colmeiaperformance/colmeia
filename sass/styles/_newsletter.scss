@@ -1,0 +1,29 @@
+.newsletter {
+  background: $color-primary-blog url('images/newsletter/newsletter-bg.png') center left no-repeat;
+  padding: 88px 0;
+  @media (max-width: 991.98px) {
+    padding: 20px 0;
+     background: $color-primary-blog;
+  }
+  
+  form {
+    @media (max-width: 991.98px) {
+      width: 100%;
+    }
+  }
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
+    @media (max-width: 991.98px) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}

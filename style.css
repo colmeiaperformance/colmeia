@@ -53,7 +53,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 }
 
 .background-mustard-dark {
-  background-color: #FF702E;
+  background-color: #FF702E !important;
 }
 
 .background-grey-light {
@@ -73,12 +73,101 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 }
 
 .color-primary-dark {
-  color: #00A69D;
+  color: #00A69D !important;
+}
+
+.background-blog {
+  background-color: #00A59E;
 }
 
 /************************************/
 /********* Colmeia STYLES *************/
 /************************************/
+.blog {
+  background-color: #00A59E;
+}
+
+.blog .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 991.98px) {
+  .blog .container {
+    padding-top: 20px;
+    padding-bottom: 33px;
+  }
+}
+
+.blog h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@media (max-width: 991.98px) {
+  .blog h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.blog h2 {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.blog h2::before {
+  content: '';
+  position: absolute;
+  background: #FFFFFF;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  top: calc(50% - 1.5px);
+  margin-left: -75px;
+}
+
+@media (max-width: 991.98px) {
+  .blog h2::before {
+    width: 40px;
+    margin-left: -50px;
+  }
+}
+
+.blog h2::after {
+  content: '';
+  position: absolute;
+  border-radius: 20px;
+  background: #FFFFFF;
+  height: 3px;
+  width: 50px;
+  top: calc(50% - 1.5px);
+  margin-left: 25px;
+}
+
+@media (max-width: 991.98px) {
+  .blog h2::after {
+    width: 40px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .blog h2 {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    margin-bottom: 30px;
+  }
+}
+
 .cases {
   background-color: #353C42;
 }
@@ -380,6 +469,44 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   }
 }
 
+.newsletter {
+  background: #00A59E url("images/newsletter/newsletter-bg.png") center left no-repeat;
+  padding: 88px 0;
+}
+
+@media (max-width: 991.98px) {
+  .newsletter {
+    padding: 20px 0;
+    background: #00A59E;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .newsletter form {
+    width: 100%;
+  }
+}
+
+.newsletter .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.newsletter h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .newsletter h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+}
+
 .products {
   background-color: #4F98A6;
 }
@@ -509,103 +636,6 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 /************************************/
 /********* Colmeia PAGES *************/
 /************************************/
-.page-blog {
-  background-color: #00A59E;
-}
-
-.page-blog .container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.page-blog .container .btn {
-  background-color: #FF702E;
-  color: #FFFFFF;
-}
-
-@media (max-width: 991.98px) {
-  .page-blog .container {
-    padding-top: 20px;
-    padding-bottom: 33px;
-  }
-}
-
-.page-blog .post {
-  color: #FFFFFF;
-}
-
-@media (max-width: 991.98px) {
-  .page-blog .post {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.page-blog .news {
-  color: #FFFFFF;
-}
-
-.page-blog h2 {
-  color: #FFFFFF;
-  text-align: center;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
-  letter-spacing: -0.015em;
-  margin-bottom: 45px;
-  position: relative;
-}
-
-.page-blog h2::before {
-  content: '';
-  position: absolute;
-  background: #FFFFFF;
-  bottom: 0;
-  height: 3px;
-  width: 50px;
-  top: calc(50% - 1.5px);
-  margin-left: -75px;
-}
-
-@media (max-width: 991.98px) {
-  .page-blog h2::before {
-    width: 40px;
-    margin-left: -50px;
-  }
-}
-
-.page-blog h2::after {
-  content: '';
-  position: absolute;
-  border-radius: 20px;
-  background: #FFFFFF;
-  height: 3px;
-  width: 50px;
-  top: calc(50% - 1.5px);
-  margin-left: 25px;
-}
-
-@media (max-width: 991.98px) {
-  .page-blog h2::after {
-    width: 40px;
-    margin-left: 15px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .page-blog h2 {
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: -0.015em;
-    margin-bottom: 30px;
-  }
-}
-
 /************************************/
 /********* Colmeia COMPONENTS *************/
 /************************************/
