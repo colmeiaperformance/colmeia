@@ -755,6 +755,10 @@ footer .menu .nav-link {
   padding: 0;
 }
 
+footer .menu .nav-link:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 991.98px) {
   footer .social .logo img {
     max-width: 60px;
@@ -765,6 +769,10 @@ footer .menu .nav-link {
   footer .social .redes img {
     max-width: 25px;
   }
+}
+
+footer .social .redes img:hover {
+  opacity: 0.8;
 }
 
 footer .social ul {
@@ -929,19 +937,19 @@ footer .float-end a {
 }
 
 .header .btn-primary:hover {
-  background-color: transparent;
+  background-color: #FF702E;
   color: #FFFFFF;
   -webkit-box-shadow: 0;
           box-shadow: 0;
-  border-color: #FFFFFF;
+  border-color: #FF702E;
 }
 
 .header .btn-primary:focus {
-  background-color: transparent;
+  background-color: #FF702E;
   color: #FFFFFF;
   -webkit-box-shadow: 0;
           box-shadow: 0;
-  border-color: #FFFFFF;
+  border-color: #FF702E;
 }
 
 .header .btn-outline-primary {
@@ -952,19 +960,19 @@ footer .float-end a {
 }
 
 .header .btn-outline-primary:hover {
-  background-color: #FFFFFF;
-  color: #00A69D;
+  background-color: #FF702E;
+  color: #FFFFFF;
   -webkit-box-shadow: 0;
           box-shadow: 0;
-  border-color: #FFFFFF;
+  border-color: #FF702E;
 }
 
 .header .btn-outline-primary:focus {
-  background-color: #FFFFFF;
-  color: #00A69D;
+  background-color: #FF702E;
+  color: #FFFFFF;
   -webkit-box-shadow: 0;
           box-shadow: 0;
-  border-color: #FFFFFF;
+  border-color: #FF702E;
 }
 
 .header img {
@@ -1090,6 +1098,11 @@ footer .float-end a {
 .navbar .dropdown-item.active, .navbar .dropdown-item:active {
   background: transparent;
   color: #FFFFFF;
+}
+
+.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+  color: #FFFFFF;
+  background-color: #00A69D;
 }
 
 .navbar .navbar-toggler:hover {

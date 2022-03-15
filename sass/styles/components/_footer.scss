@@ -37,6 +37,9 @@ footer {
       line-height: 30px;
       color: $color-black;
       padding: 0;
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
   
@@ -52,6 +55,9 @@ footer {
       img {
         @media (max-width: 991.98px) {
           max-width: 25px;
+        }
+        &:hover {
+          opacity: 0.8;
         }
       }
     }

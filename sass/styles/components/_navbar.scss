@@ -30,6 +30,10 @@
     background: transparent;
     color:  $color-white;
   }
+  .dropdown-item:focus, .dropdown-item:hover {
+    color: $color-white;
+    background-color: $color-primary-dark; 
+}
   
   .navbar-toggler {
     &:hover {

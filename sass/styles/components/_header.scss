@@ -77,16 +77,16 @@
 		font-weight: bold;
 		margin-right: 10px;
 		&:hover {
-			background-color: transparent;
+			background-color: $color-secondary-dark;
 			color: $color-white;
 			box-shadow: 0;
-			border-color: $color-white;
+			border-color: $color-secondary-dark;
 		}
 		&:focus {
-			background-color: transparent;
+			background-color: $color-secondary-dark;
 			color: $color-white;
 			box-shadow: 0;
-			border-color: $color-white;
+			border-color: $color-secondary-dark;
 		}
 	}
 	.btn-outline-primary {
@@ -95,16 +95,16 @@
 		color: $color-white;
 		font-weight: bold;
 		&:hover {
-			background-color: $color-white;
-			color: $color-primary-dark;
+			background-color:$color-secondary-dark;
+			color: $color-white;
 			box-shadow: 0;
-			border-color: $color-white;
+			border-color: $color-secondary-dark;
 		}
 		&:focus {
-			background-color: $color-white;
-			color: $color-primary-dark;
+			background-color: $color-secondary-dark;
+			color: $color-white;
 			box-shadow: 0;
-			border-color: $color-white;
+			border-color: $color-secondary-dark;
 		}
 	}
 	
