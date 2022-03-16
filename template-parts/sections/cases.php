@@ -1,55 +1,31 @@
+<?php 
+$titulo_cases = get_sub_field('titulo_cases');
+$item_cases = get_sub_field('item_cases');
+?>
 <section class="cases">
   <div class="container">
-    <h2>Cases</h2>
+    <h2><?php if ($titulo_cases) { echo $titulo_cases; } ?></h2>
     <div class="row row-cols-1 row-cols-lg-3 gy-3 gy-lg-0 gx-5 text-center">
 
+    <?php foreach ($item_cases as $ic) { ?>
+    
       <div class="col">
         <div class="card rounded-0 bg-transparent text-white">
             <div class="icon">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/images/cases/case.png" alt="Diagnóstico">
             </div>
-            <h4>Uma agência para chamar de parceira</h4>
+            <h4><?php if ($ic['titulo_item_cases']) { echo $ic['titulo_item_cases']; } ?></h4>
             <div class="mb-3">
-              <p>“A metodologia Inbound integra as ações de marketing digital, fazendo com que elas convivam de forma otimizada para o resultado final.”</p>
+              <p><?php if ($ic['descricao_item_cases']) { echo $ic['descricao_item_cases']; } ?></p>
             </div>
             <div class="fw-bold">
-              <p>André Marques</p>
+              <p><?php if ($ic['pessoa_item_cases']) { echo $ic['pessoa_item_cases']; } ?></p>
             </div>
-            <p>Diretor de Marketing na Hiléia</p>
+            <p><?php if ($ic['cargo_item_cases']) { echo $ic['cargo_item_cases']; } ?></p>
           </div>
       </div>
 
-       <div class="col">
-        <div class="card rounded-0 bg-transparent text-white">
-            <div class="icon">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/cases/case.png" alt="Diagnóstico">
-            </div>
-            <h4>Uma agência para chamar de parceira</h4>
-            <div class="mb-3">
-              <p>“A metodologia Inbound integra as ações de marketing digital, fazendo com que elas convivam de forma otimizada para o resultado final.”</p>
-            </div>
-            <div class="fw-bold">
-              <p>André Marques</p>
-            </div>
-            <p>Diretor de Marketing na Hiléia</p>
-          </div>
-      </div>
-
-       <div class="col">
-        <div class="card rounded-0 bg-transparent text-white">
-            <div class="icon">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/cases/case.png" alt="Diagnóstico">
-            </div>
-            <h4>Uma agência para chamar de parceira</h4>
-            <div class="mb-3">
-              <p>“A metodologia Inbound integra as ações de marketing digital, fazendo com que elas convivam de forma otimizada para o resultado final.”</p>
-            </div>
-            <div class="fw-bold">
-              <p>André Marques</p>
-            </div>
-            <p>Diretor de Marketing na Hiléia</p>
-          </div>
-      </div>
+    <?php } ?>
 
     </div>
   <div>
