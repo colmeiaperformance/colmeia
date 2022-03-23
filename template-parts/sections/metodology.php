@@ -1,17 +1,24 @@
+<?php 
+$titulo_met = get_sub_field('titulo_met');
+$imagem_met = get_sub_field('imagem_met');
+$video_met = get_sub_field('video_met');
+$cta_met = get_sub_field('cta_met');
+?>
 <section class="metodology">
   <div class="container">
-     <h2>Metodologia</h2>
+    <h2><?php if ($titulo_met) { echo $titulo_met; } ?></h2>
     <div class="row align-items-center justify-ceontent-center">
       <div class="col col-lg-5 d-none d-lg-block">
-        <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/images/metodologia/img-metodologia.svg" alt="Metodologia" />
+        <img class="img-fluid" src="<?php if ($imagem_met) { echo $imagem_met; } ?>" alt="Metodologia" />
       </div>
-       <div class="col col-lg-7 video">
-         <iframe width="100%" height="400" src="https://www.youtube.com/embed/ag5-98fefiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="col col-lg-7 video">
+        <?php if ($video_met) { echo $video_met; } ?>
       </div>
     </div>
     <div class="cta d-lg-flex justify-content-between align-items-center mt-2 mt-lg-5">
-      <p>Descubra como nossa metodologia é aplicada na prática. Baixe nosso ebook e conheça as oportunidades da performance digital.</p>
-      <a href="#" class="btn">Baixe agora mesmo</a>
+      <p><?php if ($cta_met['descricao_cta_met']) { echo $cta_met['descricao_cta_met']; } ?></p>
+      <a href="<?php if ($cta_met['url_botao_cta_met']) { echo $cta_met['url_botao_cta_met']; } else { echo '#'; } ?>"
+        class="btn"><?php if ($cta_met['texto_botao_cta_met']) { echo $cta_met['texto_botao_cta_met']; } ?></a>
     </div>
   </div>
 </section>
