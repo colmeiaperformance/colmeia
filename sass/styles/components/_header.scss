@@ -1,4 +1,19 @@
 .header {
+	&--home {
+		.flags {
+			margin-top: 40px;
+			@media (max-width: 991.98px) {
+				margin-top: 15px;
+			}
+		}
+		.carousel-indicators {
+			margin-bottom: 35px!important;
+			height: 15px!important;
+			@media (max-width: 991.98px) {
+				margin-bottom: 0;
+			}
+		}
+	}
 	background-color:	$color-primary-dark;
 	padding: 65px 0;
 	@media (max-width: 991.98px) { 
@@ -107,7 +122,6 @@
 			border-color: $color-secondary-dark;
 		}
 	}
-	
 	img {
 		max-width: 492px;
 		@media (max-width: 991.98px) { 
@@ -115,7 +129,6 @@
 			padding: 0 15px;
 		}
 	}
-	
 	.quote {
 		padding: 37px 13px; 
 		border: 1px solid $color-white;
