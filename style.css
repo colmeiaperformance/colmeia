@@ -653,6 +653,92 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 /************************************/
 /********* Colmeia PAGES *************/
 /************************************/
+.error {
+  background-color: #00A69D;
+  position: relative;
+  z-index: 111;
+}
+
+.error::before {
+  content: '';
+  position: absolute;
+  background-image: url("images/404/404-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
+  z-index: 1111;
+  opacity: 0.1;
+}
+
+.error .lead {
+  font-weight: 700;
+  font-size: 18.9482px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 525.81px;
+}
+
+.error .lead p {
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+
+.error .btn {
+  padding: 15.1675px 24.38px 15.17px;
+  width: 135.14px;
+  height: 54.61px;
+  background-color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16.1787px;
+  line-height: 20px;
+  color: #00A69D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.error .btn .bi-arrow-left-short {
+  color: #00A69D;
+  font-size: 35px;
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+.error .btn:hover {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.error .btn:hover .bi-arrow-left-short {
+  color: #FFFFFF;
+}
+
+.error .btn:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.error .btn:focus .bi-arrow-left-short {
+  color: #FFFFFF;
+}
+
 /************************************/
 /********* Colmeia COMPONENTS *************/
 /************************************/
