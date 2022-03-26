@@ -1,17 +1,9 @@
 <?php get_header(); ?>
-<?php get_template_part('template-parts/menu-home'); ?>
+<?php get_template_part('template-parts/navbar'); ?>
+<?php get_template_part('template-parts/headers/header-blog'); ?>
 
 <main class="page-blog">
-<section>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Blog</h1>
-    </div>
-  </div>
-</section>
-
 <section class="container blog mt-5 pt-3">
-  <h2>Notícia destaque</h2>
    <?php $catquery = new WP_Query( 'cat=11&posts_per_page=1' ); ?>
     <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
     <div class="row featurette">
@@ -37,7 +29,6 @@
      <?php endwhile;  wp_reset_postdata(); ?>
     <hr>
 </section>
-
 <section class="container border-bottom">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-2">
       <?php

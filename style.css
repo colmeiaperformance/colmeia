@@ -957,6 +957,19 @@ footer .float-end a {
   padding: 65px 0;
 }
 
+.header--blog {
+  background: #00A69D;
+  padding: 95px 0 160px 0;
+}
+
+.header--blog h1 {
+  font-weight: 700;
+  font-size: 81.57px;
+  line-height: 99px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
 .header--home .flags {
   margin-top: 40px;
 }
