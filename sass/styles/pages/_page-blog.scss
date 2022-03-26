@@ -1,3 +1,14 @@
-.page-blog {
-  
+.page-blog{
+  .newsletter {
+    background: $color-secondary-dark url("images/newsletter/newsletter-bg.png") center left no-repeat;
+    @media (max-width: 991.98px) {
+      background: $color-secondary-dark;
+    }
+  }
+  .btn {
+    background-color: $color-primary-dark!important;
+  }
+  .background-blog {
+    background-color: $color-secondary-dark;
+  }
 }
