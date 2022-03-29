@@ -668,7 +668,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   background-position: top center;
   width: 100%;
   height: 100%;
-  z-index: 1111;
+  z-index: -1;
   opacity: 0.1;
 }
 
