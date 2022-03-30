@@ -976,12 +976,147 @@ footer .float-end a {
 
 @media (max-width: 991.98px) {
   .header--home .flags {
+    margin: 0 auto;
+    padding: 0 31px;
     margin-top: 15px;
   }
 }
 
+.header--home .flags .row {
+  padding-bottom: 0;
+  background: url(images/header/setas-centro.png) center center no-repeat;
+}
+
+@media (max-width: 991.98px) {
+  .header--home .flags .row {
+    background: url(images/header/setas-mobile.png) center center no-repeat;
+  }
+}
+
+.header--home .flags .agencias {
+  position: relative;
+}
+
+@media (max-width: 991.98px) {
+  .header--home .flags .agencias {
+    margin-bottom: 45px;
+  }
+}
+
+.header--home .flags .agencias p {
+  text-align: left;
+}
+
+.header--home .flags .agencias h3 {
+  padding-right: 45px;
+}
+
+.header--home .flags .agencias h3::after {
+  content: '';
+  position: absolute;
+  background: url("images/header/seta.png") top center no-repeat;
+  width: 23.8px;
+  height: 65.48px;
+  margin-left: 15px;
+  top: -17px;
+}
+
+@media (max-width: 991.98px) {
+  .header--home .flags .agencias h3::after {
+    width: 13.46px;
+    height: 37.2px;
+    background-size: cover;
+    top: -10px;
+  }
+}
+
+.header--home .flags .clientes p {
+  text-align: right;
+  position: relative;
+}
+
+.header--home .flags .clientes h3 {
+  margin-left: 45px;
+}
+
+.header--home .flags .clientes h3::before {
+  content: '';
+  position: absolute;
+  background: url("images/header/seta-2.png") top center no-repeat;
+  width: 23.8px;
+  height: 65.48px;
+  margin-left: -40px;
+  top: -17px;
+}
+
+@media (max-width: 991.98px) {
+  .header--home .flags .clientes h3::before {
+    width: 13.46px;
+    height: 37.2px;
+    background-size: cover;
+    top: -10px;
+  }
+}
+
+.header--home .flags .col {
+  height: 102px;
+  padding: 35px;
+  position: relative;
+}
+
+@media (max-width: 991.98px) {
+  .header--home .flags .col {
+    padding: 17px;
+    height: auto;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+}
+
+.header--home .flags .col h3 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .header--home .flags .col h3 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+.header--home .flags .col p {
+  margin-bottom: 0;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .header--home .flags .col p {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .header--home .carousel-indicators {
-  margin-bottom: 35px !important;
+  margin-bottom: 15px !important;
   height: 15px !important;
 }
 

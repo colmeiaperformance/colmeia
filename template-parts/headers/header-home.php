@@ -61,12 +61,17 @@
     </button> -->
   </div>
   <div class="container flags">
-    <div class="row">
-      <div class="col">
-        Agencias
+    <div class="row align-items-center justify-content-around">
+      <div class="agencias col mx-lg-5 d-flex flex-nowrap align-items-center justify-content-center justify-content-lg-between border border-white">
+        <h3 class="order-0">Agências</h3>
+        <!-- <img src=<?php echo get_template_directory_uri() . '/images/header/seta.png' ?> alt="" width="auto" height="auto"> -->
+        <p class="order-1">A parceira de performance digital para uma solução 100% integrada.</p>
       </div>
-      <div class="col">
-        Clientes
+      <!-- <img class="setas-centro" src=<?php echo get_template_directory_uri() . '/images/header/setas-centro.png' ?> alt="" width="24px" height="auto"> -->
+      <div class="clientes col mx-lg-5 d-flex flex-nowrap align-items-center justify-content-center justify-content-lg-between  border border-white">
+        <h3 class="order-1">Clientes</h3>
+        <!-- <img src=<?php echo get_template_directory_uri() . '/images/header/seta.png' ?> alt="" width="auto" height="auto"> -->
+        <p class="order-0">Transformando números em insights, e insights em soluções.</p>
       </div>
     </div>
   </div>

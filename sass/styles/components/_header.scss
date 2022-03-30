@@ -14,11 +14,110 @@
 		.flags {
 			margin-top: 40px;
 			@media (max-width: 991.98px) {
+				margin: 0 auto;
+				padding: 0 31px;
 				margin-top: 15px;
+			}
+			.row {
+				padding-bottom: 0;
+				background: url(images/header/setas-centro.png) center center no-repeat;
+				@media (max-width: 991.98px) {
+					background: url(images/header/setas-mobile.png) center center no-repeat;
+				}
+			}
+			.agencias {
+				position: relative;
+				@media (max-width: 991.98px) {
+					margin-bottom: 45px;
+				}
+				p {
+					text-align: left;
+				}
+				h3 {
+					&::after {
+						content: '';
+						position: absolute;
+						background: url('images/header/seta.png') top center no-repeat;
+						width: 23.8px;
+						height: 65.48px;
+						margin-left: 15px;
+						top: -17px;
+						@media (max-width: 991.98px) {
+							width: 13.46px;
+							height: 37.2px;
+							background-size: cover;
+							top: -10px;
+						}
+					}
+					padding-right: 45px;
+				}
+			}
+			.clientes {
+				p {
+					text-align: right;
+					position: relative;
+				}
+				h3 {
+					margin-left: 45px;
+					&::before {
+						content: '';
+						position: absolute;
+						background: url('images/header/seta-2.png') top center no-repeat;
+						width: 23.8px;
+						height: 65.48px;
+						margin-left: -40px;
+						top: -17px;
+						@media (max-width: 991.98px) {
+							width: 13.46px;
+							height: 37.2px;
+							background-size: cover;
+							top: -10px;
+						}
+					}
+				}
+			}
+			.col {
+				height: 102px;
+				padding: 35px;
+				position: relative;
+				@media (max-width: 991.98px) {
+					padding: 17px;
+					height: auto;
+					width: 100%;
+					flex: auto;
+				}
+				h3 {
+					color: $color-white;
+					font-weight: 700;
+					font-size: 24px;
+					line-height: 29px;
+					position: relative;
+					margin-bottom: 0;
+					@media (max-width: 991.98px) {
+						font-weight: 700;
+						font-size: 13px;
+						line-height: 16px;
+					}
+				}
+				p {
+					margin-bottom: 0;
+					color: $color-white;
+					font-weight: 400;
+					font-size: 15px;
+					line-height: 18px;
+					text-align: center;
+					@media (max-width: 991.98px) {
+						font-weight: 400;
+						font-size: 11px;
+						line-height: 13px;
+						display: flex;
+						align-items: center;
+					}
+				}
 			}
 		}
 		.carousel-indicators {
-			margin-bottom: 35px!important;
+			margin-bottom: 15px !important;
 			height: 15px!important;
 			@media (max-width: 991.98px) {
 				margin-bottom: 0;
