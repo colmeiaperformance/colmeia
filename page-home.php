@@ -3,5 +3,6 @@
 <?php get_template_part('template-parts/headers/header-home'); ?>
 <main class="homepage">
 <?php get_template_part('template-parts/flexible-content'); ?>
+<?php get_template_part('template-parts/sections/services'); ?>
 </main>
 <?php get_footer();
