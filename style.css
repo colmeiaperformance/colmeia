@@ -653,6 +653,15 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 .services {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 239, 239, 0.5)), to(rgba(215, 215, 215, 0.5)));
   background: linear-gradient(180deg, rgba(239, 239, 239, 0.5) 0%, rgba(215, 215, 215, 0.5) 100%);
+  background-image: url("images/footer/logo-colmeia.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 991.98px) {
+  .services {
+    background-image: none;
+  }
 }
 
 .services h2 {

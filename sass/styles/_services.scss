@@ -3,6 +3,9 @@
   background-image: url('images/footer/logo-colmeia.svg');
   background-repeat: no-repeat;
   background-position: center;
+  @media (max-width: 991.98px) {
+    background-image: none;
+  }
   
   h2 {
     color: $color-grey;
