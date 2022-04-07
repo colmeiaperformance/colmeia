@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php get_template_part('template-parts/menu-home'); ?>
 
-<main>
+<main class="single">
 <section class="container mt-5 pt-4">
   <?php $catquery = new WP_Query( 'cat=11&posts_per_page=1' ); ?>
     <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
