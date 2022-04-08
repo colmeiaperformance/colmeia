@@ -380,7 +380,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 
 .metodology .container::before {
   content: '';
-  background: url("images/metodologia/metodologia-bg-menor") bottom left no-repeat;
+  background: url("images/metodologia/metodologia-bg-menor.png") bottom left no-repeat;
   position: absolute;
   width: 30px;
   height: 30px;
