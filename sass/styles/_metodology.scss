@@ -1,9 +1,32 @@
 .metodology {
   background-color: $color-grey-light;
-  
+  position: relative;
+  &::after {
+    content: '';
+    background: url(https://img70.pixhost.to/images/84/276318444_metodologia-bg.png) top right no-repeat;
+    position: absolute;
+    width: 234px;
+    height: 246px;
+    right: 0;
+    top: 0;
+    @media (max-width: 991.98px) {
+      display:none;
+    }
+  }
   .container {
+    &::before {
+      content:   '';
+      background: url('images/metodologia/metodologia-bg-menor') bottom left no-repeat;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      @media (max-width: 991.98px) {
+        display:none;
+      }
+    }
     padding-top: 50px;
     padding-bottom: 67px;
+    position: relative;
     @media (max-width: 991.98px) {
       padding-top: 20px;
       padding-bottom: 33px;

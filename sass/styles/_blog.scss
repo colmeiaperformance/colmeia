@@ -2,7 +2,7 @@
   background: $color-primary-blog;
   &::after{
     content: '';
-    background: url(images/blog/blog-bg.png) bottom left no-repeat;
+    background: url('images/blog/blog-bg.png') bottom left no-repeat;
     position: absolute;
     width: 341px;
     height: 508px;
@@ -12,6 +12,18 @@
     }
   }
   .container {
+    &::before {
+      content:   '';
+      background: url('images/blog/blog-bg-menor.png') bottom left no-repeat;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      right: 0;
+      margin-right: 15px;
+      @media (max-width: 991.98px) {
+        display:none;
+      }
+    }
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;

@@ -89,7 +89,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 
 .sec-blog::after {
   content: '';
-  background: url(images/blog/blog-bg.png) bottom left no-repeat;
+  background: url("images/blog/blog-bg.png") bottom left no-repeat;
   position: absolute;
   width: 341px;
   height: 508px;
@@ -107,6 +107,22 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   padding-bottom: 50px;
   position: relative;
   z-index: 11111;
+}
+
+.sec-blog .container::before {
+  content: '';
+  background: url("images/blog/blog-bg-menor.png") bottom left no-repeat;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  margin-right: 15px;
+}
+
+@media (max-width: 991.98px) {
+  .sec-blog .container::before {
+    display: none;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -337,11 +353,43 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 
 .metodology {
   background-color: #E7E7E7;
+  position: relative;
+}
+
+.metodology::after {
+  content: '';
+  background: url(https://img70.pixhost.to/images/84/276318444_metodologia-bg.png) top right no-repeat;
+  position: absolute;
+  width: 234px;
+  height: 246px;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 991.98px) {
+  .metodology::after {
+    display: none;
+  }
 }
 
 .metodology .container {
   padding-top: 50px;
   padding-bottom: 67px;
+  position: relative;
+}
+
+.metodology .container::before {
+  content: '';
+  background: url("images/metodologia/metodologia-bg-menor") bottom left no-repeat;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .metodology .container::before {
+    display: none;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -728,7 +776,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 .services .card {
   width: 255px;
   height: 130px;
-  margin: 0 10px 160px 0;
+  margin: 0 5px 160px 5px;
   background-color: transparent;
   border-left: solid 4px #71C3BD;
   border-right: solid 4px #71C3BD;
