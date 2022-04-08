@@ -1,40 +1,26 @@
+<?php
+$titulo_serv = get_sub_field('titulo_serv');            
+$item_serv = get_sub_field('item_serv');            
+?>
+
+
 <section class="services">
-  <div class="container py-5"><h2 class="m-0">Serviços</h2></div>
+  <div class="container py-5"><h2 class="m-0"><?php if ($titulo_serv) { echo $titulo_serv; } ?></h2></div>
   <div class="container pt-5">
     <div class="row align-items-center justify-content-center">
   
+    <?php foreach ($item_serv as $is) { ?>
+
       <div class="card rounded-0">
-        <a href="#" class="stretched-link text-decoration-none">Marketing Inbound</a>
+        <a href="#" class="stretched-link text-decoration-none">
+          <?php if ($is['area_item_serv']) { echo $is['area_item_serv']; }; ?>
+        </a>
       </div>
 
-     <div class="card rounded-0">
-            <a href="#" class="stretched-link text-decoration-none">Mídia Online</a>
-        </div>
+    <?php } ?>
 
-    <div class="card rounded-0">
-            <a href="#" class="stretched-link text-decoration-none">Search Engine Optimization</a>
-        </div>
 
-     <div class="card rounded-0">
-            <a href="#" class="stretched-link text-decoration-none">Marketing de Conteúdo</a>
-        </div>
-
-       <div class="card rounded-0">
-            <a href="#" class="stretched-link text-decoration-none">Gestão de Redes Sociais</a>
-        </div>
-
-       <div class="card rounded-0">
-            <a href="#" class="stretched-link text-decoration-none">Data Analytics</a> 
-        </div>
-
-      <div class="card rounded-0">
-            <a href="#" class="stretched-link text-decoration-none">Gestão de Leads</a>
-        </div>
-
-    <div class="card rounded-0">
-            <a href="#" class="stretched-link text-decoration-none">Automação de Marketing</a>
-        </div>
- 
+     
     </div>
   </div>
 </section>
