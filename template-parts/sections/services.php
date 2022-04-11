@@ -12,7 +12,7 @@ $item_serv = get_sub_field('item_serv');
     <?php foreach ($item_serv as $is) { ?>
 
       <div class="card rounded-0">
-        <a href="#" class="stretched-link text-decoration-none">
+        <a href="<?php if ($is['url_item_serv']) { echo $is['url_item_serv']; } else { echo '#'; }; ?>" class="stretched-link text-decoration-none">
           <?php if ($is['area_item_serv']) { echo $is['area_item_serv']; }; ?>
         </a>
       </div>
