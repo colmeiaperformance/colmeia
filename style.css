@@ -890,22 +890,107 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 /********* Colmeia PAGES *************/
 /************************************/
 .error {
-  background-color: #00A69D;
+  width: 100vw;
+  height: 80vh;
   position: relative;
-  z-index: 111;
+  background-image: url(images/404/404-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .error::before {
   content: '';
+  background: url(images/404/vector-top.png) top right no-repeat;
   position: absolute;
-  background-image: url("images/404/404-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.1;
+  width: 300px;
+  height: 300px;
+  top: -44px;
+  right: 0;
+}
+
+@media (max-width: 1300px) {
+  .error::before {
+    top: -104px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .error::before {
+    display: none;
+  }
+}
+
+.error::after {
+  content: '';
+  background: url(images/404/vector-bottom.png) bottom right no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 1300px) {
+  .error::after {
+    left: -30px;
+    bottom: -30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .error::after {
+    display: none;
+  }
+}
+
+.error h1 {
+  font-size: 10em;
+}
+
+@media (max-width: 1199.98px) {
+  .error h1 {
+    font-size: 8em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .error h1 {
+    font-size: 6em;
+  }
+}
+
+.error h2 {
+  font-size: 5em;
+}
+
+@media (max-width: 1199.98px) {
+  .error h2 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .error h2 {
+    font-size: 3.2em;
+  }
+}
+
+.error p {
+  font-size: 1.5em;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1199.98px) {
+  .error p {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .error p {
+    font-size: 1.3em;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -915,18 +1000,27 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   }
 }
 
-.error .lead {
-  font-weight: 700;
-  font-size: 18.9482px;
-  line-height: 23px;
-  text-align: center;
-  color: #FFFFFF;
-  max-width: 525.81px;
+.error .error-text {
+  width: 40%;
 }
 
-.error .lead p {
-  margin-bottom: 35px;
-  margin-top: 30px;
+@media (max-width: 1199.98px) {
+  .error .error-text {
+    width: 45%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .error .error-text {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
 }
 
 .error .btn {
