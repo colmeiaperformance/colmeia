@@ -1293,6 +1293,12 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   border-left: 0;
 }
 
+@media (max-width: 991.98px) {
+  .page-blog .pagination .page-empty {
+    padding: 6.5px 12.5px;
+  }
+}
+
 .page-blog .pagination .page-link {
   color: #00A69D;
   padding: 13px 23px;
@@ -1315,8 +1321,20 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   border-radius: 10px 0 0 10px;
 }
 
+@media (max-width: 991.98px) {
+  .page-blog .pagination .page-item:first-child {
+    display: none;
+  }
+}
+
 .page-blog .pagination .page-item:last-child .page-link {
   border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog .pagination .page-item:last-child {
+    display: none;
+  }
 }
 
 .page-blog .pagination .page-item.active .page-link {

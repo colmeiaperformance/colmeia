@@ -58,7 +58,7 @@ function wp_boostrap_4_pagination(){
         $links[] = $paged + 1;
     }
  
-    echo '<div class="pagination-container"><ul class="pagination justify-content-center">' . "\n";
+    echo '<div class="pagination-container"><ul class="pagination justify-content-left">' . "\n";
  
     /** Previous Post Link */
     if ( get_previous_posts_link() )
