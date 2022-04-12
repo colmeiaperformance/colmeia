@@ -84,7 +84,7 @@ function wp_boostrap_4_pagination(){
     /** Link to last page, plus ellipses if necessary */
     if ( ! in_array( $max, $links ) ) {
         if ( ! in_array( $max - 1, $links ) )
-            echo '<li>…</li>' . "\n";
+            echo '<li class="page-empty">…</li>' . "\n";
  
         $class = $paged == $max ? ' class="page-item active"' : ' class="page-item"';
         printf( '<li%s><a class="page-link" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
