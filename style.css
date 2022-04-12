@@ -891,8 +891,8 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 /********* Colmeia PAGES *************/
 /************************************/
 .error {
-  width: 100vw;
-  height: 89vh;
+  width: 100%;
+  height: 88vh;
   position: relative;
   background-image: url(images/404/404-bg.png);
   background-size: cover;
@@ -904,19 +904,13 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   content: '';
   background: url(images/404/vector-top.png) top right no-repeat;
   position: absolute;
-  width: 300px;
-  height: 300px;
-  top: -44px;
+  width: 262px;
+  height: 303px;
+  top: 0;
   right: 0;
 }
 
-@media (max-width: 1300px) {
-  .error::before {
-    top: -104px;
-  }
-}
-
-@media (max-width: 991.98px) {
+@media (max-width: 999.98px) {
   .error::before {
     display: none;
   }
@@ -932,14 +926,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   left: 0;
 }
 
-@media (max-width: 1300px) {
-  .error::after {
-    left: -30px;
-    bottom: -30px;
-  }
-}
-
-@media (max-width: 991.98px) {
+@media (max-width: 999.98px) {
   .error::after {
     display: none;
   }
