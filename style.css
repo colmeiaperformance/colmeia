@@ -892,7 +892,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 /************************************/
 .error {
   width: 100vw;
-  height: 80vh;
+  height: 89vh;
   position: relative;
   background-image: url(images/404/404-bg.png);
   background-size: cover;
@@ -1082,6 +1082,81 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   padding-bottom: 72px;
 }
 
+.page-blog article {
+  padding-bottom: 45px;
+  margin-bottom: 45px;
+  border-bottom: 2px solid #C4C4C4;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog article {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.page-blog article .featurette-image {
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
+.page-blog article h3 {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 33px;
+  color: #00A69D;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog article h3 {
+    font-size: calc(1.3rem + .6vw);
+    line-height: 1.2;
+  }
+}
+
+.page-blog article p {
+  font-weight: 400;
+  font-size: 14.7032px;
+  line-height: 18px;
+  color: #00A69D;
+  margin-bottom: 0;
+}
+
+.page-blog article .btn {
+  background: #00A69D;
+  color: #FFFFFF;
+  border: 1px solid #00A69D;
+  font-weight: 600;
+  font-size: 10.3186px;
+  line-height: 13px;
+  padding: 7px 10px;
+  margin-top: 25px;
+  border-radius: 0px;
+}
+
+.page-blog article .btn:hover {
+  background: transparent;
+  color: #00A69D;
+  border: 1px solid #00A69D;
+}
+
+.page-blog h2 {
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 38px;
+  text-align: center;
+  color: #353C42;
+  margin-bottom: 55px;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog h2 {
+    font-size: calc(1.325rem + .9vw);
+    line-height: 1.2;
+  }
+}
+
 .page-blog .topics h4 {
   font-weight: 700;
   font-size: 22.1446px;
@@ -1211,6 +1286,13 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   margin-top: 45px;
 }
 
+.page-blog .pagination .page-empty {
+  color: #00A69D;
+  padding: 13px 23px;
+  border: 0.25px solid #C4C4C4;
+  border-left: 0;
+}
+
 .page-blog .pagination .page-link {
   color: #00A69D;
   padding: 13px 23px;
@@ -1221,6 +1303,12 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   .page-blog .pagination .page-link {
     padding: 6.5px 12.5px;
   }
+}
+
+.page-blog .pagination .page-link:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .page-blog .pagination .page-item:first-child .page-link {
@@ -1432,6 +1520,13 @@ footer .float-end a {
 .header--blog {
   background: #00A69D;
   padding: 71px 0 137px 0;
+  margin-bottom: 45px;
+}
+
+@media (max-width: 991.98px) {
+  .header--blog {
+    padding: 30px 0 70px;
+  }
 }
 
 .header--blog h1 {
@@ -1440,6 +1535,13 @@ footer .float-end a {
   line-height: 99px;
   color: #FFFFFF;
   margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .header--blog h1 {
+    font-size: calc(1.375rem + 1.5vw);
+    line-height: 1.2;
+  }
 }
 
 .header--home .flags {

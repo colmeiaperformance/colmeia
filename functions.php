@@ -71,7 +71,7 @@ function wp_boostrap_4_pagination(){
         printf( '<li%s><a class="page-link" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
  
         if ( ! in_array( 2, $links ) )
-            echo '<li>…</li>';
+            echo '<li class="page-empty">…</li>';
     }
 
     /** Link to current page, plus 2 pages in either direction if necessary */
@@ -128,15 +128,6 @@ function base_setup() {
             'video',
         )
     );
-
-    // // register a new menu
-    // register_nav_menus(
-    //     array(
-    //     'main-menu'=> __('Main menu'),
-    //     'secondary-menu'=> __('Secondary menu'),
-    //     'footer-menu'=> __('Footer menu')
-    //     )
-    // );
 
 // bootstrap 5 wp_nav_menu walker
 class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
@@ -374,6 +365,6 @@ function remove_guttenberg_from_pages()
 
 //Excerpt size
 function mytheme_custom_excerpt_length( $length ) {
-    return 20;
+    return 35;
 }
 add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
