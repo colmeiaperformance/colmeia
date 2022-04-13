@@ -789,7 +789,8 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 20px;
+  padding: 10px 0;
+  height: 90vh;
 }
 
 @media (max-width: 576px) {
@@ -1139,7 +1140,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   -webkit-box-pack: left !important;
       -ms-flex-pack: left !important;
           justify-content: left !important;
-  margin-top: 45px;
+  margin-top: 55px;
 }
 
 .page-blog .latest-posts .pagination .page-empty {
@@ -1345,6 +1346,18 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   margin-bottom: 45px;
 }
 
+.page-blog .aside-blog .topics #loadmore {
+  color: #353C42;
+  text-align: right;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 11.995px;
+  line-height: 15px;
+  cursor: pointer;
+}
+
 .page-blog .aside-blog .topics h4 {
   font-weight: 700;
   font-size: 22.1446px;
@@ -1354,17 +1367,15 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   margin-bottom: 10px;
 }
 
-.page-blog .aside-blog .topics ul {
+.page-blog .aside-blog .topics .topics-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.page-blog .aside-blog .topics ul li {
+.page-blog .aside-blog .topics .topics-list .cat-item {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1376,7 +1387,31 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   margin-top: 35px;
 }
 
-.page-blog .aside-blog .topics ul li::before {
+.page-blog .aside-blog .topics .topics-list .cat-item:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-blog .aside-blog .topics .topics-list .cat-item:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-blog .aside-blog .topics .topics-list .cat-item:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-blog .aside-blog .topics .topics-list .cat-item:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-blog .aside-blog .topics .topics-list .cat-item::before {
   content: '';
   background: url(images/sidebar/chevron-right.svg) center center no-repeat;
   width: 9.23px;
@@ -1384,7 +1419,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   margin-right: 15px;
 }
 
-.page-blog .aside-blog .topics ul li a {
+.page-blog .aside-blog .topics .topics-list .cat-item a {
   font-weight: 500;
   font-size: 15.6858px;
   line-height: 19px;

@@ -22,25 +22,24 @@ jQuery(document).ready(function () {
   });
 });
 
-//Show more button
-// const loadmore = document.querySelector('#loadmore');
-// let currentItems = 4;
-// loadmore.addEventListener('click', (e) => {
-//   const elementList = [...document.querySelectorAll('.services-list .col-service')];
-//   for (let i = currentItems; i < currentItems + 4; i++) {
-//     if (elementList[i]) {
-//       elementList[i].style.display = 'flex';
-//     }
-//   }
-//   currentItems += 4;
+//Show more sidebar button
+const loadmore = document.querySelector('#loadmore');
+let currentItems = 4;
+loadmore.addEventListener('click', (e) => {
+  const elementList = [...document.querySelectorAll('.topics-list .cat-item')];
+  for (let i = currentItems; i < currentItems + 4; i++) {
+    if (elementList[i]) {
+      elementList[i].style.display = 'flex';
+    }
+  }
+  currentItems += 4;
 
-//   // Load more button will be hidden after list fully loaded
-//   if (currentItems >= elementList.length) {
-//     event.target.style.display = 'none';
-//     document.getElementById("btn-services").classList.toggle('d-inline-block');
-//   }
-// })
-
+  // Load more button will be hidden after list fully loaded
+  if (currentItems >= elementList.length) {
+    event.target.style.display = 'none';
+    document.getElementById("loadmore").classList.toggle('d-block');
+  }
+})
 
 //Bootstrap caroulsel
 jQuery( document ).ready(function() {
