@@ -7,7 +7,7 @@
 <?php get_template_part('template-parts/navbar'); ?>
 <?php get_template_part('template-parts/headers/header-blog'); ?>
 <main class="page-blog">
-  <!-- <section class="container mt-5 pt-3">
+  <section class="container mt-5 pt-3">
     <div class="row">
       <?php $catquery = new WP_Query( 'cat=11&posts_per_page=1' ); ?>
       <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
@@ -43,7 +43,7 @@
           ?>
       </div>
     </div>
-  </section> -->
+  </section>
   <section class="container">
     <div class="row">
       <div class="col-lg-8 pe-lg-4">
