@@ -28,26 +28,6 @@
                 <?php the_excerpt(); ?>
               </div>
             </article>
-            <!-- <article class="spotlight-item">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-7">
-                    <h1 class="featurette-heading"><?php the_title(); ?></h1>
-                    <p class="lead"><?php the_excerpt(); ?></p>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height:485px;width:100vw;background-image:url('<?php 
-                if ( has_post_thumbnail() ) { 
-                    echo the_post_thumbnail_url();
-                }
-                else { 
-                    echo get_template_directory_uri() . '/images/blog-media.jpg';
-                    } ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </article> -->
             <?php endwhile;  wp_reset_postdata(); ?>
           </div>
         </div>

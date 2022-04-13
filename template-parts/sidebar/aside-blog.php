@@ -1,9 +1,26 @@
 <aside class="aside-blog mt-5 mt-lg-0">
-  <div class="py-4 most-popular">
+  <div class="most-popular">
     <h4 class="underline">Artigos mais lidos</h4>
-    aaaaaaa
+    <ul class="list-group">
+      <li class="list-group-item position-relative"> 
+        <h3><a href="#" class="stretched-link">Lorem ipsum dolor sit amet, consectetur</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <span>Por: Admin - 01 de Março de 2022</span>
+      </li>
+       <li class="list-group-item position-relative"> 
+        <h3><a href="#" class="stretched-link">Lorem ipsum dolor sit amet, consectetur</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <span>Por: Admin - 01 de Março de 2022</span>
+      </li>
+       <li class="list-group-item position-relative"> 
+        <h3><a href="#" linkclass="stretched-link">Lorem ipsum dolor sit amet, consectetur</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <span>Por: Admin - 01 de Março de 2022</span>
+      </li>
+    </ul>
+     
   </div>
-  <div class="py-4 topics">
+  <div class="topics">
     <h4>Explore Topics</h4>
     <ul class="topics-list">
       <?php wp_list_categories( array(
@@ -13,7 +30,6 @@
         ?>
     </ul>
   </div>
-  <div class="py-4">
     <div class="newsletter d-flex flex-column align-items-center justify-content-center background-blog text-white">
       <h4>Newsletter</h4>
       <h5>Lorem Ipsum Subscribers!</h5>
@@ -25,5 +41,4 @@
         </div>
       </form>
     </div>
-  </div>
 </aside>

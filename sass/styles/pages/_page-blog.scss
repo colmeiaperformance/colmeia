@@ -2,6 +2,7 @@
   border-bottom: 32px solid $color-primary-dark;
   padding-bottom: 72px;
   .blog-spotlight {
+    margin-bottom: 45px;
     article {
       height: 485px;
       margin-bottom: 0;
@@ -159,17 +160,66 @@
   }
   .aside-blog {
     .most-popular {
+      border: 1px solid $color-secondary-dark;
+      border-top-left-radius: 45px;
+      border-bottom-right-radius: 45px;
+      padding: 30px;
+      margin-bottom: 85px;
+      @media (max-width: 991.98px)  {
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 20px;
+      }
       h4 {
         font-weight: 700;
         font-size: 22.2px;
         line-height: 27px;
         color: $grey-menu-link;
         text-align: left;
-        margin-bottom: 10px;
+        margin-bottom: 40px;
         text-decoration: underline;
+      }
+      ul {
+        li {
+          border: 0;
+          padding: 0 0 10px 0;
+          border-bottom: 1px solid $grey-pagination;
+          margin-bottom: 20px;
+          h3 {
+            color: $grey-menu-link;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 17.5714px;
+            line-height: 21px;
+            text-align: left;
+            margin-bottom: 10px;
+            a {
+              color: $grey-menu-link;
+              text-decoration: none;
+            }
+          }
+          p {
+            color: $color-grey;
+            font-weight: 400;
+            font-size: 10.7px;
+            line-height: 13px;
+            margin-bottom: 0;
+          }
+          span {
+            font-weight: 500;
+            font-size: 10.0917px;
+            line-height: 12px;
+            color: $grey-pagination;
+            a {
+              color: $grey-pagination;
+            }
+          }
+          
+        }
       }
     }
     .topics {
+      margin-bottom: 45px;
       h4 {
         font-weight: 700;
         font-size: 22.1446px;
