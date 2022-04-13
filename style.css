@@ -1069,25 +1069,135 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   padding-bottom: 72px;
 }
 
-.page-blog article {
+.page-blog .blog-spotlight article {
+  height: 485px;
+  margin-bottom: 0;
+  border: 0;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog .blog-spotlight article {
+    height: 350px;
+  }
+}
+
+.page-blog .blog-spotlight article .spotlight-image {
+  height: 485px;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog .blog-spotlight article .spotlight-image {
+    height: 350px;
+  }
+}
+
+.page-blog .blog-spotlight article .spotilight-content {
+  padding-left: 38px;
+  padding-bottom: 45px;
+  padding-right: 38px;
+}
+
+.page-blog .blog-spotlight article h2 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 28.4845px;
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+
+.page-blog .blog-spotlight article h2 a {
+  color: #FFFFFF;
+}
+
+.page-blog .blog-spotlight article p {
+  font-weight: 400;
+  font-size: 14.7017px;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+
+.page-blog .latest-posts .pagination {
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+  margin-top: 45px;
+}
+
+.page-blog .latest-posts .pagination .page-empty {
+  color: #00A69D;
+  padding: 13px 23px;
+  border: 0.25px solid #C4C4C4;
+  border-left: 0;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog .latest-posts .pagination .page-empty {
+    padding: 6.5px 12.5px;
+  }
+}
+
+.page-blog .latest-posts .pagination .page-link {
+  color: #00A69D;
+  padding: 13px 23px;
+  border: 0.25px solid #C4C4C4;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog .latest-posts .pagination .page-link {
+    padding: 6.5px 12.5px;
+  }
+}
+
+.page-blog .latest-posts .pagination .page-link:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.page-blog .latest-posts .pagination .page-item:first-child .page-link {
+  border-radius: 10px 0 0 10px;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog .latest-posts .pagination .page-item:first-child {
+    display: none;
+  }
+}
+
+.page-blog .latest-posts .pagination .page-item:last-child .page-link {
+  border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog .latest-posts .pagination .page-item:last-child {
+    display: none;
+  }
+}
+
+.page-blog .latest-posts .pagination .page-item.active .page-link {
+  background-color: #00A69D;
+  border-color: #00A69D;
+}
+
+.page-blog .latest-posts article {
   padding-bottom: 45px;
   margin-bottom: 45px;
   border-bottom: 2px solid #C4C4C4;
 }
 
 @media (max-width: 991.98px) {
-  .page-blog article {
+  .page-blog .latest-posts article {
     border-bottom: 0;
     padding-bottom: 0;
   }
 }
 
-.page-blog article .featurette-image {
+.page-blog .latest-posts article .featurette-image {
   -webkit-filter: brightness(0.6);
           filter: brightness(0.6);
 }
 
-.page-blog article h3 {
+.page-blog .latest-posts article h3 {
   font-weight: 700;
   font-size: 27px;
   line-height: 33px;
@@ -1096,13 +1206,13 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 }
 
 @media (max-width: 991.98px) {
-  .page-blog article h3 {
+  .page-blog .latest-posts article h3 {
     font-size: calc(1.3rem + .6vw);
     line-height: 1.2;
   }
 }
 
-.page-blog article p {
+.page-blog .latest-posts article p {
   font-weight: 400;
   font-size: 14.7032px;
   line-height: 18px;
@@ -1110,7 +1220,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   margin-bottom: 0;
 }
 
-.page-blog article .btn {
+.page-blog .latest-posts article .btn {
   background: #00A69D;
   color: #FFFFFF;
   border: 1px solid #00A69D;
@@ -1122,13 +1232,13 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   border-radius: 0px;
 }
 
-.page-blog article .btn:hover {
+.page-blog .latest-posts article .btn:hover {
   background: transparent;
   color: #00A69D;
   border: 1px solid #00A69D;
 }
 
-.page-blog h2 {
+.page-blog .latest-posts h2 {
   font-weight: 700;
   font-size: 31px;
   line-height: 38px;
@@ -1138,13 +1248,23 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 }
 
 @media (max-width: 991.98px) {
-  .page-blog h2 {
+  .page-blog .latest-posts h2 {
     font-size: calc(1.325rem + .9vw);
     line-height: 1.2;
   }
 }
 
-.page-blog .topics h4 {
+.page-blog .aside-blog .most-popular h4 {
+  font-weight: 700;
+  font-size: 22.2px;
+  line-height: 27px;
+  color: #606060;
+  text-align: left;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.page-blog .aside-blog .topics h4 {
   font-weight: 700;
   font-size: 22.1446px;
   line-height: 27px;
@@ -1153,13 +1273,13 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   margin-bottom: 10px;
 }
 
-.page-blog .topics ul {
+.page-blog .aside-blog .topics ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.page-blog .topics ul li {
+.page-blog .aside-blog .topics ul li {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1175,7 +1295,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   margin-top: 35px;
 }
 
-.page-blog .topics ul li::before {
+.page-blog .aside-blog .topics ul li::before {
   content: '';
   background: url(images/sidebar/chevron-right.svg) center center no-repeat;
   width: 9.23px;
@@ -1183,7 +1303,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   margin-right: 15px;
 }
 
-.page-blog .topics ul li a {
+.page-blog .aside-blog .topics ul li a {
   font-weight: 500;
   font-size: 15.6858px;
   line-height: 19px;
@@ -1192,18 +1312,18 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   text-decoration: none;
 }
 
-.page-blog .newsletter {
+.page-blog .aside-blog .newsletter {
   background: #FF702E url("images/newsletter/newsletter-bg.png") center left no-repeat;
   padding: 20px;
 }
 
 @media (max-width: 991.98px) {
-  .page-blog .newsletter {
+  .page-blog .aside-blog .newsletter {
     background: #FF702E;
   }
 }
 
-.page-blog .newsletter .form-control {
+.page-blog .aside-blog .newsletter .form-control {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -1217,7 +1337,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   height: 31px;
 }
 
-.page-blog .newsletter .form-control:focus {
+.page-blog .aside-blog .newsletter .form-control:focus {
   color: #FF702E !important;
   border-color: #FF702E !important;
   outline: 0;
@@ -1225,7 +1345,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
           box-shadow: none;
 }
 
-.page-blog .newsletter h4 {
+.page-blog .aside-blog .newsletter h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -1233,7 +1353,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   margin-bottom: 30px;
 }
 
-.page-blog .newsletter h5 {
+.page-blog .aside-blog .newsletter h5 {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
@@ -1241,7 +1361,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   margin-bottom: 25px;
 }
 
-.page-blog .newsletter .btn {
+.page-blog .aside-blog .newsletter .btn {
   background-color: #00A69D;
   border: 1px solid #00A69D;
   font-weight: 500;
@@ -1250,83 +1370,20 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   padding: 5px 20px;
 }
 
-.page-blog .newsletter .btn:hover {
+.page-blog .aside-blog .newsletter .btn:hover {
   background-color: transparent;
   border: 1px solid #FFFFFF;
 }
 
-.page-blog .newsletter p {
+.page-blog .aside-blog .newsletter p {
   font-weight: 400;
   font-size: 10.9px;
   line-height: 13px;
   margin: 20px 0 0 0;
 }
 
-.page-blog .background-blog {
+.page-blog .aside-blog .background-blog {
   background-color: #FF702E;
-}
-
-.page-blog .pagination {
-  -webkit-box-pack: left !important;
-      -ms-flex-pack: left !important;
-          justify-content: left !important;
-  margin-top: 45px;
-}
-
-.page-blog .pagination .page-empty {
-  color: #00A69D;
-  padding: 13px 23px;
-  border: 0.25px solid #C4C4C4;
-  border-left: 0;
-}
-
-@media (max-width: 991.98px) {
-  .page-blog .pagination .page-empty {
-    padding: 6.5px 12.5px;
-  }
-}
-
-.page-blog .pagination .page-link {
-  color: #00A69D;
-  padding: 13px 23px;
-  border: 0.25px solid #C4C4C4;
-}
-
-@media (max-width: 991.98px) {
-  .page-blog .pagination .page-link {
-    padding: 6.5px 12.5px;
-  }
-}
-
-.page-blog .pagination .page-link:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.page-blog .pagination .page-item:first-child .page-link {
-  border-radius: 10px 0 0 10px;
-}
-
-@media (max-width: 991.98px) {
-  .page-blog .pagination .page-item:first-child {
-    display: none;
-  }
-}
-
-.page-blog .pagination .page-item:last-child .page-link {
-  border-radius: 0 10px 10px 0;
-}
-
-@media (max-width: 991.98px) {
-  .page-blog .pagination .page-item:last-child {
-    display: none;
-  }
-}
-
-.page-blog .pagination .page-item.active .page-link {
-  background-color: #00A69D;
-  border-color: #00A69D;
 }
 
 /************************************/
