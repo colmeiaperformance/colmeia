@@ -33,7 +33,9 @@
         ) );
         ?>
     </ul>
-     <button id="loadmore" class="btn p-0">Ver mais+</button>
+     <div class="d-flex align-items-center justify-content-end">
+       <button id="loadmore" class="btn p-0">Ver mais+</button>
+     </div>
   </div>
     <div class="newsletter d-flex flex-column align-items-center justify-content-center background-blog text-white">
       <h4>Newsletter</h4>
