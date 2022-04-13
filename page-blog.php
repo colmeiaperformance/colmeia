@@ -21,7 +21,7 @@
                     echo get_template_directory_uri() . '/images/blog-media.jpg';
                     } ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;filter: brightness(0.6);">
               </div>
-              <div class="col-md-9 position-absolute bottom-0 spotilight-content">
+              <div class="col-md-10 position-absolute bottom-0 spotilight-content">
                 <h2 class="color-white"><a href="<?php the_permalink(); ?>" class="color-white text-decoration-none stretched-link">
                   <?php the_title(); ?>
                 </a></h2>

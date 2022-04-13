@@ -1105,6 +1105,14 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   margin-bottom: 15px;
 }
 
+@media (max-width: 991.98px) {
+  .page-blog .blog-spotlight article h2 {
+    font-size: calc(1.325rem + .9vw);
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+}
+
 .page-blog .blog-spotlight article h2 a {
   color: #FFFFFF;
 }
@@ -1114,6 +1122,13 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   font-size: 14.7017px;
   line-height: 18px;
   margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog .blog-spotlight article p {
+    line-height: 1.2;
+    font-size: 13.5px;
+  }
 }
 
 .page-blog .latest-posts .pagination {
@@ -1177,6 +1192,7 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 .page-blog .latest-posts .pagination .page-item.active .page-link {
   background-color: #00A69D;
   border-color: #00A69D;
+  color: #FFFFFF;
 }
 
 .page-blog .latest-posts article {
