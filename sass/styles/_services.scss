@@ -74,7 +74,6 @@
     align-items: center;
     justify-content: center;
     padding: 10px 0;
-    height: 90vh;
     &:hover {
       background-color: $color-primary-light;
       a {
@@ -130,6 +129,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      height: 90%;
       &:hover {
         color: $color-white;
       }
