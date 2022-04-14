@@ -369,7 +369,9 @@ function mytheme_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
 
-//Post author box
+
+//                      Post author info box                      //
+
 /* Add Contact Methods in the User Profile - https://codex.wordpress.org/Plugin_API/Filter_Reference/user_contactmethods */
 function add_user_contact_methods( $user_contact ) {
  $user_contact['facebook'] = __( 'Facebook URL' );
