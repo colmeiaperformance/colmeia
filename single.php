@@ -36,7 +36,7 @@
               <a href="<?php the_permalink(); ?>" class="btn text-uppercase">Leia Mais</a>
             </div>
           </article>
-          <?php endwhile; ?>
+          <?php endwhile; wp_reset_postdata(); ?>   
           <?php else : ?>
           <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
           <?php endif; ?>
