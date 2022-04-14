@@ -14,7 +14,7 @@
           } ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;"></div>
       <div class="d-flex">
         <h4><a href="<?php the_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h4>
-        <p><a href="<?php echo get_day_link(get_post_time('Y'), get_post_time('m'), get_post_time('d'));  ?>"><?php the_time('d') ?> de <?php the_time('M') ?> de <?php the_time('Y') ?></a></p>
+        <p><a href="<?php echo get_day_link(get_post_time('Y'), get_post_time('m'), get_post_time('d'));  ?>"><?php the_time('d') ?> de <?php the_time('F') ?> de <?php the_time('Y') ?></a></p>
       </div>
     </li>
   </ul>

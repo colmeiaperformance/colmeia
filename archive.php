@@ -1,12 +1,30 @@
 <?php get_header(); ?>
 <?php get_template_part('template-parts/navbar'); ?>
-<?php get_template_part('template-parts/headers/header-blog'); ?>
+<section id="breadcrumb" class="breadcrumb">
+    <div class="container">
+       <nav aria-label="breadcrumb">
+         <ol class="breadcrumb">
+           <li class="breadcrumb-item"><a href="/">Home</a></li>
+           <li class="breadcrumb-item"><a href="/blog" rel="category tag">Blog</a></li>
+           <li class="breadcrumb-item"><?php the_archive_title(); ?></li>
+        </ol>
+      </nav>
+    </div>
+</section>
+
+<section class="header--blog">
+  <div class="container position-relative overflow-hidden">
+    <div class="col p-lg-5 text-center">
+      <h1><?php the_archive_title(); ?></h1>
+    </div>
+  </div>
+</section>
+
 <main class="page-blog">
   <section class="container">
   <div class="row">
     <div class="col-lg-8 pe-lg-4">
       <div class="latest-posts">
-        <h2><?php the_archive_title(); ?></h2>
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
         <article class="row">
