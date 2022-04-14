@@ -5,34 +5,10 @@
 // /************************************/
 @import "styles/colmeia/_default";
 @import "styles/colmeia/_style-header";
-@import "styles/colmeia/_typography";
 @import "styles/colmeia/_variables";
 
 /************************************/
-/********* Colmeia STYLES *************/
-/************************************/
-
-@import "styles/_about";
-@import "styles/_blog";
-@import "styles/_cases";
-@import "styles/_featured";
-@import "styles/_hero";
-@import "styles/_metodology";
-@import "styles/_newsletter";
-@import "styles/_products";
-@import "styles/_services";
-@import "styles/_testmonials";
-
-/************************************/
-/********* Colmeia PAGES *************/
-/************************************/
-@import "styles/pages/_404";
-@import "styles/pages/_page-blog";
-@import "styles/pages/_page";
-@import "styles/pages/_single";
-
-/************************************/
-/********* Colmeia COMPONENTS *************/
+/********* Colmeia COMPONENTS *******/
 /************************************/
 
 @import "styles/components/_breadcrumb";
@@ -43,3 +19,30 @@
 @import "styles/components/_lgpd";
 @import "styles/components/_navbar";
 @import "styles/components/_pagination";
+@import "styles/components/_sidebar";
+
+/************************************/
+/********* Colmeia PAGES *************/
+/************************************/
+@import "styles/pages/_404";
+@import "styles/pages/_contact";
+@import "styles/pages/_page-blog";
+@import "styles/pages/_page";
+@import "styles/pages/_single";
+
+
+/************************************/
+/********* Colmeia SECTIONS *************/
+/************************************/
+
+@import "styles/sections/_about";
+@import "styles/sections/_blog";
+@import "styles/sections/_cases";
+@import "styles/sections/_contact";
+@import "styles/sections/_featured";
+@import "styles/sections/_hero";
+@import "styles/sections/_metodology";
+@import "styles/sections/_newsletter";
+@import "styles/sections/_products";
+@import "styles/sections/_services";
+@import "styles/sections/_testmonials";

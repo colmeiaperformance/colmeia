@@ -12,11 +12,22 @@ body {
 }
 
 :root {
-	accent-color: #FF702E;
+  accent-color: #FF702E;
 }
 
 .form-control {
   &:focus {
-      box-shadow: none!important;
+    box-shadow: none!important;
   }
+}
+
+a {
+  &:hover {
+    opacity: 0.8;
+    transition: all .3s ease;
+  }
+}
+
+::selection {
+  background: #FF702E;
 }

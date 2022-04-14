@@ -17,14 +17,17 @@
       content: var(--bs-breadcrumb-divider, ">");
     } 
   }
+  .breadcrumb-item.active {
+    color: $color-white;
+  }
   a {
     color: $color-white; 
     border: 0;
     text-decoration: none;
-      &:hover{
-        color: $color-white;
-        opacity: 0.8;
-      }
+    &:hover{
+      color: $color-white;
+      opacity: 0.8;
+    }
   }
   ol {
     padding: 0!important;

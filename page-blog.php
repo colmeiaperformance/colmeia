@@ -8,8 +8,8 @@
   <section class="container">
     <div class="row">
       <div class="col-lg-8 pe-lg-4">
-        <div class=" blog-spotlight">
-          <div class="">
+        <div class="swiper swiperSpotlight blog-spotlight">
+          <div class="swiper-wrapper">
             <?php $catquery = new WP_Query( 'cat=1&posts_per_page=1' ); ?>
             <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
             <article class="spotlight-item text-white position-relative">
