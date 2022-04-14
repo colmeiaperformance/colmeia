@@ -1,6 +1,6 @@
 <?php
-$titulo_serv = get_sub_field('titulo_serv');            
-$item_serv = get_sub_field('item_serv');            
+$titulo_serv = get_field('titulo_serv', 'option' );            
+$item_serv = get_field('item_serv', 'option' );            
 ?>
 
 
