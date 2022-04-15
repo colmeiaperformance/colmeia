@@ -196,7 +196,7 @@
 				line-height: 1.2;
 			}
 		}
-	}
+	}	
 	.agencia {
 		margin-top: 60px;
 		@media (max-width: 991.98px)  {
@@ -221,6 +221,11 @@
 				margin-right: 2px;
 				margin-left: 2px;
 			}
+		}
+	}
+	&--services {
+		.carousel-indicators{
+			margin-bottom: 0;
 		}
 	}
 	h1 {

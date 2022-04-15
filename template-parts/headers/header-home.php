@@ -7,7 +7,7 @@ $j = 0;
 ?>
 
 <header class="header header--home">
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     
     <div class="carousel-inner">
 
