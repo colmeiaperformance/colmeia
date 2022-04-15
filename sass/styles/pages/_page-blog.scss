@@ -47,6 +47,40 @@
         }
       }
     }
+    .carousel-control-prev-icon {
+      background: url('images/blog/prev.png') top center no-repeat;
+      width: 26px;
+      height: 43px;
+    }
+    .carousel-control-next-icon {
+      background: url('images/blog/next.png') top center no-repeat;
+      width: 26px;
+      height: 43px;
+    }
+    .carousel-indicators {
+      position: relative;
+      margin-top: 25px;
+      position: relative;
+      [data-bs-target] {
+        width: 12.86px;
+        height:  12.86px;
+        border-radius: 50%;
+        margin-right: 11px;
+        margin-left: 11px;
+        background-color: $grey-pagination;
+        opacity: 1;
+        @media (max-width: 991.98px) {
+          width: 7px;
+          height: 7px;
+          margin-right: 8px;
+          margin-left: 8px;
+        }
+      }
+      .active {
+        opacity: 1;
+        background-color: $color-primary-dark;
+      }
+    }
   }
   .latest-posts {
     .pagination {
