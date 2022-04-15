@@ -83,24 +83,24 @@ $j = 0;
     </button> -->
   </div>
 
-
+ <?php
+    if ( $item_cta_banner_home ) {  ?>
   <div class="container flags">
     <div class="row align-items-center justify-content-around">
-
-    <?php
-      if ( $item_cta_banner_home ) {  ?>
       <div
         class="agencias col mx-lg-5 d-flex flex-nowrap align-items-center justify-content-center justify-content-lg-between border border-white">
         <h3 class="order-0"><?php if ($item_cta_banner_home['titulo_cta_banner_home_esquerda']) { echo $item_cta_banner_home['titulo_cta_banner_home_esquerda']; } ?></h3>
         <p class="order-1"><?php if ($item_cta_banner_home['descricao_cta_banner_home_esquerda']) { echo $item_cta_banner_home['descricao_cta_banner_home_esquerda']; } ?></p>
       </div>
-      <?php } ?>
-
+    
       <div
         class="clientes col mx-lg-5 d-flex flex-nowrap align-items-center justify-content-center justify-content-lg-between  border border-white">
         <h3 class="order-1"><?php if ($item_cta_banner_home['titulo_cta_banner_home_direita']) { echo $item_cta_banner_home['titulo_cta_banner_home_direita']; } ?></h3>
         <p class="order-0"><?php if ($item_cta_banner_home['descricao_cta_banner_home_direita']) { echo $item_cta_banner_home['descricao_cta_banner_home_direita']; } ?></p>
       </div>
+
     </div>
   </div>
+  <?php } ?>
+
 </header>
