@@ -22,12 +22,14 @@ body {
 }
 
 a {
-  &:hover {
-    opacity: 0.8;
-    transition: all .3s ease;
+  transition: all .3s ease;
+  text-decoration: none;
+  // &:hover {
+    //   opacity: 0.8;
+    //   transition: all .3s ease;
+    // }
   }
-}
-
-::selection {
-  background: #FF702E;
-}
+  
+  ::selection {
+    background: #FF702E;
+  }

@@ -15,6 +15,13 @@
         @media (max-width: 991.98px) {
           height: 350px;
         }
+        &::before {
+          content: '';
+          position: absolute;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 90.1%);
+          height: 100%;
+          width: 100%;
+        }
       }
       .spotilight-content {
         padding-left: 38px;
@@ -34,6 +41,9 @@
         }
         a {
           color: $color-white;
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
       p {
@@ -51,11 +61,17 @@
       background: url('images/blog/prev.png') top center no-repeat;
       width: 26px;
       height: 43px;
+      @media (max-width: 991.98px) {
+        display: none;
+      }
     }
     .carousel-control-next-icon {
       background: url('images/blog/next.png') top center no-repeat;
       width: 26px;
       height: 43px;
+      @media (max-width: 991.98px) {
+        display: none;
+      }
     }
     .carousel-indicators {
       position: relative;
