@@ -5,7 +5,7 @@ $b = 0;
 ?>
 <?php get_template_part('template-parts/breadcrumb'); ?>
 <header class="header header--services" style="background: #30719A;padding: 65px 0 30px 0;">
-  <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
 
       <?php foreach ((array) $banner_serv as $bs) { ?>
