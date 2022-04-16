@@ -113,7 +113,8 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
         <?php if($descricao_cta_banner_ea) { echo $descricao_cta_banner_ea; } ?>
       </div>
     </div>
-
+    </div>
+  </div>
   <?php } ?>
 
 </header>
