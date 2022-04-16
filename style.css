@@ -541,15 +541,6 @@ footer .float-end a {
   border: 1px solid #FFFFFF;
   position: relative;
   margin: 0 20px;
-}
-
-@media (max-width: 991.98px) {
-  .header--home .quote {
-    padding: 13px 20px;
-  }
-}
-
-.header--home .quote p {
   font-weight: 400;
   font-size: 23px;
   line-height: 23px;
@@ -559,7 +550,8 @@ footer .float-end a {
 }
 
 @media (max-width: 991.98px) {
-  .header--home .quote p {
+  .header--home .quote {
+    padding: 13px 20px;
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;

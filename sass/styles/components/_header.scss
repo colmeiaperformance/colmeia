@@ -182,21 +182,16 @@
 			border: 1px solid $color-white;
 			position: relative;
 			margin: 0 20px;
+			font-weight: 400;
+			font-size: 23px;
+			line-height: 23px;
+			text-align: center;
+			color: $color-white;
+			margin-bottom: 0;
 			@media (max-width: 991.98px) {
-				padding: 13px 20px;
-			}
-			p {
-				font-weight: 400;
-				font-size: 23px;
-				line-height: 23px;
-				text-align: center;
-				color: $color-white;
-				margin-bottom: 0;
-				@media (max-width: 991.98px) {  
-					font-weight: 500;
-					font-size: 13px;
-					line-height: 16px;
-				}
+				padding: 13px 20px;	font-weight: 500;
+				font-size: 13px;
+				line-height: 16px;
 			}
 			&:before {
 				content: '';
