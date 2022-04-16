@@ -573,7 +573,7 @@ footer .float-end a {
     border-left: solid 15px #FF702E;
     border-bottom: solid 11.5px transparent;
     border-top: solid 11.5px transparent;
-    margin-left: -27px;
+    left: -7px;
     top: calc(50% - 23px / 2);
   }
 }
