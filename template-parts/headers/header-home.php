@@ -4,10 +4,11 @@ $botoes_banner = get_field('botoes_banner');
 $item_cta_banner_home = get_field('item_cta_banner_home');
 $i = 0;
 $j = 0;
+$descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
 ?>
 
 <header class="header header--home">
-  <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     
     <div class="carousel-inner">
 
@@ -84,6 +85,8 @@ $j = 0;
   </div>
 
  <?php
+  if( is_front_page() ) {
+
     if ( $item_cta_banner_home ) {  ?>
   <div class="container flags">
     <div class="row align-items-center justify-content-around">
@@ -101,6 +104,16 @@ $j = 0;
 
     </div>
   </div>
+  <?php } 
+
+  } else { ?>
+    
+    <div class="col agencia">
+      <div class="quote">
+        <?php if($descricao_cta_banner_ea) { echo $descricao_cta_banner_ea; } ?>
+      </div>
+    </div>
+
   <?php } ?>
 
 </header>
