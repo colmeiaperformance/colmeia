@@ -1890,7 +1890,7 @@ footer .float-end a {
   color: #FF702E;
 }
 
-.single .author_bio_section {
+.single .author-box-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1902,11 +1902,11 @@ footer .float-end a {
           justify-content: left;
   background: #00A69D;
   padding: 17px 20px 23px 45px;
-  margin-bottom: 40px;
+  margin: 30px 0 40px 0;
 }
 
 @media (max-width: 576px) {
-  .single .author_bio_section {
+  .single .author-box-wrap {
     display: -ms-grid;
     display: grid;
     text-align: center;
@@ -1914,23 +1914,23 @@ footer .float-end a {
   }
 }
 
-.single .author_bio_section p {
+.single .author-box-wrap p {
   margin-bottom: 0;
 }
 
-.single .author_bio_section img {
+.single .author-box-wrap img {
   border-radius: 50%;
   margin-right: 20px;
 }
 
 @media (max-width: 576px) {
-  .single .author_bio_section img {
+  .single .author-box-wrap img {
     margin-right: 0;
     margin-bottom: 20px;
   }
 }
 
-.single .author_bio_section .author-infos {
+.single .author-box-wrap .desc {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -1941,7 +1941,7 @@ footer .float-end a {
           justify-content: left;
 }
 
-.single .author_bio_section .author-infos p {
+.single .author-box-wrap .desc p {
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
@@ -1949,26 +1949,24 @@ footer .float-end a {
   margin-bottom: 9px;
 }
 
-.single .author_bio_section .author-infos h5 {
+.single .author-box-wrap .desc a {
   color: #FFFFFF;
   font-weight: 700;
   font-size: 21.26px;
   line-height: 26px;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
 
-.single .author_bio_section .author-infos p.author_bio {
+.single .author-box-wrap .desc a:hover {
+  opacity: 0.7;
+}
+
+.single .author-box-wrap .desc .author-description {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-}
-
-.single .author_bio_section .author-infos .links .fa {
-  font-size: 16px;
   color: #FFFFFF;
-}
-
-.single .author_bio_section .author-infos .links .fa:hover {
-  opacity: 0.7;
 }
 
 /************************************/

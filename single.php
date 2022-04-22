@@ -15,7 +15,7 @@
 <?php while (have_posts()) : the_post(); ?>
 <header class="header--single pb-lg-0">
   <div class="container position-relative overflow-hidden">
-    <div class="col p-lg-5 text-center pb-lg-4">
+    <div class="col py-lg-5 text-center pb-lg-4">
       <h1><?php the_title(); ?></h1>
       <div class="d-flex align-items-center justify-content-left">
         <div class="avi"><?php echo get_avatar( get_the_author_meta('ID') , 92 ); ?></div>
@@ -43,19 +43,26 @@
           </div>
          <div class="post-content">
             <?php the_content(' '); ?>
+            <div class="post-thumb">
+              <p>Esse artigo foi útil?</p> <a href="/">Sim</a> <a href="/">Não</a>
+            </div>
          </div>
-         <!-- <div class="post-thumb"><p>Esse artigo foi útil?</p> <a href="/">Sim</a> <a href="/">Não</a> </div> -->
+          <div class="post-footer">
+            <div class="tags d-flex align-items-center justify-content-start">
+              <?php $tags = get_tags(); ?>
+                <?php foreach ( $tags as $tag ) { ?>
+                <a href="<?php echo get_tag_link( $tag->term_id ); ?> " rel="tag">#<?php echo $tag->name; ?></a>
+                <?php } ?>
+            </div>
+            <div class="redes">
+            </div>
+          </div>
         </article>
-        <div class="tags d-flex align-items-center justify-content-start">
-          <?php $tags = get_tags(); ?>
-          <?php foreach ( $tags as $tag ) { ?>
-           <a href="<?php echo get_tag_link( $tag->term_id ); ?> " rel="tag">#<?php echo $tag->name; ?></a>
-          <?php } ?>
-        </div>
-        <?php endwhile; wp_reset_postdata(); ?>   
-        <?php else : ?>
-        <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-        <?php endif; ?>
+        <?php get_template_part('template-parts/sections/author'); ?>
+          <?php endwhile; wp_reset_postdata(); ?>   
+            <?php else : ?>
+              <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+            <?php endif; ?>
       </div>
       <div class="col-lg-4 ps-lg-4">
         <?php get_template_part( '/template-parts/sidebar/aside-single' ) ?>

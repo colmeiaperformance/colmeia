@@ -81,13 +81,13 @@
       }
     }
   }
-  .author_bio_section {
+  .author-box-wrap{
     display: flex;
     align-items: center;
     justify-content: left;
     background: $color-primary-dark;
     padding: 17px 20px 23px 45px;
-    margin-bottom: 40px;
+    margin: 30px 0 40px 0;
      @media (max-width: 576px) {
       display: grid;
       text-align: center;
@@ -104,7 +104,7 @@
         margin-bottom: 20px;
       }
     }
-    .author-infos {
+    .desc{
       display: grid;
       align-items: center;
       justify-content: left;
@@ -115,25 +115,22 @@
         color: $color-white;
         margin-bottom: 9px;
       }
-      h5 {
+      a {
         color: $color-white;
         font-weight: 700;
         font-size: 21.26px;
         line-height: 26px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        &:hover {
+          opacity: 0.7;
+        }
       }
-      p.author_bio {
+      .author-description {
         font-weight: 400;
         font-size: 12px;
         line-height: 15px;
-      }
-      .links {
-        .fa {
-          font-size: 16px;
-          color:  $color-white;
-          &:hover{ 
-            opacity: 0.7;
-          }
-        }
+        color:  $color-white;
       }
     }
   }
