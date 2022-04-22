@@ -1,0 +1,62 @@
+.page-sobre{
+    background-color: $color-primary-dark;
+    .container{
+        @media (max-width: 999.98px) {
+            padding-bottom: 136px;
+          }
+    }
+    .quem-somos{
+        h1{
+            margin-bottom: 2.5rem;
+            color: $color-white;
+        }
+        p{
+            color: $color-white;
+        }
+        .text{
+            padding-right: 1rem;
+        }
+    }
+    .card{
+        background-color: $color-breadcrumb;
+        width: 85%;
+        @media (max-width: 999.98px) {
+            width: 100%;
+          }
+        .testimonial{
+            background-color: $color-breadcrumb;
+            .testimonial-text{
+                width: 85%;
+                color: $color-white;
+                @media (max-width: 999.98px) {
+                    width: 100%;
+                  } 
+            }
+            .testimonial-autor{
+                background-color: $color-white;
+                padding-top: 16px; 
+                .autor-name{
+                    color: $color-primary-dark;
+                }
+                .autor-cargo{
+                    color: $color-breadcrumb;
+                    font-size: small;
+                }
+            }
+            .icon {
+                margin-top: calc(-210px);
+                img {
+                  object-fit: fill;
+                  border-radius: 100%;
+                  padding: 36px;
+                  border: 6px solid $color-white;
+                  background-color: $color-grey-dark;
+                  @media (max-width: 991.98px) {
+                    height: 80px;
+                    width: 80px;
+                  }
+                }
+              }          
+        }
+    }
+}

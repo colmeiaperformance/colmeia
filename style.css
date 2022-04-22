@@ -2031,6 +2031,89 @@ footer .float-end a {
   color: #FFFFFF;
 }
 
+.page-sobre {
+  background-color: #00A69D;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .container {
+    padding-bottom: 136px;
+  }
+}
+
+.page-sobre .quem-somos h1 {
+  margin-bottom: 2.5rem;
+  color: #FFFFFF;
+}
+
+.page-sobre .quem-somos p {
+  color: #FFFFFF;
+}
+
+.page-sobre .quem-somos .text {
+  padding-right: 1rem;
+}
+
+.page-sobre .card {
+  background-color: #00D0C5;
+  width: 85%;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .card {
+    width: 100%;
+  }
+}
+
+.page-sobre .card .testimonial {
+  background-color: #00D0C5;
+}
+
+.page-sobre .card .testimonial .testimonial-text {
+  width: 85%;
+  color: #FFFFFF;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .card .testimonial .testimonial-text {
+    width: 100%;
+  }
+}
+
+.page-sobre .card .testimonial .testimonial-autor {
+  background-color: #FFFFFF;
+  padding-top: 16px;
+}
+
+.page-sobre .card .testimonial .testimonial-autor .autor-name {
+  color: #00A69D;
+}
+
+.page-sobre .card .testimonial .testimonial-autor .autor-cargo {
+  color: #00D0C5;
+  font-size: small;
+}
+
+.page-sobre .card .testimonial .icon {
+  margin-top: calc(-210px);
+}
+
+.page-sobre .card .testimonial .icon img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 100%;
+  padding: 36px;
+  border: 6px solid #FFFFFF;
+  background-color: #353C42;
+}
+
+@media (max-width: 991.98px) {
+  .page-sobre .card .testimonial .icon img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
 /************************************/
 /********* Colmeia SECTIONS *************/
 /************************************/
