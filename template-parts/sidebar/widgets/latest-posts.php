@@ -12,7 +12,7 @@
           else { 
           echo get_template_directory_uri() . '/images/blog-media.jpg';
           } ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;"></div>
-      <div>
+      <div style="width: calc(100% - 88px);">
         <h5><a href="<?php the_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a></h5>
         <p><?php the_time('d') ?> de <?php the_time('F') ?> de <?php the_time('Y') ?></p>
       </div>
