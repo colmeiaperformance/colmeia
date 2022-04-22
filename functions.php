@@ -449,11 +449,11 @@ $user_github = get_the_author_meta('github', $post->post_author);
 // Get link to the author archive page
 $user_posts = get_author_posts_url( get_the_author_meta( 'ID' , $post->post_author));
 if ( ! empty( $display_name ) )
-$author_details = '<p class="author_name">Sobre o autor ' . $display_name . '</p>';
+// $author_details = '<p class="author_name">Sobre o autor ' . $display_name . '</p>';
 
 // Author avatar - - the number 90 is the px size of the image.
 $author_details .= '<p class="author_image">' . get_avatar( get_the_author_meta('ID') , 92 ) . '</p>';
-$author_details .= '<div class="author-infos"><p class="author_bio">' . get_the_author_meta( 'description' ). '</p>';
+$author_details .= '<div class="author-infos"><p>Sobre o autor</p><h5 class="author_name">' . $display_name . '</h5><p class="author_bio">' . get_the_author_meta( 'description' ). '</p>';
 // $author_details .= '<p class="author_links"><a href="'. $user_posts .'">View all posts by ' . $display_name . '</a></p>'; 
 
 // Display

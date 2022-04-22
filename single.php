@@ -44,13 +44,14 @@
          <div class="post-content">
             <?php the_content(' '); ?>
          </div>
-         <div class="tags d-flex align-items-center justify-content-start">
-            <?php $tags = get_tags(); ?>
-              <?php foreach ( $tags as $tag ) { ?>
-              <a href="<?php echo get_tag_link( $tag->term_id ); ?> " rel="tag">#<?php echo $tag->name; ?></a>
-              <?php } ?>
-          </div>
+         <!-- <div class="post-thumb"><p>Esse artigo foi útil?</p> <a href="/">Sim</a> <a href="/">Não</a> </div> -->
         </article>
+        <div class="tags d-flex align-items-center justify-content-start">
+          <?php $tags = get_tags(); ?>
+          <?php foreach ( $tags as $tag ) { ?>
+           <a href="<?php echo get_tag_link( $tag->term_id ); ?> " rel="tag">#<?php echo $tag->name; ?></a>
+          <?php } ?>
+        </div>
         <?php endwhile; wp_reset_postdata(); ?>   
         <?php else : ?>
         <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
