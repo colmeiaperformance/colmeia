@@ -868,6 +868,10 @@ footer .float-end a {
   color: #FFFFFF;
 }
 
+.navbar .dropdown-item:hover {
+  opacity: 0.7;
+}
+
 .navbar .dropdown-item.active, .navbar .dropdown-item:active {
   background: transparent;
   color: #FFFFFF;
@@ -1722,6 +1726,8 @@ footer .float-end a {
 }
 
 .page-blog .latest-posts article h3 {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
   font-weight: 700;
   font-size: 27px;
   line-height: 33px;
@@ -1734,6 +1740,10 @@ footer .float-end a {
     font-size: calc(1.3rem + .6vw);
     line-height: 1.2;
   }
+}
+
+.page-blog .latest-posts article h3:hover {
+  color: #606060;
 }
 
 .page-blog .latest-posts article p {
@@ -1911,6 +1921,12 @@ footer .float-end a {
     padding-top: 20px;
     padding-bottom: 33px;
   }
+}
+
+.sec-blog .btn:hover {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: 1px solid #FFFFFF;
 }
 
 .sec-blog h3 {
