@@ -26,15 +26,13 @@
         .testimonial{
             background-color: $color-breadcrumb;
             .testimonial-text{
-                width: 85%;
                 color: $color-white;
                 @media (max-width: 999.98px) {
                     width: 100%;
                   } 
             }
             .testimonial-autor{
-                background-color: $color-white;
-                padding-top: 16px; 
+                background-color: $color-white; 
                 .autor-name{
                     color: $color-primary-dark;
                 }

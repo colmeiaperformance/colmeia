@@ -2070,7 +2070,6 @@ footer .float-end a {
 }
 
 .page-sobre .card .testimonial .testimonial-text {
-  width: 85%;
   color: #FFFFFF;
 }
 
@@ -2082,7 +2081,6 @@ footer .float-end a {
 
 .page-sobre .card .testimonial .testimonial-autor {
   background-color: #FFFFFF;
-  padding-top: 16px;
 }
 
 .page-sobre .card .testimonial .testimonial-autor .autor-name {
