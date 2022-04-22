@@ -1116,7 +1116,7 @@ footer .float-end a {
   margin-bottom: 20px;
 }
 
-.sidebar .most-popular ul li:nth-last-child(3) {
+.sidebar .most-popular ul li:nth-last-child(1) {
   border-bottom: 0;
   margin-bottom: 0;
 }

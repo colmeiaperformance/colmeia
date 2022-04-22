@@ -3,7 +3,17 @@ $banner_serv = get_field('banner_serv');
 $a = 0;
 $b = 0;
 ?>
-<?php get_template_part('template-parts/breadcrumb'); ?>
+<section id="breadcrumb" class="breadcrumb">
+    <div class="container">
+       <nav aria-label="breadcrumb">
+         <ol class="breadcrumb">
+           <li class="breadcrumb-item"><a href="/">Home</a></li>
+           <li class="breadcrumb-item"><a href="/servicos" rel="category tag">Serviços</a></li>
+           <li class="breadcrumb-item"><?php the_title(); ?></li>
+        </ol>
+      </nav>
+    </div>
+</section>
 <header class="header header--services" style="background: #30719A;padding: 65px 0 30px 0;">
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
