@@ -13,13 +13,13 @@
 </section>
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
-<header class="header--single">
+<header class="header--single pb-lg-0">
   <div class="container position-relative overflow-hidden">
-    <div class="col p-lg-5 text-center">
+    <div class="col p-lg-5 text-center pb-lg-4">
       <h1><?php the_title(); ?></h1>
-      <div>
+      <div class="d-flex align-items-center justify-content-left">
         <div class="avi"><?php echo get_avatar( get_the_author_meta('ID') , 92 ); ?></div>
-        <div>
+        <div class="d-flex align-items-center justify-content-left">
           <h4><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></h4>
           <p><a href="<?php echo get_day_link(get_post_time('Y'), get_post_time('m'), get_post_time('d'));  ?>"><?php the_time('d') ?> de <?php the_time('F') ?> de <?php the_time('Y') ?></a></p>
         </div>
@@ -32,23 +32,23 @@
     <div class="row">
       <div class="col-lg-8 pe-lg-4">
         <article class="blog-post">
-          <div class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            style="height:340px;width:700px;background-image:url('<?php 
+          <div class="featurette-image m-auto mb-3">
+            <?php 
               if ( has_post_thumbnail() ) { 
-                  echo the_post_thumbnail_url();
+                  echo the_post_thumbnail();
               }
               else { 
                   echo get_template_directory_uri() . '/images/blog-media.jpg';
-                  } ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
+                  } ?>
           </div>
-          <?php the_content(' '); ?>
-          <div>
+         <div class="post-content">
+            <?php the_content(' '); ?>
+         </div>
+         <div class="tags d-flex align-items-center justify-content-start">
             <?php $tags = get_tags(); ?>
-            <div class="tags">
               <?php foreach ( $tags as $tag ) { ?>
               <a href="<?php echo get_tag_link( $tag->term_id ); ?> " rel="tag">#<?php echo $tag->name; ?></a>
               <?php } ?>
-            </div>
           </div>
         </article>
         <?php endwhile; wp_reset_postdata(); ?>   
