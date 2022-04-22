@@ -43,8 +43,11 @@
           </div>
          <div class="post-content">
             <?php the_content(' '); ?>
-            <div class="post-thumb">
-              <p>Esse artigo foi útil?</p> <a href="/">Sim</a> <a href="/">Não</a>
+            <div class="post-like">
+              <p>Esse artigo foi útil?</p> 
+              <div>
+                <a href="/">Sim</a> <a href="/">Não</a>
+              </div>
             </div>
          </div>
           <div class="post-footer">
@@ -54,7 +57,13 @@
                 <a href="<?php echo get_tag_link( $tag->term_id ); ?> " rel="tag">#<?php echo $tag->name; ?></a>
                 <?php } ?>
             </div>
-            <div class="redes">
+            <div class="social">
+              <a title="Compartilhe no Facebook" target="_blank"  href="http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>"><i class="bi bi-facebook"></i></a>
+              <a title="Compartilhe no Twitter"  target="_blank" href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&amp;url=<?php the_permalink() ?>"><a target="_blank" title="Compartilhe no Twitter"  href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&amp;url=<?php the_permalink() ?>"><i class="bi bi-twitter"></i></a></a>
+              <a title="Compartilhe no Whatsapp" target="_blank" href="https://api.whatsapp.com/send?text=<?php the_title(); ?> - <?php the_permalink() ?>"><i class="bi bi-whatsapp"></i></a>
+              <a title="Compartilhe no Linkedin" target="_blank" href="/"><i class="bi bi-linkedin"></i></a>
+              <a title="Compartilhe no Telegram" target="_blank" href="/"><i class="bi bi-telegram"></i></a>
+              <a title="Compartilhe por email" target="_blank" href="mailto:?subject=Recomendação%20de%20%Post:%20<?php the_permalink() ?>"><i class="bi bi-envelope-fill"></i></a>
             </div>
           </div>
         </article>

@@ -35,10 +35,12 @@ a {
 
 ::-moz-selection {
   background: #FF702E;
+  color: #212529;
 }
 
 ::selection {
   background: #FF702E;
+  color: #212529;
 }
 
 /*
@@ -1792,12 +1794,20 @@ footer .float-end a {
   border-bottom: 1px solid #E5E5E5;
   margin-bottom: 10px;
   padding-bottom: 45px;
-}
-
-.single article .post-content p {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #606060;
+}
+
+@media (max-width: 991.98px) {
+  .single article .post-content {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+
+.single article .post-content p {
   color: #606060;
 }
 
@@ -1826,14 +1836,7 @@ footer .float-end a {
   opacity: 0.7;
 }
 
-@media (max-width: 991.98px) {
-  .single article .post-content p {
-    font-size: 1rem;
-    line-height: 1.2;
-  }
-}
-
-.single article .post-content h1 {
+.single article .post-content h1, .single article .post-content h2 {
   color: #FF702E;
 }
 
@@ -1856,6 +1859,37 @@ footer .float-end a {
   margin-bottom: 5px;
 }
 
+.single article .post-content .post-like {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.single article .post-content .post-like p {
+  font-weight: 600;
+  font-size: 13.62px;
+  line-height: 17px;
+  margin-bottom: 0;
+  color: #FF702E;
+}
+
+.single article .post-content .post-like a {
+  color: #FF702E;
+  font-size: 13px;
+  margin-left: 30px;
+}
+
+.single article .post-content .post-like a:hover {
+  opacity: 0.7;
+}
+
 .single article .featurette-image {
   max-width: 724px;
 }
@@ -1865,7 +1899,35 @@ footer .float-end a {
   height: 100%;
 }
 
-.single .tags a {
+.single .post-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single .post-footer .social {
+  width: 190px;
+}
+
+.single .post-footer .social a {
+  color: #FF702E;
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.single .post-footer .social a:hover {
+  opacity: 0.7;
+}
+
+.single .post-footer .tags {
+  width: calc(100% - 200px);
+  display: block;
+}
+
+.single .post-footer .tags a {
   font-weight: 500;
   font-size: 11.9018px;
   line-height: 15px;
@@ -1885,7 +1947,7 @@ footer .float-end a {
   margin: 0 12px 8px 0;
 }
 
-.single .tags a:hover {
+.single .post-footer .tags a:hover {
   border: 1px solid #FF702E;
   color: #FF702E;
 }
