@@ -5,11 +5,11 @@
 
   <div class="container">
     <div class="row d-flex align-items-stretch">
-      <div class="quem-somos col-lg-6 d-flex flex-column text-left my-5 justify-content-center align-items-center">
-        <div class="titulo w-75">
+      <div class="quem-somos col-lg-6 d-flex flex-column text-center text-lg-start my-5 justify-content-left align-items-left px-4">
+        <div class="titulo w-lg-75">
           <h1>Quem Somos?</h1>
         </div>
-        <div class="text w-75">
+        <div class="text w-lg-75">
           <p>Com 7 anos de experiência, a Colmeia atende empresas nacionais e multinacionais de pequeno e grande porte. Também atuamos como parceiros de agências de publicidade e comunicação oferecendo performance e criatividade com foco em alavancar resultados. 
             <br><br>
             A gestão de marketing por áreas que não interagem e métricas que não conversam entre si leva ao desperdício de forças e recursos financeiros e, por consequência, de competitividade. Juntar os parceiros certos e trazer uma visão integrada, que potencializa a criatividade e aprofunda o conhecimento, é a nova fórmula do sucesso. É aí que nossa expertise se encaixa. 
@@ -22,10 +22,10 @@
       <div class="col-lg-6 d-flex justify-content-center align-items-center">
         <div class="card d-flex justify-content-center align-items-center">
           <div class="testimonial d-flex justify-content-center align-items-center text-center flex-column">
-            <div class="testimonial-text px-5 my-5">
+            <div class="testimonial-text px-5 mx-2 my-5">
               <p>Nossa missão é reunir o que existe de melhor em estratégia e produção de conteúdo, ferramentas de mensuração e tecnologias de automação. Após vinte anos de carreira na área de marketing, em empresas de referência como a Coca-Cola Company, Nielsen, Enel e em agências, como DIA Comunicação, estruturei a Colmeia como um verdadeiro hub de inteligência, com foco em performance digital.</p>
             </div>
-            <div class="testimonial-autor w-100 py-5">
+            <div class="testimonial-autor w-100">
               <div class="autor-name">
                 <p><b>Fernando Terra</b></p>
               </div>
@@ -38,11 +38,11 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="image-sbre">
-        <img class="img-fluid" src="/images/sobre/sobre.png" alt="sobre">
-      </div>
+      </div>      
     </div>
+  </div>
+  <div class="image-sobre">
+    <img class="img-fluid" src="http://localhost/colmeia/wp-content/themes/colmeia/images/sobre/sobre.png" alt="sobre">
   </div>
 
 

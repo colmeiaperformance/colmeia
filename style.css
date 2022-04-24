@@ -2066,7 +2066,28 @@ footer .float-end a {
 }
 
 .page-sobre .card .testimonial {
+  font-size: 0.9rem;
   background-color: #00D0C5;
+}
+
+.page-sobre .card .testimonial:before {
+  content: "";
+  background: url("images/sobre/aspas-top.png") bottom left no-repeat;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 10px;
+  top: 20px;
+}
+
+.page-sobre .card .testimonial:after {
+  content: "";
+  background: url("images/sobre/aspas-bottom.png") bottom left no-repeat;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  bottom: 80px;
 }
 
 .page-sobre .card .testimonial .testimonial-text {
@@ -2081,6 +2102,8 @@ footer .float-end a {
 
 .page-sobre .card .testimonial .testimonial-autor {
   background-color: #FFFFFF;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 .page-sobre .card .testimonial .testimonial-autor .autor-name {
@@ -2088,12 +2111,22 @@ footer .float-end a {
 }
 
 .page-sobre .card .testimonial .testimonial-autor .autor-cargo {
+  position: relative;
   color: #00D0C5;
   font-size: small;
 }
 
+.page-sobre .card .testimonial .testimonial-autor .autor-cargo:before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 25px);
+  top: -8px;
+  width: 50px;
+  border-top: 2px solid #C4C4C4;
+}
+
 .page-sobre .card .testimonial .icon {
-  margin-top: calc(-210px);
+  margin-top: calc(-180px);
 }
 
 .page-sobre .card .testimonial .icon img {
@@ -2109,6 +2142,17 @@ footer .float-end a {
   .page-sobre .card .testimonial .icon img {
     height: 80px;
     width: 80px;
+  }
+}
+
+.page-sobre .image-sobre .img-fluid {
+  width: 100%;
+  height: 350px;
+}
+
+@media (max-width: 991.98px) {
+  .page-sobre .image-sobre .img-fluid {
+    height: 200px;
   }
 }
 

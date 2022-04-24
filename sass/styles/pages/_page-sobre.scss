@@ -24,7 +24,26 @@
             width: 100%;
           }
         .testimonial{
+            font-size: 0.9rem;
             background-color: $color-breadcrumb;
+            &:before {
+                content: "";
+                background: url("images/sobre/aspas-top.png") bottom left no-repeat;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                left: 10px;
+                top: 20px;                                 
+            }
+            &:after {
+                content: "";
+                background: url("images/sobre/aspas-bottom.png") bottom left no-repeat;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                right: 10px;
+                bottom: 80px;                                      
+            }
             .testimonial-text{
                 color: $color-white;
                 @media (max-width: 999.98px) {
@@ -32,17 +51,28 @@
                   } 
             }
             .testimonial-autor{
-                background-color: $color-white; 
+                background-color: $color-white;
+                padding-top: 3rem;
+                padding-bottom: 1rem; 
                 .autor-name{
                     color: $color-primary-dark;
                 }
                 .autor-cargo{
+                    position: relative;
                     color: $color-breadcrumb;
                     font-size: small;
-                }
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: calc(50% - 25px);
+                        top: -8px;                       
+                        width: 50px;
+                        border-top: 2px solid $grey-pagination;
+                    }
+                }   
             }
             .icon {
-                margin-top: calc(-210px);
+                margin-top: calc(-180px);
                 img {
                   object-fit: fill;
                   border-radius: 100%;
@@ -55,6 +85,15 @@
                   }
                 }
               }          
+        }
+    }
+    .image-sobre{
+        .img-fluid{
+            width: 100%;
+            height: 350px;
+            @media (max-width: 991.98px) {
+                height: 200px;
+            }
         }
     }
 }
