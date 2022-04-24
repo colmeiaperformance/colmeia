@@ -22,7 +22,7 @@
       <div class="col-lg-6 d-flex justify-content-center align-items-center">
         <div class="card d-flex justify-content-center align-items-center">
           <div class="testimonial d-flex justify-content-center align-items-center text-center flex-column">
-            <div class="testimonial-text px-5 mx-2 my-5">
+            <div class="testimonial-text px-5 py-4 mx-2 my-5">
               <p>Nossa missão é reunir o que existe de melhor em estratégia e produção de conteúdo, ferramentas de mensuração e tecnologias de automação. Após vinte anos de carreira na área de marketing, em empresas de referência como a Coca-Cola Company, Nielsen, Enel e em agências, como DIA Comunicação, estruturei a Colmeia como um verdadeiro hub de inteligência, com foco em performance digital.</p>
             </div>
             <div class="testimonial-autor w-100">
@@ -41,7 +41,7 @@
       </div>      
     </div>
   </div>
-  <div class="image-sobre">
+  <div class="image-sobre mt-4">
     <img class="img-fluid" src="http://localhost/colmeia/wp-content/themes/colmeia/images/sobre/sobre.png" alt="sobre">
   </div>
 
