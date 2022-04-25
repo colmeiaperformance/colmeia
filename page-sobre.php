@@ -1,5 +1,6 @@
 <?php get_header(); ?>
   <?php get_template_part('template-parts/navbar'); ?>
+  <?php get_template_part('template-parts/breadcrumb'); ?>
 <main class="page-sobre">
 
 
@@ -42,7 +43,7 @@
     </div>
   </div>
   <div class="image-sobre mt-4">
-    <img class="img-fluid" src="http://localhost/colmeia/wp-content/themes/colmeia/images/sobre/sobre.png" alt="sobre">
+    <img class="img-fluid" src="/images/sobre/sobre.png" alt="sobre">
   </div>
 
 
