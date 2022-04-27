@@ -88,12 +88,11 @@
         }
     }
     .image-sobre{
-        .img-fluid{
-            width: 100%;
-            height: 350px;
-            @media (max-width: 991.98px) {
-                height: 200px;
-            }
+        background: url(images/sobre/sobre.png) top left no-repeat;
+        background-size: cover;
+        height: 350px;
+        @media (max-width: 991.98px) {
+            height: 200px;
         }
     }
 }

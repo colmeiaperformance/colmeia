@@ -2191,13 +2191,14 @@ footer .float-end a {
   }
 }
 
-.page-sobre .image-sobre .img-fluid {
-  width: 100%;
+.page-sobre .image-sobre {
+  background: url(images/sobre/sobre.png) top left no-repeat;
+  background-size: cover;
   height: 350px;
 }
 
 @media (max-width: 991.98px) {
-  .page-sobre .image-sobre .img-fluid {
+  .page-sobre .image-sobre {
     height: 200px;
   }
 }

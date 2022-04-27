@@ -43,7 +43,7 @@
     </div>
   </div>
   <div class="image-sobre mt-4">
-    <img class="img-fluid" src="/images/sobre/sobre.png" alt="sobre">
+    
   </div>
 
 
