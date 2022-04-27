@@ -30,7 +30,7 @@
               <div class="autor-name">
                 <p><b>Fernando Terra</b></p>
               </div>
-              <div class="autor-cargo">
+              <div class="autor-office">
                 <p>Sócio da Colmeia</p>
               </div>
             </div>
