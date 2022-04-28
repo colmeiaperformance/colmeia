@@ -174,32 +174,6 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   cursor: grab;
 }
 
-.carousel-indicators {
-  width: 95%;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.carousel-indicators::before {
-  content: '';
-  position: absolute;
-  height: 3px;
-  width: 45%;
-  border-bottom: 2px solid #ffffff33;
-  padding-top: 13px;
-  left: 0;
-}
-
-.carousel-indicators::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  height: 3px;
-  width: 45%;
-  border-bottom: 2px solid #ffffff33;
-  padding-top: 13px;
-}
-
 footer .container {
   padding: 30px 0;
 }
@@ -556,12 +530,35 @@ footer .float-end a {
 .header--home .carousel-indicators {
   margin-bottom: 15px !important;
   height: 15px !important;
+  width: 95%;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 @media (max-width: 991.98px) {
   .header--home .carousel-indicators {
     margin-bottom: 0;
   }
+}
+
+.header--home .carousel-indicators::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 45%;
+  border-bottom: 2px solid #ffffff33;
+  padding-top: 13px;
+  left: 0;
+}
+
+.header--home .carousel-indicators::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 3px;
+  width: 45%;
+  border-bottom: 2px solid #ffffff33;
+  padding-top: 13px;
 }
 
 .header--home .quote {

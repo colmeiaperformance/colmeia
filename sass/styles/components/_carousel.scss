@@ -2,26 +2,3 @@
   cursor: grab;
 }
 
-.carousel-indicators {
-  width: 95%;
-  max-width: 1140px;
-  margin: 0 auto;
-  &::before {
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 45%;
-    border-bottom: 2px solid #ffffff33;
-    padding-top: 13px;
-    left: 0;
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    height: 3px;
-    width: 45%;
-    border-bottom: 2px solid #ffffff33;
-    padding-top: 13px;
-  }
-}
