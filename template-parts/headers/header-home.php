@@ -108,10 +108,12 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
 
   } else { ?>
     
-    <div class="col agencia">
+    <div class="container">
+      <div class="col agencia">
       <div class="quote">
         <?php if($descricao_cta_banner_ea) { echo $descricao_cta_banner_ea; } ?>
       </div>
+    </div>
     </div>
     </div>
   </div>
