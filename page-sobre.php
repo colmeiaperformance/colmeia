@@ -1,3 +1,8 @@
+<?php
+$card_imagem_qs = get_field('card_imagem_qs');
+$citacao_qs = get_field('citacao_qs');
+?>
+
 <?php get_header(); ?>
   <?php get_template_part('template-parts/navbar'); ?>
   <?php get_template_part('template-parts/breadcrumb'); ?>
@@ -24,14 +29,14 @@
         <div class="card d-flex justify-content-center align-items-center">
           <div class="testimonial d-flex justify-content-center align-items-center text-center flex-column">
             <div class="testimonial-text px-5 py-4 mx-2 my-5">
-              <p>Nossa missão é reunir o que existe de melhor em estratégia e produção de conteúdo, ferramentas de mensuração e tecnologias de automação. Após vinte anos de carreira na área de marketing, em empresas de referência como a Coca-Cola Company, Nielsen, Enel e em agências, como DIA Comunicação, estruturei a Colmeia como um verdadeiro hub de inteligência, com foco em performance digital.</p>
+            <?php if ($citacao_qs['texto_da_citacao']) { echo $citacao_qs['texto_da_citacao']; } ?>
             </div>
             <div class="testimonial-autor w-100">
               <div class="autor-name">
-                <p><b>Fernando Terra</b></p>
+                <p><b><?php if ($citacao_qs['autor']) { echo $citacao_qs['autor']; } ?></b></p>
               </div>
               <div class="autor-office">
-                <p>Sócio da Colmeia</p>
+                <p><?php if ($citacao_qs['cargo']) { echo $citacao_qs['cargo']; } ?></p>
               </div>
             </div>
             <div class="icon">
@@ -42,7 +47,7 @@
       </div>      
     </div>
   </div>
-  <div class="image-sobre mt-4">
+  <div class="image-sobre mt-4" style="background: url(images/sobre/sobre.png) top left no-repeat; background-size: cover;">
     
   </div>
 

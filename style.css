@@ -2192,8 +2192,6 @@ footer .float-end a {
 }
 
 .page-sobre .image-sobre {
-  background: url(images/sobre/sobre.png) top left no-repeat;
-  background-size: cover;
   height: 350px;
 }
 
