@@ -1,5 +1,6 @@
 <?php 
 $banner_serv = get_field('banner_serv');
+$cor_item_serv = get_field('cor_item_serv');
 $a = 0;
 $b = 0;
 ?>
@@ -14,7 +15,12 @@ $b = 0;
       </nav>
     </div>
 </section>
-<header class="header header--services" style="background: #30719A;padding: 65px 0 30px 0;">
+<header class="header header--services" style="background: <?php if ($cor_item_serv) {
+  echo $cor_item_serv;
+} else {
+  echo '#30719A';
+}
+ ?>;padding: 65px 0 30px 0;">
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
 

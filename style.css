@@ -1507,6 +1507,52 @@ footer .float-end a {
   color: #FFFFFF;
 }
 
+.page-contato {
+  background-color: #00A69D;
+}
+
+.page-contato .text-contact {
+  color: #FFFFFF;
+}
+
+.page-contato .contact-area .form-contact {
+  background-color: #FFFFFF;
+  width: 300px;
+  height: 300px;
+}
+
+.page-contato .image-contact {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 112, 46, 0.84)), to(rgba(255, 112, 46, 0.84))), url(images/contato/contato.png) top left no-repeat;
+  background: linear-gradient(0deg, rgba(255, 112, 46, 0.84), rgba(255, 112, 46, 0.84)), url(images/contato/contato.png) top left no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+@media (max-width: 991.98px) {
+  .page-contato .image-contact {
+    height: 200px;
+  }
+}
+
+.page-contato .image-contact .image-text {
+  color: #FFFFFF;
+}
+
+.page-contato .image-contact .image-text p:first-child {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.page-contato .image-contact .image-text h1 {
+  font-size: 6rem;
+}
+
+@media (max-width: 991.98px) {
+  .page-contato .image-contact .image-text h1 {
+    font-size: 3rem;
+  }
+}
+
 .page-blog {
   border-bottom: 32px solid #00A69D;
   padding-bottom: 72px;
@@ -2033,6 +2079,130 @@ footer .float-end a {
   font-size: 12px;
   line-height: 15px;
   color: #FFFFFF;
+}
+
+.page-sobre {
+  background-color: #00A69D;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .container {
+    padding-bottom: 136px;
+  }
+}
+
+.page-sobre .quem-somos h1 {
+  margin-bottom: 2.5rem;
+  color: #FFFFFF;
+}
+
+.page-sobre .quem-somos p {
+  color: #FFFFFF;
+}
+
+.page-sobre .quem-somos .text {
+  padding-right: 1rem;
+}
+
+.page-sobre .card {
+  background-color: #00D0C5;
+  width: 85%;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .card {
+    width: 100%;
+  }
+}
+
+.page-sobre .card .testimonial {
+  font-size: 0.9rem;
+  background-color: #00D0C5;
+}
+
+.page-sobre .card .testimonial:before {
+  content: "";
+  background: url("images/sobre/aspas-top.png") bottom left no-repeat;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 58px;
+  top: 20px;
+}
+
+.page-sobre .card .testimonial:after {
+  content: "";
+  background: url("images/sobre/aspas-bottom.png") bottom left no-repeat;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 58px;
+  bottom: 90px;
+}
+
+.page-sobre .card .testimonial .testimonial-text {
+  color: #FFFFFF;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .card .testimonial .testimonial-text {
+    width: 100%;
+  }
+}
+
+.page-sobre .card .testimonial .testimonial-autor {
+  background-color: #FFFFFF;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.page-sobre .card .testimonial .testimonial-autor .autor-name {
+  color: #00A69D;
+}
+
+.page-sobre .card .testimonial .testimonial-autor .autor-office {
+  position: relative;
+  color: #00D0C5;
+  font-size: small;
+}
+
+.page-sobre .card .testimonial .testimonial-autor .autor-office:before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 25px);
+  top: -8px;
+  width: 50px;
+  border-top: 2px solid #C4C4C4;
+}
+
+.page-sobre .card .testimonial .icon {
+  margin-top: calc(-180px);
+}
+
+.page-sobre .card .testimonial .icon img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 100%;
+  padding: 36px;
+  border: 6px solid #FFFFFF;
+  background-color: #353C42;
+}
+
+@media (max-width: 991.98px) {
+  .page-sobre .card .testimonial .icon img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.page-sobre .image-sobre {
+  height: 350px;
+}
+
+@media (max-width: 991.98px) {
+  .page-sobre .image-sobre {
+    height: 200px;
+  }
 }
 
 /************************************/

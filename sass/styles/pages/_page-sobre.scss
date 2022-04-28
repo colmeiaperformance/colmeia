@@ -1,0 +1,96 @@
+.page-sobre{
+    background-color: $color-primary-dark;
+    .container{
+        @media (max-width: 999.98px) {
+            padding-bottom: 136px;
+          }
+    }
+    .quem-somos{
+        h1{
+            margin-bottom: 2.5rem;
+            color: $color-white;
+        }
+        p{
+            color: $color-white;
+        }
+        .text{
+            padding-right: 1rem;
+        }
+    }
+    .card{
+        background-color: $color-breadcrumb;
+        width: 85%;
+        @media (max-width: 999.98px) {
+            width: 100%;
+          }
+        .testimonial{
+            font-size: 0.9rem;
+            background-color: $color-breadcrumb;
+            &:before {
+                content: "";
+                background: url("images/sobre/aspas-top.png") bottom left no-repeat;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                left: 58px;
+                top: 20px;                                 
+            }
+            &:after {
+                content: "";
+                background: url("images/sobre/aspas-bottom.png") bottom left no-repeat;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                right: 58px;
+                bottom: 90px;                                      
+            }
+            .testimonial-text{
+                color: $color-white;
+                @media (max-width: 999.98px) {
+                    width: 100%;
+                  } 
+            }
+            .testimonial-autor{
+                background-color: $color-white;
+                padding-top: 3rem;
+                padding-bottom: 1rem; 
+                .autor-name{
+                    color: $color-primary-dark;
+                }
+                .autor-office{
+                    position: relative;
+                    color: $color-breadcrumb;
+                    font-size: small;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: calc(50% - 25px);
+                        top: -8px;                       
+                        width: 50px;
+                        border-top: 2px solid $grey-pagination;
+                    }
+                }   
+            }
+            .icon {
+                margin-top: calc(-180px);
+                img {
+                  object-fit: fill;
+                  border-radius: 100%;
+                  padding: 36px;
+                  border: 6px solid $color-white;
+                  background-color: $color-grey-dark;
+                  @media (max-width: 991.98px) {
+                    height: 80px;
+                    width: 80px;
+                  }
+                }
+              }          
+        }
+    }
+    .image-sobre{
+        height: 350px;
+        @media (max-width: 991.98px) {
+            height: 200px;
+        }
+    }
+}
