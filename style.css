@@ -1903,9 +1903,12 @@ footer .float-end a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .single .post-footer .social {
@@ -1924,7 +1927,8 @@ footer .float-end a {
 
 .single .post-footer .tags {
   width: calc(100% - 200px);
-  display: block;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .single .post-footer .tags a {
