@@ -302,6 +302,9 @@
 	.carousel-indicators {
 		margin-bottom: 170px;
 		height: 15px;
+		width: 100%;
+		max-width: 1140px;
+		margin: 0 auto;
 		@media (max-width: 991.98px) {
 			margin-bottom: calc(180px / 2);
 		}
