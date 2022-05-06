@@ -1,3 +1,12 @@
+<?php 
+$imagem_de_fundo_c = get_field('imagem_de_fundo_c');
+$cor_do_fundo_c = get_field('cor_do_fundo_c');
+$subtitulo_c = get_field('subtitulo_c');
+$titulo_c = get_field('titulo_c');
+$texto_c = get_field('texto_c');
+$formulario_c = get_field('formulario_c');
+?>
+
 <?php get_header(); ?>
   <?php get_template_part('template-parts/navbar'); ?>
   <?php get_template_part('template-parts/breadcrumb'); ?>
