@@ -1,6 +1,9 @@
 <?php
 $titulo_serv = get_field('titulo_serv', 'option' );            
-$item_serv = get_field('item_serv', 'option' );            
+$item_serv = get_field('item_serv', 'option' );   
+$page_address = get_permalink();
+global $post; 
+  $slug_name = $post->post_name;
 ?>
 
 
@@ -11,16 +14,15 @@ $item_serv = get_field('item_serv', 'option' );
   
     <?php foreach ($item_serv as $is) { ?>
 
-      <div class="card rounded-0 card rounded-0 position-relative">
+      <div class="card rounded-0 card rounded-0 position-relative<?php
+      if ( $page_address == $is['url_item_serv'] ) { echo ' active'; } ?>">
         <a href="<?php if ($is['url_item_serv']) { echo $is['url_item_serv']; } else { echo '#'; }; ?>" class="stretched-link text-decoration-none">
           <?php if ($is['area_item_serv']) { echo $is['area_item_serv']; }; ?>
         </a>
       </div>
-
+      
     <?php } ?>
-
-
-     
+    
     </div>
   </div>
 </section>
