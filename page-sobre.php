@@ -1,4 +1,5 @@
 <?php
+$imagem_mobile_qs = get_field('imagem_mobile_qs');
 $card_imagem_qs = get_field('card_imagem_qs');
 $citacao_qs = get_field('citacao_qs');
 ?>
