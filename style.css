@@ -1533,52 +1533,6 @@ footer .float-end a {
   color: #FFFFFF;
 }
 
-.page-contato {
-  background-color: #00A69D;
-}
-
-.page-contato .text-contact {
-  color: #FFFFFF;
-}
-
-.page-contato .contact-area .form-contact {
-  background-color: #FFFFFF;
-  width: 300px;
-  height: 300px;
-}
-
-.page-contato .image-contact {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 112, 46, 0.84)), to(rgba(255, 112, 46, 0.84))), url(images/contato/contato.png) top left no-repeat;
-  background: linear-gradient(0deg, rgba(255, 112, 46, 0.84), rgba(255, 112, 46, 0.84)), url(images/contato/contato.png) top left no-repeat;
-  background-size: cover;
-  height: 350px;
-}
-
-@media (max-width: 991.98px) {
-  .page-contato .image-contact {
-    height: 200px;
-  }
-}
-
-.page-contato .image-contact .image-text {
-  color: #FFFFFF;
-}
-
-.page-contato .image-contact .image-text p:first-child {
-  font-size: 1.3rem;
-  margin-bottom: 0;
-}
-
-.page-contato .image-contact .image-text h1 {
-  font-size: 6rem;
-}
-
-@media (max-width: 991.98px) {
-  .page-contato .image-contact .image-text h1 {
-    font-size: 3rem;
-  }
-}
-
 .page-blog {
   border-bottom: 32px solid #00A69D;
   padding-bottom: 72px;
@@ -1859,6 +1813,162 @@ footer .float-end a {
   .page-blog .latest-posts h2 {
     font-size: calc(1.325rem + .9vw);
     line-height: 1.2;
+  }
+}
+
+.page-contact {
+  background: #FF702E url("images/contato/map.png") center center no-repeat;
+  background-size: cover;
+  padding: 57px 0 216px 0;
+}
+
+@media (max-width: 991.98px) {
+  .page-contact {
+    padding: 26px 0 100px 0;
+  }
+}
+
+.page-contact h2 {
+  font-weight: 400;
+  font-size: 25.05px;
+  line-height: 105.1%;
+  color: #FFFFFF;
+}
+
+@media (max-width: 991.98px) {
+  .page-contact h2 {
+    text-align: center;
+    font-size: 17.32px;
+    line-height: 18.2px;
+  }
+}
+
+.page-contact h2 strong {
+  font-size: 48.05px;
+  line-height: 50.5px;
+  font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+  .page-contact h2 strong {
+    font-size: 33.22px;
+    line-height: 34.91px;
+  }
+}
+
+.page-contact p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-top: 17px;
+}
+
+@media (max-width: 991.98px) {
+  .page-contact p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 25px;
+  }
+}
+
+.page-contact form {
+  background-color: #FFFFFF;
+  padding: 42px 22px 29px 22px;
+}
+
+@media (max-width: 991.98px) {
+  .page-contact form {
+    margin: 0 30px;
+  }
+}
+
+.page-contact form label {
+  display: none;
+}
+
+.page-contact form ::-webkit-input-placeholder {
+  color: #00A69D;
+  opacity: 1;
+}
+
+.page-contact form :-ms-input-placeholder {
+  color: #00A69D;
+  opacity: 1;
+}
+
+.page-contact form ::-ms-input-placeholder {
+  color: #00A69D;
+  opacity: 1;
+}
+
+.page-contact form ::placeholder {
+  color: #00A69D;
+  opacity: 1;
+}
+
+.page-contact form .form-control {
+  font-weight: 600;
+  font-size: 14.9974px;
+  line-height: 37px;
+  color: #00A69D;
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #727272;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 991.98px) {
+  .page-contact form .form-control {
+    border: 1px solid #00A69D;
+    padding: 0 8px;
+  }
+}
+
+.page-contact form select {
+  height: 37px;
+}
+
+.page-contact form select.form-control {
+  -webkit-appearance: menulist;
+}
+
+@media (max-width: 991.98px) {
+  .page-contact form select.form-control {
+    border: 0;
+    border-bottom: 1px solid #727272;
+    padding: 0;
+  }
+}
+
+.page-contact form .btn {
+  font-weight: 700;
+  font-size: 14.9974px;
+  line-height: 24px;
+  letter-spacing: -0.019em;
+  color: #FFFFFF;
+  background: #FF702E;
+  border: 1px solid #FF702E;
+  width: 100%;
+  border-radius: 0;
+}
+
+.page-contact form .btn:hover {
+  color: #FF702E;
+  background: transparent;
+}
+
+@media (max-width: 991.98px) {
+  .page-contact form .btn {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.019em;
+    height: 42px;
   }
 }
 

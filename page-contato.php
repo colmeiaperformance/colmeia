@@ -1,49 +1,66 @@
-<?php 
-$imagem_de_fundo_c = get_field('imagem_de_fundo_c');
-$cor_do_fundo_c = get_field('cor_do_fundo_c');
-$subtitulo_c = get_field('subtitulo_c');
-$titulo_c = get_field('titulo_c');
-$texto_c = get_field('texto_c');
-$formulario_c = get_field('formulario_c');
-?>
-
 <?php get_header(); ?>
-  <?php get_template_part('template-parts/navbar'); ?>
-  <?php get_template_part('template-parts/breadcrumb'); ?>
-<main class="page-contato">
-
+<?php get_template_part('template-parts/navbar'); ?>
+<?php get_template_part('template-parts/breadcrumb'); ?>
+<main class="page-contact">
   <div class="container">
-      <div class="row d-flex align-items-stretch">
-        <div class="text-contact col-lg-6 d-flex flex-column text-center text-lg-start my-5 justify-content-left align-items-left px-4">
-          <div class="title w-lg-75 mb-4">
-            <h1>Vamos<br>conversar?</h1>
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="col-12 col-lg-6 pe-lg-5">
+        <h1 class="d-none">Contato</h1>
+        <h2>Nossa localização? </br> <strong>Anywhere!</strong></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nascetur ridiculus mus mauris vitae ultricies. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Consectetur libero id faucibus nisl tincidunt eget nullam non.</p>
+      </div>
+      <div class="col-12 col-lg-6 ps-lg-5">
+        <form>
+            <div class="row">
+              <div class="col-12 col-md-6 form-group">
+                <label for="exampleInputName">Nome</label>
+                <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Nome">
+              </div>
+              <div class="col-12 col-md-6 form-group">
+                <label for="exampleInputEmail">E-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="E-mail">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 form-group">
+                <label for="exampleInputPhone">Telefone</label>
+                <input type="tel" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp" placeholder="Telefone">
+              </div>
+              <div class="col-12 col-md-6 form-group">
+                <select class="form-control" id="exampleFormControlSelectEstado">
+                  <option>Estado</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-12 col-md-6 form-group">
+              <label for="exampleInputEmpresa">Empresa</label>
+              <input type="text" class="form-control" id="exampleInputEmpresa" aria-describedby="empresaHelp" placeholder="Empresa">
+            </div>
+            <div class="col-12 col-md-6 form-group">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Interesse</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
           </div>
-          <div class="text w-lg-75">
-            <p> 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Nascetur ridiculus mus mauris vitae ultricies. Bibendum ut 
-              tristique et egestas quis ipsum suspendisse ultrices gravida. 
-              Consectetur libero id faucibus nisl tincidunt eget nullam non.s
-            </p>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Mensagem"></textarea>
           </div>
-        </div>
-        <div class="contact-area col-lg-6 d-flex justify-content-center align-items-center">
-          <div class="form-contact d-flex justify-content-center align-items-center my-5">
-            
-          </div>
-        </div>      
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
       </div>
     </div>
-    <div class="image-contact d-flex justify-content-center align-items-center mt-4">
-      <div class="image-text text-center">
-        <p>Nossa localização?</p>
-        <h1><b>Anywhere</b></h1>
-        <p>nos orgulhamos de ser Remote First!</p>
-      </div>
-    </div>
-
-  <?php get_template_part('template-parts/flexible-content'); ?>
-  <?php get_template_part('template-parts/sections/newsletter'); ?>
+  </div>
+  </div>
 </main>
 <?php get_footer();
