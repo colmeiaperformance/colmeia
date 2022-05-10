@@ -3,10 +3,11 @@
   
   .container {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     @media (max-width: 991.98px) {
       padding-top: 30px;
-      padding-bottom: -30px;
+      padding-bottom: 0;
+      margin-bottom: -50px;
     }
   }
   
@@ -55,14 +56,20 @@
     }
   }
   
+  
   .card {
     border: 2px solid $color-white;
     padding: 35px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     @media (max-width: 991.98px) {
       margin-bottom: 100px;
       padding: 30px 40px;
+      height: auto;
     }
-    .card:nth-last-child(n) {
+    .card:nth-last-child() {
       @media (max-width: 991.98px) {
         margin-bottom: 50px;
       }
