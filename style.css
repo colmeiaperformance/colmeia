@@ -27,6 +27,26 @@ body {
           box-shadow: none !important;
 }
 
+form ::-webkit-input-placeholder {
+  color: #00A69D !important;
+  opacity: 1;
+}
+
+form :-ms-input-placeholder {
+  color: #00A69D !important;
+  opacity: 1;
+}
+
+form ::-ms-input-placeholder {
+  color: #00A69D !important;
+  opacity: 1;
+}
+
+form ::placeholder {
+  color: #00A69D !important;
+  opacity: 1;
+}
+
 a {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -2391,6 +2411,10 @@ footer .float-end a {
   }
 }
 
+.sec-blog .btn {
+  border: 1px solid #FF702E;
+}
+
 .sec-blog .btn:hover {
   background-color: transparent !important;
   background: transparent !important;
@@ -2833,6 +2857,26 @@ footer .float-end a {
 .newsletter form button:hover {
   background-color: transparent !important;
   border: 1px solid #FFFFFF;
+}
+
+.newsletter form ::-webkit-input-placeholder {
+  color: #00A69D;
+  opacity: 1;
+}
+
+.newsletter form :-ms-input-placeholder {
+  color: #00A69D;
+  opacity: 1;
+}
+
+.newsletter form ::-ms-input-placeholder {
+  color: #00A69D;
+  opacity: 1;
+}
+
+.newsletter form ::placeholder {
+  color: #00A69D;
+  opacity: 1;
 }
 
 .newsletter .container {

@@ -21,6 +21,13 @@ body {
   }
 }
 
+form {
+  ::placeholder { 
+    color: #00A69D!important;
+    opacity: 1;
+  }
+}
+
 a {
   transition: all .3s ease;
   text-decoration: none;

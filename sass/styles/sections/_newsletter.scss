@@ -3,9 +3,9 @@
   padding: 88px 0;
   @media (max-width: 991.98px) {
     padding: 20px;
-     background: $color-primary-blog;
+    background: $color-primary-blog;
   }
-   
+  
   form {
     @media (max-width: 991.98px) {
       width: 100%;
@@ -15,6 +15,10 @@
         background-color: transparent!important;
         border: 1px solid $color-white;
       }
+    }
+    ::placeholder { 
+      color: $color-primary-dark;
+      opacity: 1;
     }
   }
   .container {

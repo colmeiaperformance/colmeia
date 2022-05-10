@@ -34,6 +34,7 @@
     }
   }
   .btn {
+    border: 1px solid $color-secondary-dark;
     &:hover {
       background-color: transparent!important;
       background: transparent!important;
