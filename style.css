@@ -2237,7 +2237,14 @@ footer .float-end a {
 }
 
 .page-sobre {
-  background: #F9F9F9;
+  background: #F9F9F9 url("images/sobre/background.png") top center no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre {
+    background: #F9F9F9;
+  }
 }
 
 .page-sobre .container {
@@ -2336,6 +2343,7 @@ footer .float-end a {
 
 .page-sobre .col:nth-child(1) .box {
   margin: 0 auto;
+  margin-top: 60px;
 }
 
 @media (max-width: 999.98px) {
