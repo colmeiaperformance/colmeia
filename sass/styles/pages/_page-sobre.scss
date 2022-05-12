@@ -1,96 +1,149 @@
 .page-sobre{
-    background-color: $color-primary-dark;
+    background: $grey-sobre;
     .container{
+        padding-top: 90px;
         @media (max-width: 999.98px) {
-            padding-bottom: 136px;
-          }
-    }
-    .quem-somos{
-        h1{
-            margin-bottom: 2.5rem;
-            color: $color-white;
-        }
-        p{
-            color: $color-white;
-        }
-        .text{
-            padding-right: 1rem;
+            padding: 0;
+            max-width: 100%;
         }
     }
-    .card{
-        background-color: $color-breadcrumb;
-        width: 85%;
-        @media (max-width: 999.98px) {
-            width: 100%;
-          }
-        .testimonial{
-            font-size: 0.9rem;
-            background-color: $color-breadcrumb;
-            &:before {
-                content: "";
-                background: url("images/sobre/aspas-top.png") bottom left no-repeat;
-                position: absolute;
-                width: 30px;
-                height: 30px;
-                left: 58px;
-                top: 20px;                                 
+    .col {
+        margin-bottom: 161px;
+        @media (max-width: 999.98px)  {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 653px;
+            border-radius: 8px;
+            position: relative;
+            @media (max-width: 999.98px) {
+                border-radius: 0;
+                max-width: 100%;
+                display: none;
             }
-            &:after {
-                content: "";
-                background: url("images/sobre/aspas-bottom.png") bottom left no-repeat;
-                position: absolute;
-                width: 30px;
-                height: 30px;
-                right: 58px;
-                bottom: 90px;                                      
+        }
+        .box {
+            background: $color-white;
+            border-radius: 8px;
+            padding: 30px 30px 75px 30px;
+            position: relative;
+            margin-top: 60px;
+            text-align: right;
+            @media (max-width: 999.98px) {
+                text-align: left;
+                width: 95%;
+                margin: 0 auto;
+                padding: 20px;
             }
-            .testimonial-text{
-                color: $color-white;
+            h2 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 26px;
+                letter-spacing: 1.25px;
+                color: $color-primary-dark;
+                margin-bottom: 14px;
                 @media (max-width: 999.98px) {
-                    width: 100%;
-                  } 
-            }
-            .testimonial-autor{
-                background-color: $color-white;
-                padding-top: 3rem;
-                padding-bottom: 1rem; 
-                .autor-name{
-                    color: $color-primary-dark;
+                    margin-bottom: 8px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 18px;
                 }
-                .autor-office{
-                    position: relative;
-                    color: $color-breadcrumb;
-                    font-size: small;
-                    &:before {
-                        content: "";
-                        position: absolute;
-                        left: calc(50% - 25px);
-                        top: -8px;                       
-                        width: 50px;
-                        border-top: 2px solid $grey-pagination;
-                    }
-                }   
             }
-            .icon {
-                margin-top: calc(-180px);
-                img {
-                  object-fit: fill;
-                  border-radius: 100%;
-                  padding: 36px;
-                  border: 6px solid $color-white;
-                  background-color: $color-grey-dark;
-                  @media (max-width: 991.98px) {
-                    height: 80px;
-                    width: 80px;
-                  }
+            p {
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 31px;
+                color: $grey-menu-link;
+                @media (max-width: 999.98px) {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 21px;
+                    margin-bottom: 0;
                 }
-              }          
+            }
         }
     }
-    .image-sobre{
-        height: 350px;
-        @media (max-width: 991.98px) {
-            height: 200px;
+    .col {
+        &:nth-child(1) {
+            img {
+                @media (max-width: 999.98px) {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .box {
+                margin: 0 auto;
+                margin-top: -35px;
+                @media (max-width: 999.98px) {
+                    margin-top: -35px;
+                }
+            }
+        }
+    }
+    .col {
+        &:nth-child(even) {
+            .image {
+                order: 2;
+                margin-left: -110px;
+            }
+            .text {
+                order: 1;
+                .box {
+                    text-align: left;
+                    margin-left: 0;
+                    @media (max-width: 999.98px) {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+    
+    .quote {
+        background-color: $color-secondary-dark;
+        position: relative;
+        img {
+            opacity: 0.1;
+        }
+        .container {
+            position: absolute;
+            right: 0;
+            left: 0;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            bottom: 3rem;
+            z-index: 10;
+            @media (max-width: 999.98px) {
+                top: 0;
+                bottom: 0;
+                padding: 35px 0 40px;
+                padding-right: var(--bs-gutter-x,.75rem);
+                padding-left: var(--bs-gutter-x,.75rem);
+            }
+        }
+        p {
+            font-weight: 500;
+            font-size: 19.43px;
+            line-height: 30px;
+            color: $color-white;
+            margin-bottom: 20px;
+            @media (max-width: 999.98px) {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+        h4 {
+            font-weight: 700;
+            font-size: 19.43px;
+            line-height: 30px;
+            color: $color-white;
+            text-align: right;
+            @media (max-width: 999.98px) {
+                font-weight: 700;
+                font-size: 8.46015px;
+                line-height: 13px;
+            }
         }
     }
 }

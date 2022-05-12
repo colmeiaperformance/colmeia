@@ -843,7 +843,7 @@ footer .float-end a {
 
 .header .btn-outline-primary {
   background-color: transparent;
-  border-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
   color: #FFFFFF;
   font-weight: bold;
 }
@@ -1505,6 +1505,7 @@ footer .float-end a {
   width: 135.14px;
   height: 54.61px;
   background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
   font-weight: 700;
   font-size: 16.1787px;
   line-height: 20px;
@@ -2236,126 +2237,196 @@ footer .float-end a {
 }
 
 .page-sobre {
-  background-color: #00A69D;
+  background: #F9F9F9;
+}
+
+.page-sobre .container {
+  padding-top: 90px;
 }
 
 @media (max-width: 999.98px) {
   .page-sobre .container {
-    padding-bottom: 136px;
+    padding: 0;
+    max-width: 100%;
   }
 }
 
-.page-sobre .quem-somos h1 {
-  margin-bottom: 2.5rem;
-  color: #FFFFFF;
-}
-
-.page-sobre .quem-somos p {
-  color: #FFFFFF;
-}
-
-.page-sobre .quem-somos .text {
-  padding-right: 1rem;
-}
-
-.page-sobre .card {
-  background-color: #00D0C5;
-  width: 85%;
+.page-sobre .col {
+  margin-bottom: 161px;
 }
 
 @media (max-width: 999.98px) {
-  .page-sobre .card {
-    width: 100%;
+  .page-sobre .col {
+    margin-bottom: 20px;
   }
 }
 
-.page-sobre .card .testimonial {
-  font-size: 0.9rem;
-  background-color: #00D0C5;
-}
-
-.page-sobre .card .testimonial:before {
-  content: "";
-  background: url("images/sobre/aspas-top.png") bottom left no-repeat;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 58px;
-  top: 20px;
-}
-
-.page-sobre .card .testimonial:after {
-  content: "";
-  background: url("images/sobre/aspas-bottom.png") bottom left no-repeat;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  right: 58px;
-  bottom: 90px;
-}
-
-.page-sobre .card .testimonial .testimonial-text {
-  color: #FFFFFF;
-}
-
-@media (max-width: 999.98px) {
-  .page-sobre .card .testimonial .testimonial-text {
-    width: 100%;
-  }
-}
-
-.page-sobre .card .testimonial .testimonial-autor {
-  background-color: #FFFFFF;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-}
-
-.page-sobre .card .testimonial .testimonial-autor .autor-name {
-  color: #00A69D;
-}
-
-.page-sobre .card .testimonial .testimonial-autor .autor-office {
+.page-sobre .col img {
+  max-width: 653px;
+  border-radius: 8px;
   position: relative;
-  color: #00D0C5;
-  font-size: small;
 }
 
-.page-sobre .card .testimonial .testimonial-autor .autor-office:before {
-  content: "";
-  position: absolute;
-  left: calc(50% - 25px);
-  top: -8px;
-  width: 50px;
-  border-top: 2px solid #C4C4C4;
-}
-
-.page-sobre .card .testimonial .icon {
-  margin-top: calc(-180px);
-}
-
-.page-sobre .card .testimonial .icon img {
-  -o-object-fit: fill;
-     object-fit: fill;
-  border-radius: 100%;
-  padding: 36px;
-  border: 6px solid #FFFFFF;
-  background-color: #353C42;
-}
-
-@media (max-width: 991.98px) {
-  .page-sobre .card .testimonial .icon img {
-    height: 80px;
-    width: 80px;
+@media (max-width: 999.98px) {
+  .page-sobre .col img {
+    border-radius: 0;
+    max-width: 100%;
+    display: none;
   }
 }
 
-.page-sobre .image-sobre {
-  height: 350px;
+.page-sobre .col .box {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 30px 30px 75px 30px;
+  position: relative;
+  margin-top: 60px;
+  text-align: right;
 }
 
-@media (max-width: 991.98px) {
-  .page-sobre .image-sobre {
-    height: 200px;
+@media (max-width: 999.98px) {
+  .page-sobre .col .box {
+    text-align: left;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+.page-sobre .col .box h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1.25px;
+  color: #00A69D;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .col .box h2 {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+  }
+}
+
+.page-sobre .col .box p {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 31px;
+  color: #606060;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .col .box p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .col:nth-child(1) img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.page-sobre .col:nth-child(1) .box {
+  margin: 0 auto;
+  margin-top: -35px;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .col:nth-child(1) .box {
+    margin-top: -35px;
+  }
+}
+
+.page-sobre .col:nth-child(even) .image {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: -110px;
+}
+
+.page-sobre .col:nth-child(even) .text {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.page-sobre .col:nth-child(even) .text .box {
+  text-align: left;
+  margin-left: 0;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .col:nth-child(even) .text .box {
+    margin-left: auto;
+  }
+}
+
+.page-sobre .quote {
+  background-color: #FF702E;
+  position: relative;
+}
+
+.page-sobre .quote img {
+  opacity: 0.1;
+}
+
+.page-sobre .quote .container {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  bottom: 3rem;
+  z-index: 10;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .quote .container {
+    top: 0;
+    bottom: 0;
+    padding: 35px 0 40px;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+  }
+}
+
+.page-sobre .quote p {
+  font-weight: 500;
+  font-size: 19.43px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .quote p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.page-sobre .quote h4 {
+  font-weight: 700;
+  font-size: 19.43px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: right;
+}
+
+@media (max-width: 999.98px) {
+  .page-sobre .quote h4 {
+    font-weight: 700;
+    font-size: 8.46015px;
+    line-height: 13px;
   }
 }
 
@@ -2854,7 +2925,21 @@ footer .float-end a {
   }
 }
 
-.newsletter form button:hover {
+.newsletter form .form-control:hover {
+  border: 0;
+  outline: 0;
+}
+
+.newsletter form .form-control:focus {
+  border: 0;
+  outline: 0;
+}
+
+.newsletter form .btn {
+  border: 1px solid #FF702E;
+}
+
+.newsletter form .btn:hover {
   background-color: transparent !important;
   border: 1px solid #FFFFFF;
 }
