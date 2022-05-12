@@ -17,13 +17,13 @@
             margin-bottom: 20px;
         }
         img {
-            max-width: 653px;
+            width: 50vw;
             border-radius: 8px;
             position: relative;
             @media (max-width: 999.98px) {
                 border-radius: 0;
-                max-width: 100%;
                 display: none;
+                width: 100%;
             }
         }
         .box {
@@ -118,9 +118,8 @@
             bottom: 3rem;
             z-index: 10;
             @media (max-width: 999.98px) {
-                top: 0;
-                bottom: 0;
-                padding: 35px 0 40px;
+                top: 20px;
+                bottom: 20px;
                 padding-right: var(--bs-gutter-x,.75rem);
                 padding-left: var(--bs-gutter-x,.75rem);
             }
