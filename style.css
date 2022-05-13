@@ -1280,6 +1280,12 @@ footer .float-end a {
   display: flex;
 }
 
+.sidebar .topics .topics-list .cat-item:nth-child(5) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .sidebar .topics .topics-list .cat-item::before {
   content: '';
   background: url(images/sidebar/chevron-right.svg) center center no-repeat;

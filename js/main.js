@@ -24,15 +24,15 @@ jQuery(document).ready(function () {
 
 //Show more sidebar button
 const loadmore = document.querySelector('#loadmore');
-let currentItems = 4;
+let currentItems = 5;
 loadmore.addEventListener('click', (e) => {
   const elementList = [...document.querySelectorAll('.topics-list .cat-item')];
-  for (let i = currentItems; i < currentItems + 4; i++) {
+  for (let i = currentItems; i < currentItems + 5; i++) {
     if (elementList[i]) {
       elementList[i].style.display = 'flex';
     }
   }
-  currentItems += 4;
+  currentItems += 5;
 
   // Load more button will be hidden after list fully loaded
   if (currentItems >= elementList.length) {
