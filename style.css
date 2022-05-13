@@ -772,6 +772,16 @@ footer .float-end a {
   margin-bottom: 0;
 }
 
+.header--services h1 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.header--services p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .header h1 {
   font-weight: normal;
   font-size: 28px;
