@@ -8,6 +8,6 @@ Template Name: Página de Serviço
   <?php get_template_part('template-parts/headers/header-services'); ?>
 <main class="page-services">
   <?php get_template_part('template-parts/sections/services'); ?>
-  <?php get_template_part('template-parts/sections/newsletter'); ?>
+  <?php get_template_part('template-parts/sections/blog'); ?>
 </main>
 <?php get_footer();

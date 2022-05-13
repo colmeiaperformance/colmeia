@@ -2583,6 +2583,27 @@ footer .float-end a {
   }
 }
 
+.sec-blog .swiper-wrapper {
+  margin-bottom: 50px;
+}
+
+.sec-blog .swiper-pagination-bullet-active {
+  background: #00D0C5;
+}
+
+.sec-blog .swiper-pagination-bullet {
+  background: #FFFFFF;
+  height: 12px;
+  width: 12px;
+}
+
+@media (max-width: 991.98px) {
+  .sec-blog .swiper-pagination-bullet {
+    height: 6.15px;
+    width: 6.15px;
+  }
+}
+
 .cases {
   background-color: #353C42;
 }

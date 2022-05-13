@@ -1,8 +1,8 @@
 <section class="sec-blog">
   <div class="container">
     <h2>Blog</h2>
-      <div id="oquedizem" class="swiper swiperVisiteBlog background-blog" data-bs-ride="carousel">
-        <div class="swiper-wrapper">
+      <div id="oquedizem" class="swiper swiperVisiteBlog" data-bs-ride="carousel">
+        <div class="swiper-wrapper mb-4 pb-4 mb-lg-5 pb-lg-5">
           <div class="swiper-slide col-12 col-lg-6 background-blog">
             <div class="d-flex border">
               <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/images/cases/post-blog.png" alt="Metodologia" />
@@ -17,7 +17,21 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide col-12 col-lg-6 d-none d-lg-block background-blog">
+          <div class="swiper-slide col-12 col-lg-6 background-blog">
+            <div class="d-flex border">
+              <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/images/cases/post-blog.png" alt="Metodologia" />
+              <div class="content p-3 text-white">
+                <p><strong>Ferramentas de Automação Titulo maior aqui</strong></p>
+                <p>As ferramentas de automação chegaram para ele atender a nova realidade do marketing personalizado...</p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="btn text-white background-mustard-dark rounded-0">
+                  Saiba mais
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-12 col-lg-6 background-blog">
             <div class="d-flex border">
               <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/images/cases/post-blog.png" alt="Metodologia" />
               <div class="content p-3 text-white">
@@ -32,8 +46,9 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-    <div class="row mt-5 border py-4 m-1 background-blog">
+    <div class="row mt-2 mt-lg-5 border py-4 m-1 background-blog">
       <form class="d-flex justify-content-center align-items-center flex-column flex-lg-row">
         <div class="text-center col-12 col-lg-4 text-white">
           <h3>Assine a nossa newsletter</h3>

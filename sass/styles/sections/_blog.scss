@@ -94,4 +94,19 @@
       margin-bottom: 30px;
     }
   }
+  .swiper-wrapper {
+    margin-bottom: 50px;
+  }
+  .swiper-pagination-bullet-active {
+    background: $color-breadcrumb;
+  }
+  .swiper-pagination-bullet {
+    background: $color-white;
+    height: 12px;
+    width: 12px;
+    @media (max-width: 991.98px) {
+      height: 6.15px;
+      width: 6.15px;
+    }
+  }
 }
