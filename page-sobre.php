@@ -7,10 +7,10 @@
     <div class="row">
       <div class="col col-12">
         <div class="row d-flex">
-          <div class="col-12 col-lg-6 image">        
+          <div class="col-12 col-lg-6 image order-1">        
             <img src=<?php echo get_template_directory_uri() . '/images/sobre/sobre.png' ?> alt="Sobre">            
            </div>
-           <div class="col-12 col-lg-6 text">
+           <div class="col-12 col-lg-6 text order-2">
               <div class="box">
                 <h2>Quem somos?</h2>
                 <p>Com 7 anos de experiência, <Strong>a Colmeia</Strong> atende empresas <Strong>nacionais</Strong> e <strong>multinacionais</strong> de pequeno e grande porte. Também atuamos como parceiros de <Strong>agências de publicidade e comunicação</Strong> oferecendo performance e criatividade com foco em alavancar resultados.</p>
@@ -21,10 +21,10 @@
 
       <div class="col col-12">
         <div class="row d-flex">
-          <div class="col-12 col-lg-6 image">        
+          <div class="col-12 col-lg-6 image order-2">        
             <img src=<?php echo get_template_directory_uri() . '/images/sobre/sobre.png' ?> alt="Sobre">            
            </div>
-           <div class="col-12 col-lg-6 text">
+           <div class="col-12 col-lg-6 text order-1">
               <div class="box">
                 <p>Juntar os parceiros <strog>certos</strog> e ter uma <strong>visão integrada</strong> do ambiente digital, que potencializa a criatividade e aprofunda o conhecimento, é a <strong>nova fórmula do sucesso</strong> para uma gestão de marketing <stromg>eficiente</stromg>, sem <Stromg>desperdício</Stromg> de forças e recursos financeiros. É aí que nossa expertise se encaixa.</p>
               </div>
@@ -34,10 +34,10 @@
 
       <div class="col col-12">
         <div class="row d-flex">
-          <div class="col-12 col-lg-6 image">        
+          <div class="col-12 col-lg-6 image order-1">        
             <img src=<?php echo get_template_directory_uri() . '/images/sobre/sobre.png' ?> alt="Sobre">            
            </div>
-           <div class="col-12 col-lg-6 text">
+           <div class="col-12 col-lg-6 text order-2">
               <div class="box">
                 <p>Nossa aposta é em colaboração e complementaridade: um <strong>ecossistema</strong> que junta diferentes expertises para oferecer um portfólio <strong>amplo</strong> e <strong>efetivo</strong>, com a profundidade de conhecimento que cada área exige, tendo o cliente como centro das soluções oferecidas.</p>
               </div>
