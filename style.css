@@ -2295,6 +2295,7 @@ footer .float-end a {
   position: relative;
   margin-top: 60px;
   text-align: right;
+  z-index: 1111;
 }
 
 @media (max-width: 999.98px) {
@@ -2424,6 +2425,7 @@ footer .float-end a {
   position: relative;
   margin-top: 60px;
   text-align: right;
+  z-index: 1111;
 }
 
 @media (max-width: 999.98px) {
