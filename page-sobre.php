@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Sobre
+*/
+?>  
 <?php 
 $imagem_mobile_qs = get_field('imagem_mobile_qs');
 $card_imagem_qs = get_field('card_imagem_qs');
@@ -55,8 +60,7 @@ $citacao_qs = get_field('citacao_qs');
 
   <?php if( have_rows('citacao_qs') ): ?>
   <?php while( have_rows('citacao_qs') ): the_row(); ?>
-  <div class="quote">
-    <img src=<?php echo get_template_directory_uri() . '/images/sobre/sobre-quote.png' ?> alt="Sobre">
+  <div class="quote" style="background: url('<?php echo get_template_directory_uri() . '/images/sobre/sobre-quote.png' ?>') center center no-repeat;background-size: cover;">
     <div class="container">
       <?php if ($citacao_qs['texto_da_citacao']) { echo $citacao_qs['texto_da_citacao']; } ?>
       <h4><?php if ($citacao_qs['autor']) { echo $citacao_qs['autor']; } ?> <?php if ($citacao_qs['cargo']) { echo '- ' . $citacao_qs['cargo']; } ?></h4>
