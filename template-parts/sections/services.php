@@ -1,63 +1,40 @@
 <?php
 $titulo_serv = get_field('titulo_serv', 'option' );            
-$item_serv = get_field('item_serv', 'option' );   
+$item_serv = get_field('item_serv', 'option' );
+$cor_item_serv = get_field('cor_item_serv');
 $page_address = get_permalink();
 global $post; 
   $slug_name = $post->post_name;
 ?>
 <style>
-  .card {
-    border-left: solid 4px #71C3BD;
-    border-right: solid 4px #71C3BD;
-}
-  .card::before {
-      border-top: solid 5.6569px #71C3BD;
-      border-right: solid 5.6569px #71C3BD;
-  }
-  .card::after {
-      border-bottom: solid 5.6569px #71C3BD;
-      border-left: solid 5.6569px #71C3BD;
-  }
-  .card a {
-    color: #71C3BD;
-  }
-  
-  .card:hover {
-     background-color: #71C3BD;
-  }
-
-  .card:hover  a {
-    color: #fff;
-  }
-
   .card.active {
-    background: red;
-    border-left: solid 4px red;
-    border-right: solid 4px red;
+    background: <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
+    border-left: solid 4px <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
+    border-right: solid 4px <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
   }
   .card.active a {
     color: #fff;
   }
   .card.active::before {
-    border-top: solid 5.6569px red;
-    border-right: solid 5.6569px red;
+    border-top: solid 5.6569px <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
+    border-right: solid 5.6569px <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
   }
   .card.active::after {
-    border-bottom: solid 5.6569px red;
-    border-left: solid 5.6569px red;
+    border-bottom: solid 5.6569px <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
+    border-left: solid 5.6569px <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
   }
   .card.active:hover {
-    background: red;
-    border-left: solid 4px red;
-    border-right: solid 4px red;
+    background: <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
+    border-left: solid 4px <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
+    border-right: solid 4px <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
   }
   .card.active:hover .card.active::before {
-    border-top: solid 5.6569px red;
-    border-right: solid 5.6569px red;
+    border-top: solid 5.6569px <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
+    border-right: solid 5.6569px <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
   }
   .card.active:hover .card.active::after {
-    border-bottom: solid 5.6569px red;
-    border-left: solid 5.6569px red;
+    border-bottom: solid 5.6569px <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
+    border-left: solid 5.6569px <?php if ($cor_item_serv) { echo $cor_item_serv; } ?>;
   }
 
 </style>
@@ -75,7 +52,7 @@ global $post;
           <?php if ($is['area_item_serv']) { echo $is['area_item_serv']; }; ?>
         </a>
       </div>
-      
+
     <?php } ?>
     
     </div>
