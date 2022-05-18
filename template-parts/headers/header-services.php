@@ -9,7 +9,6 @@ $b = 0;
        <nav aria-label="breadcrumb">
          <ol class="breadcrumb">
            <li class="breadcrumb-item"><a href="/">Home</a></li>
-           <li class="breadcrumb-item"><a href="/servicos" rel="category tag">Serviços</a></li>
            <li class="breadcrumb-item"><?php the_title(); ?></li>
         </ol>
       </nav>
