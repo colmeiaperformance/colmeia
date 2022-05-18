@@ -4,7 +4,7 @@ $menu_index = get_field('menu_index', 'option');
 ?>
 <nav class="navbar navbar-expand-lg bg-white">
   <div class="container">
-    <a class="navbar-brand" href="<?php home_url(); ?>">
+    <a class="navbar-brand" href="<?php echo home_url(); ?>">
       <img src=<?php if($logo_h) { echo $logo_h; } else { echo get_template_directory_uri() . '/images/logo.png'; } ?>
         alt="Logotipo Colmeia Performance" width="194px" height="auto">
     </a>
