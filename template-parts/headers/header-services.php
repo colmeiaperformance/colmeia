@@ -8,7 +8,7 @@ $b = 0;
     <div class="container">
        <nav aria-label="breadcrumb">
          <ol class="breadcrumb">
-           <li class="breadcrumb-item"><a href="<?php echo home_url(); ?>">>Home</a></li>
+           <li class="breadcrumb-item"><a href="<?php echo home_url(); ?>">Home</a></li>
            <li class="breadcrumb-item"><?php the_title(); ?></li>
         </ol>
       </nav>
