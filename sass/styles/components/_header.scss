@@ -1,12 +1,12 @@
 .header {
-	background-color:	$color-primary-dark;
+	background-color: $color-primary-dark;
 	padding: 65px 0;
-	@media (max-width: 991.98px) { 
+	@media (max-width: 991.98px) {
 		padding: 18px 0;
 	}
 	.row {
 		padding-bottom: 60px;
-		@media (max-width: 991.98px)  { 
+		@media (max-width: 991.98px) {
 			padding-bottom: 15px;
 		}
 	}
@@ -19,12 +19,12 @@
 		}
 		h1 {
 			font-weight: 700;
-			font-size: 81.57px;
-			line-height: 99px;
+			font-size: 3.75rem;
+			line-height: 6.25rem;
 			color: $color-white;
 			margin-bottom: 0;
 			@media (max-width: 991.98px) {
-				font-size: 	calc(1.375rem + 1.5vw);
+				font-size: calc(1.375rem + 1.5vw);
 				line-height: 1.2;
 			}
 		}
@@ -46,7 +46,7 @@
 			}
 			.agencias {
 				&::before {
-					content: '';
+					content: "";
 					position: absolute;
 					width: 0;
 					height: 0;
@@ -71,9 +71,9 @@
 				}
 				h3 {
 					&::after {
-						content: '';
+						content: "";
 						position: absolute;
-						background: url('images/header/seta.png') top center no-repeat;
+						background: url("images/header/seta.png") top center no-repeat;
 						width: 23.8px;
 						height: 65.48px;
 						margin-left: 15px;
@@ -91,7 +91,7 @@
 			.clientes {
 				position: relative;
 				&::after {
-					content: '';
+					content: "";
 					position: absolute;
 					width: 0;
 					height: 0;
@@ -114,9 +114,9 @@
 				h3 {
 					margin-left: 45px;
 					&::before {
-						content: '';
+						content: "";
 						position: absolute;
-						background: url('images/header/seta-2.png') top center no-repeat;
+						background: url("images/header/seta-2.png") top center no-repeat;
 						width: 23.8px;
 						height: 65.48px;
 						margin-left: -40px;
@@ -143,27 +143,27 @@
 				h3 {
 					color: $color-white;
 					font-weight: 700;
-					font-size: 24px;
-					line-height: 29px;
+					font-size: 1.5rem;
+					line-height: 1.85rem;
 					position: relative;
 					margin-bottom: 0;
 					@media (max-width: 991.98px) {
 						font-weight: 700;
-						font-size: 13px;
-						line-height: 16px;
+						font-size: 1.85rem;
+						line-height: 1rem;
 					}
 				}
 				p {
 					margin-bottom: 0;
 					color: $color-white;
 					font-weight: 400;
-					font-size: 15px;
-					line-height: 18px;
+					font-size: 0.95rem;
+					line-height: 1.125rem;
 					text-align: center;
 					@media (max-width: 991.98px) {
 						font-weight: 400;
-						font-size: 11px;
-						line-height: 13px;
+						font-size: 0.7rem;
+						line-height: 0.85rem;
 						display: flex;
 						align-items: center;
 					}
@@ -172,7 +172,7 @@
 		}
 		.carousel-indicators {
 			margin-bottom: 15px !important;
-			height: 15px!important;
+			height: 15px !important;
 			width: 95%;
 			max-width: 1140px;
 			margin: 0 auto;
@@ -180,7 +180,7 @@
 				margin-bottom: 0;
 			}
 			&::before {
-				content: '';
+				content: "";
 				position: absolute;
 				height: 3px;
 				width: 45%;
@@ -189,7 +189,7 @@
 				left: 0;
 			}
 			&::after {
-				content: '';
+				content: "";
 				position: absolute;
 				right: 0;
 				height: 3px;
@@ -199,23 +199,24 @@
 			}
 		}
 		.quote {
-			padding: 37px 13px; 
+			padding: 37px 13px;
 			border: 1px solid $color-white;
 			position: relative;
 			margin: 0 20px;
 			font-weight: 400;
-			font-size: 23px;
-			line-height: 23px;
+			font-size: 1.45rem;
+			line-height: 1.45rem;
 			text-align: center;
 			color: $color-white;
 			margin-bottom: 0;
 			@media (max-width: 991.98px) {
-				padding: 13px 20px;	font-weight: 500;
-				font-size: 13px;
-				line-height: 16px;
+				padding: 13px 20px;
+				font-weight: 500;
+				font-size: 0.85rem;
+				line-height: 1rem;
 			}
 			&:before {
-				content: '';
+				content: "";
 				border-left: solid 30px $color-secondary-dark;
 				border-bottom: solid 22.5px transparent;
 				border-top: solid 22.5px transparent;
@@ -231,7 +232,7 @@
 				}
 			}
 			&::after {
-				content: '';
+				content: "";
 				border-right: solid 30px $color-secondary-dark;
 				border-bottom: solid 22.5px transparent;
 				border-top: solid 22.5px transparent;
@@ -249,6 +250,29 @@
 				}
 			}
 		}
+		h1 {
+			font-weight: normal;
+			font-size: 1.75rem;
+			line-height: 2.125rem;
+			color: $color-white;
+			margin-bottom: 20px;
+			@media (max-width: 991.98px) {
+				font-size: 1rem;
+				line-height: 1.25rem;
+			}
+		}
+
+		p {
+			font-weight: normal;
+			font-size: 1rem;
+			line-height: 1.25rem;
+			color: $color-white;
+			margin-bottom: 25px;
+			@media (max-width: 991.98px) {
+				font-size: 0.7rem;
+				line-height: 0.85rem;
+			}
+		}
 	}
 	&--single {
 		background: $color-primary-dark;
@@ -259,13 +283,13 @@
 		}
 		h1 {
 			font-weight: 700;
-			font-size: 35.6182px;
-			line-height: 43px;
+			font-size: 2.23rem;
+			line-height: 2.6875rem;
 			color: $color-white;
 			margin-bottom: 25px;
 			text-align: left;
 			@media (max-width: 991.98px) {
-				font-size: 	calc(1.375rem + 1.5vw);
+				font-size: calc(1.375rem + 1.5vw);
 				line-height: 1.2;
 			}
 		}
@@ -281,27 +305,28 @@
 		h4 {
 			margin-right: 15px;
 		}
-		h4, p {
+		h4,
+		p {
 			font-weight: 500;
-			font-size: 10.91px;
-			line-height: 13px;
+			font-size: 0.69rem;
+			line-height: 0.8125rem;
 			color: $color-white;
 			margin-bottom: 0;
 			position: relative;
-		} 
-		p{
+		}
+		p {
 			display: flex;
 			align-items: center;
 			a {
 				position: relative;
 				margin-left: 20px;
 			}
-			&::before{
+			&::before {
 				border-radius: 50%;
 				width: 7px;
 				height: 7px;
 				background-color: $color-white;
-				content: ''; 
+				content: "";
 				position: absolute;
 			}
 		}
@@ -313,10 +338,10 @@
 				color: $color-white;
 			}
 		}
-	}	
+	}
 	.agencia {
 		margin-top: 60px;
-		@media (max-width: 991.98px)  {
+		@media (max-width: 991.98px) {
 			margin-top: 15px;
 		}
 	}
@@ -344,47 +369,30 @@
 		}
 	}
 	&--services {
-		.carousel-indicators{
+		.carousel-indicators {
 			margin-bottom: 0;
 		}
 		h1 {
-			font-size: 30px;
-			line-height: 36px;
+			font-size: 3rem;
+			line-height: 3.6875rem;
+			font-weight: 700;
 		}
 		p {
-			font-size: 16px;
-			line-height: 20px;
+			font-size: 1.375rem;
+			line-height: 1.75rem;
+			font-weight: 500;
+			strong {
+				font-weight: 800;
+			}
 		}
 	}
-	h1 {
-		font-weight: normal;
-		font-size: 28px;
-		line-height: 34px;
-		color: $color-white;
-		margin-bottom: 20px;
-		@media (max-width: 991.98px) { 
-			font-size: 16px;
-			line-height: 20px;
-		}
-	}
-	
-	p {
-		font-weight: normal;
-		font-size: 14px;
-		line-height: 17px;
-		color: $color-white;
-		margin-bottom: 25px;
-		@media (max-width: 991.98px) { 
-			font-size: 11px;
-			line-height: 13px;
-		}
-	}
+
 	.btn {
 		border-radius: 0;
 		padding: 15px 34px;
 		line-height: 17px;
 		font-size: 14px;
-		@media (max-width: 991.98px) { 
+		@media (max-width: 991.98px) {
 			padding: 11px 25px;
 			font-size: 12px;
 			line-height: 15px;
@@ -415,7 +423,7 @@
 		color: $color-white;
 		font-weight: bold;
 		&:hover {
-			background-color:$color-secondary-dark;
+			background-color: $color-secondary-dark;
 			color: $color-white;
 			box-shadow: 0;
 			border-color: $color-secondary-dark;
@@ -429,7 +437,7 @@
 	}
 	img {
 		max-width: 492px;
-		@media (max-width: 991.98px) { 
+		@media (max-width: 991.98px) {
 			margin-bottom: 20px;
 			padding: 0 15px;
 		}
