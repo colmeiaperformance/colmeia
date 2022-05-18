@@ -401,14 +401,14 @@
 	.btn-primary {
 		color: $color-primary-dark;
 		background: $color-white;
-		border-color: $color-white;
+		border: 1px solid $color-white;
 		font-weight: bold;
 		margin-right: 10px;
 		&:hover {
 			background-color: $color-secondary-dark;
 			color: $color-white;
 			box-shadow: 0;
-			border-color: $color-secondary-dark;
+			border: 1px solid $color-secondary-dark;
 		}
 		&:focus {
 			background-color: $color-secondary-dark;
@@ -426,7 +426,7 @@
 			background-color: $color-secondary-dark;
 			color: $color-white;
 			box-shadow: 0;
-			border-color: $color-secondary-dark;
+			border: 1px solid $color-secondary-dark;
 		}
 		&:focus {
 			background-color: $color-secondary-dark;

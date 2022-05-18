@@ -837,7 +837,7 @@ footer .float-end a {
 .header .btn-primary {
   color: #00A69D;
   background: #FFFFFF;
-  border-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
   font-weight: bold;
   margin-right: 10px;
 }
@@ -847,7 +847,7 @@ footer .float-end a {
   color: #FFFFFF;
   -webkit-box-shadow: 0;
           box-shadow: 0;
-  border-color: #FF702E;
+  border: 1px solid #FF702E;
 }
 
 .header .btn-primary:focus {
@@ -870,7 +870,7 @@ footer .float-end a {
   color: #FFFFFF;
   -webkit-box-shadow: 0;
           box-shadow: 0;
-  border-color: #FF702E;
+  border: 1px solid #FF702E;
 }
 
 .header .btn-outline-primary:focus {
