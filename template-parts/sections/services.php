@@ -39,7 +39,7 @@ global $post;
 
 </style>
 
-<section class="services">
+<section id="services" class="services">
   <div class="container py-5"><h2 class="m-0"><?php if ($titulo_serv) { echo $titulo_serv; } ?></h2></div>
   <div class="container pt-5">
     <div class="row align-items-center justify-content-center">
