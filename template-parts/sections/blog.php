@@ -11,9 +11,12 @@
 
         <div class="swiper-slide col-12 col-lg-6 background-blog">
           <div class="d-flex border">
-            <img class="img-fluid" src="<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); } ?>"
-              alt="Metodologia" />
-            <div class="content p-3 text-white">
+            <a class="col-4" href="<?php the_permalink(); ?>">
+            <div class="col-12 w-100 h-100" style="background:url('<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); } ?>') center no-repeat; background-size:cover;">
+            </div>
+              
+            </a>
+            <div class="col-8 content p-3 text-white">
               <p><strong><?php the_title(); ?></strong></p>
               <p><?php the_excerpt(); ?></p>
               <div class="d-flex justify-content-end">
@@ -28,7 +31,7 @@
         <?php endwhile; 
         wp_reset_postdata();
         ?>
-       
+
 
       </div>
       <div class="swiper-pagination"></div>
