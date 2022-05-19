@@ -11,12 +11,12 @@
 
         <div class="swiper-slide col-12 col-lg-6 background-blog">
           <div class="d-flex border">
-            <a class="col-4" href="<?php the_permalink(); ?>">
+            <a class="col-12 col-md-4" href="<?php the_permalink(); ?>">
             <div class="col-12 w-100 h-100" style="background:url('<?php if ( has_post_thumbnail() ) { echo the_post_thumbnail_url(); } ?>') center no-repeat; background-size:cover;">
             </div>
               
             </a>
-            <div class="col-8 content p-3 text-white">
+            <div class="col-12 col-md-8 content p-3 text-white">
               <p><strong><?php the_title(); ?></strong></p>
               <p><?php the_excerpt(); ?></p>
               <div class="d-flex justify-content-end">
