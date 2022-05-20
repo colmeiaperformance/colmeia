@@ -809,10 +809,24 @@ footer .float-end a {
   font-weight: 700;
 }
 
+@media (max-width: 991.98px) {
+  .header--services h1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
 .header--services p {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 500;
+}
+
+@media (max-width: 991.98px) {
+  .header--services p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .header--services p strong {

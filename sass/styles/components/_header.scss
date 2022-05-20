@@ -261,7 +261,7 @@
 				line-height: 1.25rem;
 			}
 		}
-
+		
 		p {
 			font-weight: normal;
 			font-size: 1rem;
@@ -376,17 +376,25 @@
 			font-size: 3rem;
 			line-height: 3.6875rem;
 			font-weight: 700;
+			@media (max-width: 991.98px) {
+				font-size: 18px;
+				line-height: 22px;
+			}
 		}
 		p {
 			font-size: 1.25rem;
 			line-height: 1.75rem;
 			font-weight: 500;
+			@media (max-width: 991.98px) {
+				font-size: 14px;
+				line-height: 20px;
+			}
 			strong {
 				font-weight: 800;
 			}
 		}
 	}
-
+	
 	.btn {
 		border-radius: 0;
 		padding: 15px 34px;
