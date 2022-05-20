@@ -2670,15 +2670,7 @@ footer .float-end a {
 .cases .card {
   border: 2px solid #FFFFFF;
   padding: 35px 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
   height: 100%;
 }
 
@@ -2703,6 +2695,7 @@ footer .float-end a {
   letter-spacing: -0.015em;
   color: #FFFFFF;
   margin-bottom: 30px;
+  margin-top: 65px;
 }
 
 @media (max-width: 991.98px) {
@@ -2711,6 +2704,7 @@ footer .float-end a {
     line-height: 22px;
     letter-spacing: -0.015em;
     margin-bottom: 25px;
+    margin-top: 45px;
   }
 }
 
@@ -2733,7 +2727,17 @@ footer .float-end a {
 
 .cases .card .icon {
   margin-top: calc(-110px);
-  margin-bottom: 30px;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 140px / 2);
+}
+
+@media (max-width: 991.98px) {
+  .cases .card .icon {
+    margin-top: calc(-100px);
+  }
 }
 
 .cases .card .icon img {
@@ -2743,12 +2747,15 @@ footer .float-end a {
   padding: 20px;
   border: 2px solid #FFFFFF;
   background-color: #353C42;
+  max-width: 145px;
+  max-height: 145px;
+  border-radius: 50%;
 }
 
 @media (max-width: 991.98px) {
   .cases .card .icon img {
-    height: 120px;
-    width: 120px;
+    height: 125px;
+    width: 125px;
   }
 }
 

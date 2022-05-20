@@ -5,14 +5,14 @@ $item_cases = get_sub_field('item_cases');
 <section class="cases">
   <div class="container">
     <h2><?php if ($titulo_cases) { echo $titulo_cases; } ?></h2>
-    <div class="row row-cols-1 row-cols-lg-3 gy-3 gy-lg-0 gx-5 text-center">
+    <div class="row text-center">
 
     <?php foreach ($item_cases as $ic) { ?>
     
-      <div class="col">
+      <div class="col-12 col-lg-4 px-3">
         <div class="card rounded-0 bg-transparent text-white">
-            <div class="icon">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/cases/case.png" alt="Diagnóstico">
+            <div class="icon d-inline">
+                <img src="https://picsum.photos/id/237/400/400" alt="Diagnóstico">
             </div>
             <h4><?php if ($ic['titulo_item_cases']) { echo $ic['titulo_item_cases']; } ?></h4>
             <div class="mb-3">
