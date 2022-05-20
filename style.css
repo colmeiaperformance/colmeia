@@ -1675,57 +1675,75 @@ footer .float-end a {
   }
 }
 
-.page-blog .blog-spotlight .carousel-control-prev-icon {
+.page-blog .blog-spotlight .swiper-button-prev {
+  left: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog .blog-spotlight .swiper-button-prev {
+    left: 12px;
+  }
+}
+
+.page-blog .blog-spotlight .swiper-button-prev:after {
   background: url("images/blog/prev.png") top center no-repeat;
   width: 26px;
   height: 43px;
+  content: '';
 }
 
 @media (max-width: 991.98px) {
-  .page-blog .blog-spotlight .carousel-control-prev-icon {
-    display: none;
+  .page-blog .blog-spotlight .swiper-button-prev:after {
+    background: url("images/blog/prev-m.png") top center no-repeat;
+    width: 7.5px;
+    height: 15px;
+    background-size: cover;
   }
 }
 
-.page-blog .blog-spotlight .carousel-control-next-icon {
+.page-blog .blog-spotlight .swiper-button-next {
+  right: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .page-blog .blog-spotlight .swiper-button-next {
+    right: 12px;
+  }
+}
+
+.page-blog .blog-spotlight .swiper-button-next:after {
   background: url("images/blog/next.png") top center no-repeat;
   width: 26px;
   height: 43px;
+  content: '';
 }
 
 @media (max-width: 991.98px) {
-  .page-blog .blog-spotlight .carousel-control-next-icon {
-    display: none;
+  .page-blog .blog-spotlight .swiper-button-next:after {
+    background: url("images/blog/next-m.png") top center no-repeat;
+    width: 7.5px;
+    height: 15px;
+    background-size: cover;
   }
 }
 
-.page-blog .blog-spotlight .carousel-indicators {
-  position: relative;
-  margin-top: 25px;
-  position: relative;
-}
-
-.page-blog .blog-spotlight .carousel-indicators [data-bs-target] {
-  width: 12.86px;
-  height: 12.86px;
-  border-radius: 50%;
-  margin-right: 11px;
-  margin-left: 11px;
+.page-blog .blog-spotlight .swiper-pagination-bullet {
   background-color: #C4C4C4;
   opacity: 1;
+  width: 13px;
+  height: 13px;
+  margin: 0 11px;
 }
 
 @media (max-width: 991.98px) {
-  .page-blog .blog-spotlight .carousel-indicators [data-bs-target] {
-    width: 7px;
-    height: 7px;
-    margin-right: 8px;
-    margin-left: 8px;
+  .page-blog .blog-spotlight .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin: 0 4.5px;
   }
 }
 
-.page-blog .blog-spotlight .carousel-indicators .active {
-  opacity: 1;
+.page-blog .blog-spotlight .swiper-pagination-bullet-active {
   background-color: #00A69D;
 }
 
