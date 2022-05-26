@@ -1947,6 +1947,42 @@ footer .float-end a {
   }
 }
 
+.page-contact form ::-webkit-input-placeholder {
+  color: #00A69D;
+  opacity: 1;
+}
+
+.page-contact form :-ms-input-placeholder {
+  color: #00A69D;
+  opacity: 1;
+}
+
+.page-contact form ::-ms-input-placeholder {
+  color: #00A69D;
+  opacity: 1;
+}
+
+.page-contact form ::placeholder {
+  color: #00A69D;
+  opacity: 1;
+}
+
+.page-contact form #_form_9_ ._form_element * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-contact form #_form_9_ ._form_element * input {
+  margin-right: 10px;
+}
+
 .single article .post-content {
   border-bottom: 1px solid #E5E5E5;
   margin-bottom: 10px;
@@ -2710,8 +2746,8 @@ footer .float-end a {
 
 .cases .card p {
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.375rem;
   letter-spacing: -0.015em;
   margin-bottom: 0px;
   color: #FFFFFF;
