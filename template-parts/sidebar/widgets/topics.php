@@ -1,9 +1,10 @@
   <div class="topics">
-    <h4>Explore Topics</h4>
+    <h4>Editorias</h4>
     <ul class="topics-list">
       <?php wp_list_categories( array(
         'title_li'    => '',
-        'hide_empty'   => true
+        'hide_empty'  => true,
+        'exclude'     => array( 1 )
         ) );
         ?>
     </ul>
