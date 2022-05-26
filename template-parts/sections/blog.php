@@ -1,3 +1,6 @@
+<?php
+$codigo_do_formulario_news = get_field('codigo_do_formulario_news', 'option');
+?>
 <section class="sec-blog">
   <div class="container">
     <h2>Blog</h2>
@@ -37,17 +40,15 @@
       <div class="swiper-pagination"></div>
     </div>
 
+    <?php if ($codigo_do_formulario_news) { ?>
     <div class="row mt-2 mt-lg-5 border py-4 m-1 background-blog">
-      <form class="d-flex justify-content-center align-items-center flex-column flex-lg-row">
-        <div class="text-center col-12 col-lg-4 text-white">
-          <h3>Assine a nossa newsletter</h3>
-        </div>
-        <div class="col-12 col-lg-6 px-3">
-          <input type="email" placeholder="E-mail" class="form-control rounded-0 color-primary-dark">
-        </div>
-        <button type="submit" class="btn mt-3 mt-lg-0 rounded-0 text-white background-mustard-dark">Cadastrar</button>
-      </form>
+
+    <?php echo $codigo_do_formulario_news; ?>
+        
+      
     </div>
+    <?php } ?>
+
   </div>
   <script>
   jQuery(document).ready(function() {
