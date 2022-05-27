@@ -86,10 +86,9 @@
   }
   .post-footer {
     display: flex;
-    justify-content: left;
-    align-items: baseline;
+    align-items: end;
+    justify-content: end;
     .social {
-      width: 190px;
       a {
         color: $color-secondary-dark;
         font-size: 22px;
