@@ -1,13 +1,21 @@
   <div class="most-popular">
     <h4 class="underline">Artigos mais lidos</h4>
-    <ul class="list-group">
-    <?php 
-      $popularpost = new WP_Query( array( 'posts_per_page' => 3, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
-      while ( $popularpost->have_posts() ) : $popularpost->the_post();
-      the_title();
-      endwhile;
-    ?>
-     </ul>
+      <?php
+        query_posts('meta_key=post_views_count&posts_per_page=5&orderby=meta_value_num&order=DESC');
+        if (have_posts()) : while (have_posts()) : the_post();
+      ?>
+        <ul class="list-group">
+          <li class="list-group-item position-relative"> 
+            <h3><a href="<?php the_permalink(); ?>" class="stretched-link"><?php the_title();?></a></h3>
+            <p><?php the_excerpt(); ?></p>
+            <span>Por: <?php the_author(); ?> - <?php the_time('d') ?> de <?php the_time('F') ?> de <?php the_time('Y') ?></span>
+          </li>
+        </ul>
+      <?php
+      endwhile; endif;
+      wp_reset_query();
+      ?>
+  
 
     <!-- <ul class="list-group">
       <li class="list-group-item position-relative"> 
