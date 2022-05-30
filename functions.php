@@ -377,3 +377,4 @@ wp_localize_script( 'twentyfifteen-script', 'ajax_posts', array(
     'ajaxurl' => admin_url( 'admin-ajax.php' ),
     'noposts' => __('No older posts found', 'twentyfifteen'),
 ));
+
