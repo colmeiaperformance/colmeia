@@ -17,10 +17,33 @@
         <span>Por: Admin - 01 de Março de 2022</span>
       </li>
     </ul>  -->
+    <?php
+$popularpostbyview = array(
+    'meta_key'  => 'wp_post_views_count', // set custom meta key
+    'orderby'    => 'meta_value_num',
+    'order'      => 'DESC',
+    'posts_per_page' => 4
+);
+ 
+// Invoke the query
+$prime_posts = new WP_Query( $popularpostbyview );
+ 
+if ( $prime_posts->have_posts() ) :?>
     <ul>
-	<?php $popular = new WP_Query(array('posts_per_page'=>7, 'meta_key'=>'popular_posts', 'orderby'=>'meta_value_num', 'order'=>'DESC'));
-	while ($popular->have_posts()) : $popular->the_post(); ?>
-	<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-	<?php endwhile; wp_reset_postdata(); ?>
-</ul>
+        <?php
+            while ( $prime_posts->have_posts() ) : $prime_posts->the_post();
+            ?>
+                <li>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                      <?php the_title(); ?>
+                    </a>
+                </li>
+            <?php
+            endwhile;
+            wp_reset_postdata();
+        ?>
+    </ul>
+<?php 
+endif;
+?>
   </div>

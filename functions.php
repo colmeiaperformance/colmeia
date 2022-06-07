@@ -378,24 +378,32 @@ wp_localize_script( 'twentyfifteen-script', 'ajax_posts', array(
     'noposts' => __('No older posts found', 'twentyfifteen'),
 ));
 
-function shapeSpace_popular_posts($post_id) {
-	$count_key = 'popular_posts';
-	$count = get_post_meta($post_id, $count_key, true);
-	if ($count == '') {
-		$count = 0;
-		delete_post_meta($post_id, $count_key);
-		add_post_meta($post_id, $count_key, '0');
-	} else {
-		$count++;
-		update_post_meta($post_id, $count_key, $count);
-	}
+function positronx_set_post_views($post_id) {
+    $count_key = 'wp_post_views_count';
+    $count = get_post_meta($post_id, $count_key, true);
+     
+    if($count == '') {
+        $count = 0;
+        delete_post_meta($post_id, $count_key);
+        add_post_meta($post_id, $count_key, '0');
+    } else {
+        $count++;
+        update_post_meta($post_id, $count_key, $count);
+    }
 }
-function shapeSpace_track_posts($post_id) {
-	if (!is_single()) return;
-	if (empty($post_id)) {
-		global $post;
-		$post_id = $post->ID;
-	}
-	shapeSpace_popular_posts($post_id);
+
+function positronx_track_post_views ($post_id) {
+    if ( !is_single() ) 
+    return;
+     
+    if ( empty ( $post_id) ) {
+        global $post;
+        $post_id = $post->ID;    
+    }
+     
+    positronx_set_post_views($post_id);
 }
-add_action('wp_head', 'shapeSpace_track_posts');
+ 
+add_action( 'wp_head', 'positronx_track_post_views');
+
+remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
