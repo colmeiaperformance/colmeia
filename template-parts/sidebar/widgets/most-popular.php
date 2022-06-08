@@ -1,4 +1,6 @@
-<?php
+<div class="most-popular">
+<h4 class="underline">Artigos mais lidos</h4>
+  <?php
 if ( function_exists('wpp_get_mostpopular') ) { ?>
     <?php
     /* Get up to the top 5 posts from the last 7 days */
@@ -7,10 +9,11 @@ if ( function_exists('wpp_get_mostpopular') ) { ?>
         'order_by' => 'views',
         'post_type' => 'post',
         'stats_date' => 1,
-        'post_html' => '<div class="most-popular"><h4 class="underline">Artigos mais lidos</h4><ul class="list-group"><li class="list-group-item position-relative"><h3><a href="{url}" class="stretched-link">{title}</a></h3>{summary}<span>{date}</span></li></div>'
+        'post_html' => '<ul class="list-group"><li class="list-group-item position-relative"><h3><a href="{url}" class="stretched-link">{title}</a></h3>{summary}<span>{stats}</span></li>'
     ));
 }
 ?>
+</div>
  <!-- <div class="most-popular">
     <h4 class="underline">Artigos mais lidos</h4>
   <ul class="list-group">
