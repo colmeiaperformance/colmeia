@@ -27,10 +27,9 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
               <div>
               <?php
                 foreach ($botao_banner as $b) { ?>
-                <a class="btn btn-md <?php if ( $j == 0 ) { echo 'btn-primary btn-active' . ' ' . $j;} else
-                { echo 'btn-outline-primary' . ' ' . $j; }?>" href="<?php if ($b['pagina_botao']) { echo $b['pagina_botao']; } ?>">
-                <?php if ($b['botao_texto']) { echo $b['botao_texto']; } ?>
-                </a>
+                <a class="btn btn-md btn-outline-primary"
+                  href="<?php if ( $bs['pagina_botao'] ) { echo $bs['pagina_botao']; } ?>">
+                  <?php if ( $bs['botao_texto'] ) { echo $bs['botao_texto']; } ?></a>
                 <?php 
                 $j++;
                 } ?>
