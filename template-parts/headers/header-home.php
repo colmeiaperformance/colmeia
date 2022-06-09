@@ -1,6 +1,6 @@
 <?php 
 $banner_home = get_field('banner_home');
-$botoes_banner = get_field('botoes_banner');
+$botao_banner = get_field('botao_banner');
 $item_cta_banner_home = get_field('item_cta_banner_home');
 $i = 0;
 $j = 0;
@@ -24,6 +24,18 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
               </h1>
               <?php if ( $bh['descricao_banner'] ) { echo $bh['descricao_banner']; } ?>
 
+              <div>
+              <?php
+                foreach ($botao_banner as $b) { ?>
+                <a class="btn btn-md <?php if ( $j == 0 ) { echo 'btn-primary btn-active' . ' ' . $j;} else
+                { echo 'btn-outline-primary' . ' ' . $j; }?>" href="<?php if ($b['pagina_botao']) { echo $b['pagina_botao']; } ?>">
+                <?php if ($b['botao_texto']) { echo $b['botao_texto']; } ?>
+                </a>
+                <?php 
+                $j++;
+                } ?>
+              </div>
+
             </div>
             <div class="col-md-5 order-1 order-lg-2 caroulsel-image">
               <img src="<?php if ($bh['imagem_banner']) { echo $bh['imagem_banner']; } else { echo get_template_directory_uri() . '/images/homem.png'; } ?>" alt="" width="100%"
@@ -38,8 +50,6 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
       $j = 0; 
       } ?>
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
   </div>
 
  <?php
@@ -84,13 +94,7 @@ jQuery(document).ready(function() {
   const swiper = new Swiper('.swiperHeader', {
     // Optional parameters
     loop: false,
-    slidesPerView: 1,
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    }
-  
+    slidesPerView: 1,  
   });
 
 });
