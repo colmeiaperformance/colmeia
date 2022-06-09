@@ -25,7 +25,7 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
               <div>
                 <a class="btn btn-md btn-outline-primary"
                   href="<?php if ( $aa['link_do_botao'] ) { echo $aa['link_do_botao']; } ?>">
-                  <?php if ( $aa['texto_do_botao'] ) { echo $aa['texto_do_botao']; } ?>
+                  <?php if ( $aa['titulo_banner'] ) { echo $aa['titulo_banner']; } ?>
                 </a>
               </div>
 
