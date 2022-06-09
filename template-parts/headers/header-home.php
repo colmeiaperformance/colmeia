@@ -16,17 +16,17 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
       <div class="swiper-slide">
         <div class="container">
           <div class="row">
-            <div
-              class="col-md-7 order-2 order-lg-1 carousel-caption position-relative text-center text-lg-start start-0 end-0">
+            <div class="col-md-7 order-2 order-lg-1 carousel-caption position-relative text-center text-lg-start start-0 end-0">
               <h1>
                 <?php if ( $bh['titulo_banner'] ) { echo $bh['titulo_banner']; } ?>
               </h1>
               <?php if ( $bh['descricao_banner'] ) { echo $bh['descricao_banner']; } ?>
 
               <div>
-              <div><a class="btn btn-md btn-outline-primary"
-                  href="<?php if ( $bs['link_do_botao'] ) { echo $bs['link_do_botao']; } ?>"><?php if ( $bs['texto_do_botao'] ) { echo $bs['texto_do_botao']; } ?></a>
-              </div>
+                <a class="btn btn-md btn-outline-primary"
+                  href="<?php if ( $aa['link_do_botao'] ) { echo $aa['link_do_botao']; } ?>">
+                  <?php if ( $aa['texto_do_botao'] ) { echo $aa['texto_do_botao']; } ?>
+                </a>
               </div>
 
             </div>
