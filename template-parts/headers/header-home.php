@@ -23,8 +23,8 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
               <?php if ( $bh['descricao_banner'] ) { echo $bh['descricao_banner']; } ?>
 
               <a class="btn btn-md <?php if ( $j == 0 ) { echo 'btn-primary btn-active' . ' ' . $j;} else
-              { echo 'btn-outline-primary' . ' ' . $j; }?>" href="<?php if ($b['link_do_botao']) { echo $b['link_do_botao']; } ?>">
-              <?php if ($b['texto_do_botao']) { echo $b['texto_do_botao']; } ?>
+              { echo 'btn-outline-primary' . ' ' . $j; }?>" href="<?php if ($b['link_do_botao']) { echo $bh['link_do_botao']; } ?>">
+              <?php if ($bh['texto_do_botao']) { echo $bh['texto_do_botao']; } ?>
               </a>
             </div>
             <div class="col-md-5 order-1 order-lg-2 caroulsel-image">
