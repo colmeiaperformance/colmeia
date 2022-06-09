@@ -1,6 +1,5 @@
 <?php 
 $banner_home = get_field('banner_home');
-$botao_banner = get_field('botao_banner');
 $item_cta_banner_home = get_field('item_cta_banner_home');
 $i = 0;
 $j = 0;
@@ -25,14 +24,9 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
               <?php if ( $bh['descricao_banner'] ) { echo $bh['descricao_banner']; } ?>
 
               <div>
-              <?php
-                foreach ($botao_banner as $b) { ?>
-                <a class="btn btn-md btn-outline-primary"
-                  href="<?php if ( $bs['pagina_botao'] ) { echo $bs['pagina_botao']; } ?>">
-                  <?php if ( $bs['botao_texto'] ) { echo $bs['botao_texto']; } ?></a>
-                <?php 
-                $j++;
-                } ?>
+              <div><a class="btn btn-md btn-outline-primary"
+                  href="<?php if ( $bs['link_do_botao'] ) { echo $bs['link_do_botao']; } ?>"><?php if ( $bs['texto_do_botao'] ) { echo $bs['texto_do_botao']; } ?></a>
+              </div>
               </div>
 
             </div>
