@@ -24,15 +24,6 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
               </h1>
               <?php if ( $bh['descricao_banner'] ) { echo $bh['descricao_banner']; } ?>
 
-              <?php
-               foreach ($botoes_banner as $bb) { ?>
-              <a class="btn btn-md btn-outline-primary" href="<?php if ( $bb['url_bb'] ) { echo $bb['url_bb']; } ?>">
-                <?php if ( $bb['texto_bb'] ) { echo $bb['texto_bb']; } ?>
-              </a>
-              <?php 
-              $j++;
-              } ?>
-          
             </div>
             <div class="col-md-5 order-1 order-lg-2 caroulsel-image">
               <img src="<?php if ($bh['imagem_banner']) { echo $bh['imagem_banner']; } else { echo get_template_directory_uri() . '/images/homem.png'; } ?>" alt="" width="100%"
