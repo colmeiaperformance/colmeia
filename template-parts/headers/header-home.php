@@ -8,14 +8,13 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
 ?>
 
 <header class="header header--home">
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    
-    <div class="carousel-inner">
+  <div class="swiper swiperHeader">  
+    <div class="swiper-wrapper">
 
       <?php foreach ((array) $banner_home as $bh) {
         ?>
 
-      <div class="carousel-item<?php if ($i == 0) { echo ' active'; } ?>">
+      <div class="swiper-slide">
         <div class="container">
           <div class="row">
             <div
@@ -48,38 +47,9 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
       $i++;
       $j = 0; 
       } ?>
-
-
     </div>
-
-    <div class="carousel-indicators">
-
-      <?php
-      $k = 0;
-      while ($k < $i) { ?>
-        
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="<?php echo $k; ?>" class="<?php if ($k == 0 ) { echo 'active'; } ?>" aria-label="Slide <?php echo $k + 1;?>"></button>
-
-      <?php
-      $k++;
-      }
-      ?>
-
-      <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
-        aria-current="true"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
-
-
-    </div>
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button> -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
 
  <?php
@@ -118,3 +88,28 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
   <?php } ?>
 
 </header>
+
+<script>
+jQuery(document).ready(function() {
+  const swiper = new Swiper('.swiperHeader', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 1,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      spaceBetween: 10
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  
+  });
+
+});
+</script>
