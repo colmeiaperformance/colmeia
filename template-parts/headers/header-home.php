@@ -23,7 +23,6 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
                 <?php if ( $bh['titulo_banner'] ) { echo $bh['titulo_banner']; } ?>
               </h1>
               <?php if ( $bh['descricao_banner'] ) { echo $bh['descricao_banner']; } ?>
-              <div>
 
               <?php
                foreach ($botoes_banner as $bb) { ?>
@@ -93,16 +92,8 @@ $descricao_cta_banner_ea = get_field('descricao_cta_banner_ea');
 jQuery(document).ready(function() {
   const swiper = new Swiper('.swiperHeader', {
     // Optional parameters
-    loop: true,
+    loop: false,
     slidesPerView: 1,
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      spaceBetween: 10
-    },
-
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
