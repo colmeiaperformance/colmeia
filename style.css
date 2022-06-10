@@ -2626,6 +2626,112 @@ footer .float-end a {
   }
 }
 
+.sec-blog .swiper-slide {
+  height: auto;
+  background: #00A59E;
+}
+
+.sec-blog .swiper-slide h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.015em;
+  margin-bottom: 9px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .sec-blog .swiper-slide h6 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: -0.015em;
+  }
+}
+
+.sec-blog .swiper-slide p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .sec-blog .swiper-slide p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: -0.015em;
+  }
+}
+
+.sec-blog .swiper-slide .btn {
+  padding: 7px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .sec-blog .swiper-slide .btn {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.015em;
+    padding: 5px 7px;
+  }
+}
+
+.sec-blog .swiper-slide .card-image {
+  width: 180px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.sec-blog .swiper-slide .card-image::before {
+  content: '';
+  position: absolute;
+  border-right: solid 107.5px #00A59E;
+  border-bottom: solid 107.5px transparent;
+  top: 0;
+  left: calc(180px - 107.5px);
+}
+
+.sec-blog .swiper-slide .card-image::after {
+  content: '';
+  content: '';
+  position: absolute;
+  border-right: solid 107.5px #00A59E;
+  border-top: solid 107.5px transparent;
+  bottom: 0;
+  left: calc(180px - 107.5px);
+}
+
 .cases {
   background-color: #353C42;
 }
