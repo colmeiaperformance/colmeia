@@ -166,49 +166,30 @@
       height: auto;
       object-fit: cover;
       flex: 0 0 auto;
-      // @media (max-width: 768px) {
-        //   width: 100%;
-        //   height: 178px;
-        // }
-        &::before {
-          content: '';
-          position: absolute;
-          border-right: solid 107.5px $color-primary-blog;
-          border-bottom: solid 107.5px transparent;
-          top: 0;
-          left: calc(180px - 107.5px);
-          // @media (max-width: 768px) {
-            //   // display: none;
-            //   content: '';
-            //   position: absolute;
-            //   border-left: solid 200px #00A59E;
-            //   border-top: solid 200px transparent;
-            //   border-right: 0;
-            //   border-bottom: 0;
-            //   top: calc(178px - 150px);
-            //   left: 0;
-            // }
-          }
-          
-          &::after {
-            content: '';
-            content: '';
-            position: absolute;
-            border-right: solid 107.5px $color-primary-blog;
-            border-top: solid 107.5px transparent;
-            bottom: 0;
-            left: calc(180px - 107.5px);
-            // @media (max-width: 768px) {
-              //   // display: none;
-              //   content: '';
-              //   position: absolute;
-              //   border-right: solid 200px #00A59E;
-              //   border-top: solid 200px transparent;
-              //   border-bottom: 0;
-              //   top: calc(178px - 150px);
-              //   right: 0;
-              // }
-            }
-          }
+      &::before {
+        content: '';
+        position: absolute;
+        border-right: solid 107.5px $color-primary-blog;
+        border-bottom: solid 107.5px transparent;
+        top: 0;
+        left: calc(180px - 107.5px);
+        @media (max-width: 380px) {
+          border-bottom: solid 123.5px transparent;
         }
       }
+      
+      &::after {
+        content: '';
+        content: '';
+        position: absolute;
+        border-right: solid 107.5px $color-primary-blog;
+        border-top: solid 107.5px transparent;
+        bottom: 0;
+        left: calc(180px - 107.5px);
+        @media (max-width: 380px) {
+          border-top: solid 123.5px transparent;
+        }
+      }
+    }
+  }
+}

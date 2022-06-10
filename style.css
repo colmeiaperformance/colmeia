@@ -2722,6 +2722,12 @@ footer .float-end a {
   left: calc(180px - 107.5px);
 }
 
+@media (max-width: 380px) {
+  .sec-blog .swiper-slide .card-image::before {
+    border-bottom: solid 123.5px transparent;
+  }
+}
+
 .sec-blog .swiper-slide .card-image::after {
   content: '';
   content: '';
@@ -2730,6 +2736,12 @@ footer .float-end a {
   border-top: solid 107.5px transparent;
   bottom: 0;
   left: calc(180px - 107.5px);
+}
+
+@media (max-width: 380px) {
+  .sec-blog .swiper-slide .card-image::after {
+    border-top: solid 123.5px transparent;
+  }
 }
 
 .cases {
