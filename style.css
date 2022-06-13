@@ -1190,7 +1190,7 @@ footer .float-end a {
 
 .sidebar .most-popular ul {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 !important;
   border: 0;
 }
 
