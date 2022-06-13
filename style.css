@@ -1188,6 +1188,12 @@ footer .float-end a {
   text-decoration: underline;
 }
 
+.sidebar .most-popular ul {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
 .sidebar .most-popular ul li {
   border: 0;
   padding: 0 0 10px 0;
@@ -1232,6 +1238,7 @@ footer .float-end a {
   font-size: 10.0917px;
   line-height: 12px;
   color: #C4C4C4;
+  text-transform: capitalize;
 }
 
 .sidebar .most-popular ul li span a {

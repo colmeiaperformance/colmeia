@@ -9,7 +9,8 @@ if ( function_exists('wpp_get_mostpopular') ) { ?>
         'order_by' => 'views',
         'post_type' => 'post',
         'stats_date' => 1,
-        'post_html' => '<ul class="list-group"><li class="list-group-item position-relative"><h3><a href="{url}" class="stretched-link">{title}</a></h3>{summary}<span>{stats}</span></li>'
+        'excerpt_length' => 123,
+        'post_html' => '<ul class="list-group"><li class="list-group-item position-relative"><h3><a href="{url}" class="stretched-link">{title}</a></h3><p>{summary}</p><span>{stats}</span></li>'
     ));
 }
 ?>
