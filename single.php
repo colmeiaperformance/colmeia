@@ -61,8 +61,8 @@
               <a title="Compartilhe no Facebook" target="_blank"  href="http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>"><i class="bi bi-facebook"></i></a>
               <a title="Compartilhe no Twitter"  target="_blank" href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&amp;url=<?php the_permalink() ?>"><i class="bi bi-twitter"></i></a>
               <a title="Compartilhe no Whatsapp" target="_blank" href="https://api.whatsapp.com/send?text=<?php the_title(); ?> - <?php the_permalink() ?>"><i class="bi bi-whatsapp"></i></a>
-              <a title="Compartilhe no Linkedin" target="_blank" href="/"><i class="bi bi-linkedin"></i></a>
-              <a title="Compartilhe no Telegram" target="_blank" href="/"><i class="bi bi-telegram"></i></a>
+              <a title="Compartilhe no Linkedin" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink() ?>"><i class="bi bi-linkedin"></i></a>
+              <a title="Compartilhe no Telegram" target="_blank" href="https://t.me/share/url?url=<?php the_permalink() ?>&text=<?php the_title(); ?>"><i class="bi bi-telegram"></i></a>
               <a title="Compartilhe por email" target="_blank" href="mailto:?subject=Recomendação%20de%20%Post:%20<?php the_permalink() ?>"><i class="bi bi-envelope-fill"></i></a>
             </div>
           </div>
