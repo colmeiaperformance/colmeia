@@ -1,6 +1,7 @@
 <?php 
 $titulo_cases = get_sub_field('titulo_cases');
 $item_cases = get_sub_field('item_cases');
+$num_case = 1;
 ?>
 <section class="cases">
   <div class="container">
@@ -12,7 +13,7 @@ $item_cases = get_sub_field('item_cases');
       <div class="col-12 col-lg-4 px-3">
         <div class="card rounded-0 bg-transparent text-white">
             <div class="icon d-inline">
-                <img src="<?php if ($ic['imagem_item_cases']) { echo $ic['imagem_item_cases']; } ?>" alt="Diagnóstico">
+                <img src="<?php if ($ic['imagem_item_cases']) { echo $ic['imagem_item_cases']; } ?>" alt="Case <?php echo $num_case; ?>">
             </div>
             <h4><?php if ($ic['titulo_item_cases']) { echo $ic['titulo_item_cases']; } ?></h4>
             <div class="mb-3">
@@ -25,7 +26,9 @@ $item_cases = get_sub_field('item_cases');
           </div>
       </div>
 
-    <?php } ?>
+    <?php 
+    $num_case++;
+    } ?>
 
     </div>
   <div>
