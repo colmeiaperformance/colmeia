@@ -12,7 +12,7 @@ $item_cases = get_sub_field('item_cases');
       <div class="col-12 col-lg-4 px-3">
         <div class="card rounded-0 bg-transparent text-white">
             <div class="icon d-inline">
-                <img src="https://picsum.photos/id/237/400/400" alt="Diagnóstico">
+                <img src="<?php if ($ic['imagem_item_cases']) { echo $ic['imagem_item_cases']; } ?>" alt="Diagnóstico">
             </div>
             <h4><?php if ($ic['titulo_item_cases']) { echo $ic['titulo_item_cases']; } ?></h4>
             <div class="mb-3">
