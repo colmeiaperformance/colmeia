@@ -117,8 +117,8 @@
         padding: 20px;
         border: 2px solid $color-white;
         background-color: $color-grey-dark;
-        max-width: 145px;
-        max-height: 145px;
+        width: 145px;
+        height: 145px;
         border-radius: 50%;
         @media (max-width: 991.98px) {
           height: 125px;
