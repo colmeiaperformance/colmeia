@@ -2904,8 +2904,8 @@ footer .float-end a {
   padding: 20px;
   border: 2px solid #FFFFFF;
   background-color: #353C42;
-  max-width: 145px;
-  max-height: 145px;
+  width: 145px;
+  height: 145px;
   border-radius: 50%;
 }
 
