@@ -2898,8 +2898,8 @@ footer .float-end a {
 }
 
 .cases .card .icon img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 100%;
   padding: 20px;
   border: 2px solid #FFFFFF;
