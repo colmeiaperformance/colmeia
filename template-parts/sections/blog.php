@@ -1,5 +1,5 @@
 <?php
-  $codigo_do_formulario_news = get_field('codigo_do_formulario_news', 'option');
+  $codigo_do_formulario_news_blog = get_field('codigo_do_formulario_news_blog', 'option');
   ?>
 <section class="sec-blog">
   <div class="container">
@@ -28,9 +28,9 @@
       </div>
       <div class="swiper-pagination"></div>
     </div>
-    <?php if ($codigo_do_formulario_news) { ?>
+    <?php if ($codigo_do_formulario_news_blog) { ?>
     <div class="row mt-2 mt-lg-5 border py-4 m-1 background-blog">
-      <?php echo $codigo_do_formulario_news; ?>
+      <?php echo $codigo_do_formulario_news_blog; ?>
     </div>
     <?php } ?>
   </div>
