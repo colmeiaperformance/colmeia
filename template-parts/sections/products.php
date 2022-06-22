@@ -8,23 +8,23 @@ $item_prod = get_sub_field('item_prod');
     <h2><?php if ($titulo_prod) { echo $titulo_prod; } ?></h2>
     <div class="row row-cols-1 row-cols-md-3 gy-3 gy-lg-0 gx-5 text-center">
 
-    <?php foreach ($item_prod as $ip) { ?>
-      
+      <?php foreach ($item_prod as $ip) { ?>
+
       <div class="col">
         <div class="card rounded-0 mb-4 mb-lg-0 border-0 bg-transparent text-white">
-        <a href="<?php if ($ip['link_item_prod']) { echo $ip['link_item_prod']; }; ?>" class="text-white">
+          <a href="<?php if ($ip['link_item_prod']) { echo $ip['link_item_prod']; }; ?>" class="text-white">
             <div class="icon-square">
-                <img class="" src="<?php if ($ip['imagem_item_prod']['url']) { echo $ip['imagem_item_prod']['url']; }; ?>"
+              <img class="" src="<?php if ($ip['imagem_item_prod']['url']) { echo $ip['imagem_item_prod']['url']; }; ?>"
                 alt="Diagnóstico">
             </div>
             <h4><?php if ($ip['titulo_item_prod']) { echo $ip['titulo_item_prod']; }; ?></h4>
             <p><?php if ($ip['descricao_item_prod']) { echo $ip['descricao_item_prod']; }; ?></p>
-            </div>
-            </a>
         </div>
+        </a>
+      </div>
 
       <?php } ?>
-        
+
 
     </div>
     <div>
