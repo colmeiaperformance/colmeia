@@ -12,13 +12,15 @@ $item_prod = get_sub_field('item_prod');
       
       <div class="col">
         <div class="card rounded-0 mb-4 mb-lg-0 border-0 bg-transparent text-white">
-          <div class="icon-square">
-            <img class="" src="<?php if ($ip['imagem_item_prod']['url']) { echo $ip['imagem_item_prod']['url']; }; ?>"
-            alt="Diagnóstico">
-          </div>
-          <h4><?php if ($ip['titulo_item_prod']) { echo $ip['titulo_item_prod']; }; ?></h4>
-          <p><?php if ($ip['descricao_item_prod']) { echo $ip['descricao_item_prod']; }; ?></p>
-          </div>
+        <a href="<?php the_permalink(); ?>" class="text-white">
+            <div class="icon-square">
+                <img class="" src="<?php if ($ip['imagem_item_prod']['url']) { echo $ip['imagem_item_prod']['url']; }; ?>"
+                alt="Diagnóstico">
+            </div>
+            <h4><?php if ($ip['titulo_item_prod']) { echo $ip['titulo_item_prod']; }; ?></h4>
+            <p><?php if ($ip['descricao_item_prod']) { echo $ip['descricao_item_prod']; }; ?></p>
+            </div>
+            </a>
         </div>
 
       <?php } ?>
