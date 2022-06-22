@@ -12,7 +12,7 @@ $item_prod = get_sub_field('item_prod');
       
       <div class="col">
         <div class="card rounded-0 mb-4 mb-lg-0 border-0 bg-transparent text-white">
-        <a href="<?php the_permalink(); ?>" class="text-white">
+        <a href="<?php if ($ip['link_item_prod']) { echo $ip['link_item_prod']; }; ?>" class="text-white">
             <div class="icon-square">
                 <img class="" src="<?php if ($ip['imagem_item_prod']['url']) { echo $ip['imagem_item_prod']['url']; }; ?>"
                 alt="Diagnóstico">
