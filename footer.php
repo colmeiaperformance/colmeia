@@ -94,6 +94,10 @@ $copyright_text = get_field('copyright_text', 'option');
 </footer>
 <?php wp_footer(); ?>
 <script src="js/main.js"></script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NG9C76V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
