@@ -15,7 +15,7 @@ $num_case = 1;
             <div class="icon d-inline">
                 <img src="<?php if ($ic['imagem_item_cases']) { echo $ic['imagem_item_cases']; } ?>" alt="Case <?php echo $num_case; ?>">
             </div>
-            <h4><?php if ($ic['titulo_item_cases']) { echo $ic['titulo_item_cases']; } ?></h4>
+            <a href="#" class="stretched-link"><h4><?php if ($ic['titulo_item_cases']) { echo $ic['titulo_item_cases']; } ?></h4></a>
             <div class="mb-3">
               <p><?php if ($ic['descricao_item_cases']) { echo $ic['descricao_item_cases']; } ?></p>
             </div>
