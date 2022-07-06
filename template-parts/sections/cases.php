@@ -11,7 +11,7 @@ $num_case = 1;
     <?php foreach ($item_cases as $ic) { ?>
     
       <div class="col-12 col-lg-4 px-3">
-        <a href="#">
+        <a href="<?php if ( $ic['link_item_cases'] ) { echo $ic['link_item_cases']; } else { echo '#'; } ?>">
         <div class="card rounded-0 bg-transparent text-white">
             <div class="icon d-inline">
                 <img src="<?php if ($ic['imagem_item_cases']) { echo $ic['imagem_item_cases']; } ?>" alt="Case <?php echo $num_case; ?>">
