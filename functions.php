@@ -407,3 +407,92 @@ function positronx_track_post_views ($post_id) {
 add_action( 'wp_head', 'positronx_track_post_views');
 
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+//Change WP Logo on Login Page
+function wpb_login_logo() { ?>
+<style type="text/css">
+#login h1 a,
+.login h1 a {
+  background-image: url(https://colmeiaperformance.com.br/wp-content/themes/colmeia/images/logo.png);
+  height: 100px;
+  width: 300px;
+  background-size: 300px 100px;
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+}
+
+#lostpasswordform #wp-submit, #loginform #wp-submit {
+  width: 105px;
+  height: 35px;
+  background-color: #00A69D;
+  border: 2px solid #00A69D;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  border-radius: 0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#lostpasswordform #wp-submit:hover , #loginform #wp-submit:hover {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #00A69D;
+  background-color: transparent;
+}
+
+.wp-core-ui .button-secondary .dashicons {
+  color: #00A69D;
+}
+#lostpasswordform, #loginform{
+    border: none;
+    box-shadow: 1px 1px 15px rgba(0,0,0,.2);
+}
+#lostpasswordform input, #loginform input {
+  border: 2px solid #00a59e;
+  border-radius: 0px;
+}
+#lostpasswordform input[type="checkbox"]:checked::before, #loginform input[type="checkbox"]:checked::before {
+    margin: -0.250rem 0 0 -0.35rem;
+}
+#lostpasswordform #wp-submit {
+    width: 160px;
+}
+.login #login_error, .login .message, .login .success {
+    border-left: 4px solid #00a59e!important;
+}
+.login .button.wp-hide-pw:focus {
+    border-color: none!important;
+    box-shadow: none!important;
+}
+</style>
+<?php }
+add_action( 'login_enqueue_scripts', 'wpb_login_logo' );
+
+function wpb_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'wpb_login_logo_url' );
+  
+function wpb_login_logo_url_title() {
+    return 'Your Site Name and Info';
+}
+add_filter( 'login_headertitle', 'wpb_login_logo_url_title' );
+
+//Disable Login language
+add_filter( 'login_display_language_dropdown', '__return_false' );
