@@ -2037,6 +2037,11 @@ footer .float-end a {
   color: #606060;
 }
 
+.single article .post-content p img {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
 .single article .post-content p img.aligncenter.size-large {
   height: auto;
   max-width: 724px;
