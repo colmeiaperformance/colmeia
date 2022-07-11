@@ -2038,7 +2038,7 @@ footer .float-end a {
 }
 
 .single article .post-content p img {
-  max-width: 760px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
