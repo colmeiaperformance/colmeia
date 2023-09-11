@@ -3288,6 +3288,14 @@ body {
 .page-masterclass .masterclass-form .form-fields .btn-masterclass:hover {
   background: #20888f;
 }
+.page-masterclass .masterclass-form .form-fields .alert-masterclass {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 576px) {
+  .page-masterclass .masterclass-form .form-fields .alert-masterclass {
+    font-size: 2rem;
+  }
+}
 @media only screen and (max-width: 992px) {
   .page-masterclass .masterclass-form .form-title {
     font-size: 2rem;

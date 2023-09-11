@@ -253,6 +253,12 @@ body {
           background: $masterclass-primary-hover;
         }
       }
+      .alert-masterclass {
+        font-size: 2rem;
+        @include devices(mobile) {
+          font-size: 2rem;
+        }
+      }
     }
     @include devices(tablet) {
       .form-title {

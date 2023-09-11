@@ -39,7 +39,7 @@
     <div class="_clear-element">
     </div>
   </div>
-  <div class="_form-thank-you" style="display:none;">
+  <div class="alert alert-success alert-masterclass mt-4 _form-thank-you" style="display:none;">
   </div>
 </form>
 <script type="text/javascript">
