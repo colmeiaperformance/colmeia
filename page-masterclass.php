@@ -78,7 +78,7 @@ get_header(); ?>
         </div>
       </div>
 
-      <?php get_template_part( '/template-parts/forms/form-masterclass' ); ?>
+      <?php get_template_part('/template-parts/forms/form-masterclass'); ?>
 
     </div>
   </section>
@@ -200,7 +200,7 @@ get_header(); ?>
             Inteligência de Mercado - Crie estratégias baseadas em dados
           </div>
           <div class="class-description">
-            <ul class="list-unstyled">
+            <ul class="list-unstyled list-class">
               <li>Decifre as tendências energéticas de 2023.</li>
               <li>Decisões precisas com indicadores-chave.</li>
               <li>Ferramentas poderosas de inteligência de mercado.</li>
@@ -215,13 +215,13 @@ get_header(); ?>
         <div class="class-bg-cyan col-12 col-lg-6 order-2 order-lg-2 p-4 p-md-5">
           <div class="class-badge"></div>
           <div class="class-title">
-            Inteligência de Mercado - Crie estratégias baseadas em dados
+            Marca poderosa - Posicione-se em um mercado em crescimento
           </div>
           <div class="class-description">
-            <ul class="list-unstyled">
-              <li>Decifre as tendências energéticas de 2023.</li>
-              <li>Decisões precisas com indicadores-chave.</li>
-              <li>Ferramentas poderosas de inteligência de mercado.</li>
+            <ul class="list-unstyled list-class">
+              <li>Construa uma marca sólida e resiliente no setor.</li>
+              <li>Estratégias de posicionamento para destaque.</li>
+              <li>Vantagens de uma marca forte.</li>
             </ul>
           </div>
         </div>
@@ -233,13 +233,13 @@ get_header(); ?>
         <div class="class-bg-cyan col-12 col-lg-6 order-2 order-lg-1 p-4 p-md-5">
           <div class="class-badge"></div>
           <div class="class-title">
-            Inteligência de Mercado - Crie estratégias baseadas em dados
+            Planejamento de conteúdo - Defina os temas que engajam e convertem
           </div>
           <div class="class-description">
-            <ul class="list-unstyled">
-              <li>Decifre as tendências energéticas de 2023.</li>
-              <li>Decisões precisas com indicadores-chave.</li>
-              <li>Ferramentas poderosas de inteligência de mercado.</li>
+            <ul class="list-unstyled list-class">
+              <li>SEO e Marketing de Conteúdo: Fundamentos.</li>
+              <li>ICP (Perfil do Cliente Ideal): Base estratégica.</li>
+              <li>Jornada de Decisão: Conteúdo para conversão.</li>
             </ul>
           </div>
         </div>
@@ -251,13 +251,13 @@ get_header(); ?>
         <div class="class-bg-cyan col-12 col-lg-6 order-2 order-lg-2 p-4 p-md-5">
           <div class="class-badge"></div>
           <div class="class-title">
-            Inteligência de Mercado - Crie estratégias baseadas em dados
+            Canais de aquisição - Amplie a presença online
           </div>
           <div class="class-description">
-            <ul class="list-unstyled">
-              <li>Decifre as tendências energéticas de 2023.</li>
-              <li>Decisões precisas com indicadores-chave.</li>
-              <li>Ferramentas poderosas de inteligência de mercado.</li>
+            <ul class="list-unstyled list-class">
+              <li>Canais Digitais de Impacto: Energia em foco.</li>
+              <li>Sincronização Estratégica: Canais alinhados.</li>
+              <li>Atração e Fortalecimento de Marca: Conscientização ampliada.</li>
             </ul>
           </div>
         </div>
@@ -269,13 +269,12 @@ get_header(); ?>
         <div class="class-bg-cyan col-12 col-lg-6 order-2 order-lg-1 p-4 p-md-5">
           <div class="class-badge"></div>
           <div class="class-title">
-            Inteligência de Mercado - Crie estratégias baseadas em dados
+            Metodologias de aquisição de clientes - Efetividade na conversão
           </div>
           <div class="class-description">
-            <ul class="list-unstyled">
-              <li>Decifre as tendências energéticas de 2023.</li>
-              <li>Decisões precisas com indicadores-chave.</li>
-              <li>Ferramentas poderosas de inteligência de mercado.</li>
+            <ul class="list-unstyled list-class">
+              <li>Domine o inbound, outbound e marketing baseado em contas (ABM).</li>
+              <li>Estratégias alinhadas às necessidades corporativas.</li>
             </ul>
           </div>
         </div>
@@ -287,13 +286,13 @@ get_header(); ?>
         <div class="class-bg-cyan col-12 col-lg-6 order-2 order-lg-2 p-4 p-md-5">
           <div class="class-badge"></div>
           <div class="class-title">
-            Inteligência de Mercado - Crie estratégias baseadas em dados
+            Métricas sintonizadas - Mensuração e otimização estratégica
           </div>
           <div class="class-description">
-            <ul class="list-unstyled">
-              <li>Decifre as tendências energéticas de 2023.</li>
-              <li>Decisões precisas com indicadores-chave.</li>
-              <li>Ferramentas poderosas de inteligência de mercado.</li>
+            <ul class="list-unstyled list-class">
+              <li>Métricas essenciais para marketing B2B.</li>
+              <li>Avalie resultados com precisão.</li>
+              <li>Aumente conversões com CRM inteligente.</li>
             </ul>
           </div>
         </div>

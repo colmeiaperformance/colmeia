@@ -3082,8 +3082,7 @@ footer .float-end a {
 * Colmeia LPs
 */
 body {
-  counter-reset: extra-counter;
-  counter-reset: class-badge;
+  counter-reset: extra-counter class-badge;
 }
 
 .page-masterclass {
@@ -3453,6 +3452,15 @@ body {
   .page-masterclass .masterclass-classes .class-bg-cyan .class-description {
     font-size: 1.1rem;
   }
+}
+.page-masterclass .masterclass-classes .class-bg-cyan .class-description .list-class > li {
+  list-style-type: none;
+}
+.page-masterclass .masterclass-classes .class-bg-cyan .class-description .list-class > li::before {
+  content: "·";
+  font-size: 35px;
+  vertical-align: sub;
+  margin-right: 5px;
 }
 .page-masterclass .masterclass-classes .class-img {
   height: auto;

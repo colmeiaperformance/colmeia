@@ -43,8 +43,7 @@
 
 //General
 body {
-  counter-reset: extra-counter;
-  counter-reset: class-badge;
+  counter-reset: extra-counter class-badge;
 }
 
 .page-masterclass {
@@ -498,6 +497,15 @@ body {
         line-height: 1.88125rem;
         @include devices(tablet) {
           font-size: 1.1rem;
+        }
+        .list-class > li {
+          list-style-type: none;
+          &::before {
+            content: "·";
+            font-size: 35px;
+            vertical-align: sub;
+            margin-right: 5px;
+          }
         }
       }
     }
