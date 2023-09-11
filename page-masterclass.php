@@ -59,7 +59,7 @@ get_header(); ?>
       </div>
     </div>
   </section>
-  <section class="masterclass-form container-fluid px-4">
+  <section id="masterclass-form" class="masterclass-form container-fluid px-4">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
@@ -307,7 +307,7 @@ get_header(); ?>
         <div class="cta-subtitle py-4 py-lg-5">Domine as técnicas de marketing para
           o setor de energia B2B</div>
         <div class="cta-btn text-center">
-          <a href="#" type="button" class="btn masterclass-btn">Inscreva-se</a>
+          <a href="#masterclass-form" type="button" class="btn masterclass-btn">Inscreva-se</a>
         </div>
       </div>
     </div>
