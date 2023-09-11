@@ -1,0 +1,561 @@
+@mixin devices($breakpoint) {
+  @if $breakpoint == small-screen {
+    @media only screen and (max-width: 1199px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  }
+}
+
+@mixin font-title-h2 {
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.2rem;
+  @include devices(tablet) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@mixin masterclass-background {
+  background: url("images/masterclass/textures.png"),
+    linear-gradient(270deg, rgba(13, 96, 101, 1) 0%, rgba(7, 42, 44, 1) 100%);
+  background:
+    url("images/masterclass/textures.png"),
+    -moz-linear-gradient(270deg, rgba(13, 96, 101, 1) 0%, rgba(7, 42, 44, 1) 100%);
+  background:
+    url("images/masterclass/textures.png"),
+    -webkit-linear-gradient(270deg, rgba(13, 96, 101, 1) 0%, rgba(7, 42, 44, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d6065",endColorstr="#072a2c",GradientType=1);
+  background-blend-mode: multiply;
+}
+
+.page-masterclass {
+  position: relative;
+
+  .masterclass-green {
+    color: $masterclass-primary;
+  }
+  .highlight {
+    display: inline-block;
+    background-color: $masterclass-primary;
+    color: $color-white;
+    padding: 0.15rem;
+    margin-bottom: 5px;
+  }
+
+  /*
+  ** Sections
+  */
+
+  //Section Header
+  .masterclass-header {
+    color: $color-white;
+    @include masterclass-background;
+    .header-row {
+      .header-image {
+        height: 70vh;
+        min-height: 770px;
+      }
+    }
+    .header-content {
+      margin-left: -13rem;
+      .header-badge {
+        margin-bottom: 1rem;
+        span {
+          font-size: 1.25vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          border: 1px solid $color-white;
+          padding: 0.5rem;
+        }
+      }
+      .header-title {
+        font-size: 3.75vw;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+      }
+    }
+
+    .divider {
+      border-top: 1px solid $color-white;
+    }
+    .header-extra {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 15%;
+        width: 36px;
+        height: 268px;
+        background: $masterclass-cyan;
+        opacity: 0.2;
+      }
+      .extra-title {
+        font-size: 2.917vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      ul.extra-container {
+        counter-reset: extra-counter;
+        list-style-type: none;
+        padding-left: 0;
+        .card {
+          background-color: transparent;
+          border: none;
+          border-radius: 0;
+          flex-direction: row;
+          align-items: center;
+        }
+        .extra-item {
+          margin-bottom: 30px;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            left: auto;
+            right: auto;
+            background: $color-white;
+            height: 1px;
+            width: 90%;
+          }
+          &:last-child::before {
+            background: transparent;
+          }
+          .extra-counter {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.25rem;
+            min-width: 110px;
+            &::before {
+              counter-increment: class-badge;
+              content: counter(extra-counter, decimal-leading-zero);
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    //Media Query Header
+    @include devices(tablet) {
+      .header-row {
+        .header-image {
+          height: 40vh;
+          min-height: 30vh;
+        }
+      }
+      .header-content {
+        margin-left: initial;
+        margin-top: -100px;
+        .header-badge > span {
+          font-size: 1rem;
+        }
+        .header-title {
+          font-size: 3rem;
+        }
+      }
+      .header-extra {
+        &::before {
+          top: 16.5%;
+        }
+        .extra-title {
+          font-size: 1.5rem;
+        }
+        ul.extra-container {
+          .extra-item {
+            &:last-child::before {
+              background: $color-white;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 576px) {
+      .header-extra {
+        &::before {
+          display: none;
+        }
+      }
+      .divider {
+        width: 90%;
+      }
+    }
+  }
+  //Section form
+  .masterclass-form {
+    .form-img {
+      margin-top: -100px;
+      width: 29vw;
+    }
+    .form-title {
+      color: $masterclass-primary;
+      @include font-title-h2;
+    }
+    .form-description {
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.6875rem;
+      letter-spacing: 0.01688rem;
+    }
+
+    .form-fields {
+      .form-control {
+        border-radius: 0.625rem;
+        background: $masterclass-light-grey;
+        &:focus {
+          border: 1px solid $masterclass-primary-hover;
+        }
+      }
+      .form-control + .form-label {
+        margin-left: 0.75rem;
+        &:focus + .form-label {
+          margin-left: 0.75rem;
+        }
+      }
+      .form-label::after {
+        background: transparent;
+      }
+      .btn-masterclass {
+        border-radius: 0.625rem;
+        background: $masterclass-primary;
+        color: $color-white;
+        text-align: center;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.0225rem;
+        text-transform: uppercase;
+        padding: 1.1rem;
+        width: 100%;
+        &:hover {
+          background: $masterclass-primary-hover;
+        }
+      }
+    }
+    @include devices(tablet) {
+      .form-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+  //Section new
+  .masterclass-new {
+    .new-title {
+      @include font-title-h2;
+      @include devices(small-screen) {
+        font-size: 2.5rem;
+        line-height: 3.2rem;
+      }
+      @include devices(mobile) {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+      }
+    }
+    .new-text {
+      color: $masterclass-dark-grey;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.6875rem;
+      letter-spacing: 0.0225rem;
+    }
+  }
+  //Section profs
+  .masterclass-profs {
+    // .prof-card {
+    //   position: relative;
+    //   height: 100%;
+    //   background-size: cover;
+    //   background-position: top center;
+    //   background-repeat: no-repeat;
+    //   overflow: hidden;
+    //   border: 0;
+    //   .card-body{
+    //     .card-subbody {
+    //       position: relative;
+    //       opacity: 1;
+    //       transition: all ease-in-out 0.15s;
+
+    //       // make sure hidden text effect only shows on desktop
+    //       @media screen and (min-width: 750px) {
+    //         opacity: 0;
+    //         transform: translateY(-2em);
+    //       }
+    //     }
+    //   }
+    //   &:hover {
+    //     .card-subbody {
+    //       transform: translateY(0);
+    //       height: auto;
+    //       opacity: 1;
+    //     }
+    //   } // hover
+    //   .prof-badge {
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     display: inline;
+    //     background: rgba(100, 100, 100, 0.4);
+    //     backdrop-filter: blur(10px);
+    //     padding: 1rem;
+    //     color: $color-white;
+    //     font-size: 0.875rem;
+    //     font-style: normal;
+    //     font-weight: 600;
+    //     line-height: 1.3125rem;
+    //     letter-spacing: 0.0175rem;
+    //     text-transform: uppercase;
+    //   }
+    //   .prof-img-container {
+    //     .prof-img {
+    //       width: 100%;
+    //       height: auto;
+    //     }
+    //   }
+    //   .prof-bio-container {
+    //     transition: 0.3s ease-in-out all;
+    //     position: relative;
+    //     bottom: 0;
+    //     left: 0;
+    //     color: $color-white;
+    //     font-size: 0.75rem;
+    //     font-style: normal;
+    //     font-weight: 300;
+    //     line-height: 1.125rem;
+    //     letter-spacing: 0.015rem;
+    //     text-transform: uppercase;
+    //     &::before {
+    //       transition: 0.3s ease-in-out all;
+    //       content: "";
+    //       position: absolute;
+    //       top: 0;
+    //       left: 0;
+    //       width: 100%;
+    //       height: 100%;
+    //       opacity: 0;
+    //       background-image: linear-gradient(
+    //       180deg,
+    //       rgba(25, 30, 38, 0) 0%,
+    //       rgba(31, 37, 46, 0.64) 45.59%,
+    //       rgba(31, 37, 46, 0.89) 85%
+    //     );
+    //       background-blend-mode: multiply;
+    //     }
+    //     &:hover::before {
+    //       opacity: 0.5;
+    //     }
+    //     .prof-bio-text {
+    //       transition: 0.3s ease-in-out all;
+    //       position: absolute;
+    //       content: "";
+    //       bottom: 0;
+    //       left: 0;
+    //       opacity: 0;
+    //       &:hover {
+    //         opacity: 1 !important;
+    //       }
+    //     }
+    //   }
+    // }
+    .prof-resume {
+      color: $masterclass-dark-grey;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.5rem;
+      letter-spacing: 0.02rem;
+      text-transform: uppercase;
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+
+  //Section Pricing
+  .masterclass-pricing {
+    .pricing-title {
+      @include font-title-h2;
+    }
+    .pricing-text {
+      .text-header {
+        color: $masterclass-dark-grey;
+        font-size: 1.73388rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.08069rem;
+      }
+      .text-price {
+        .currency {
+          font-size: 1.285rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.542rem;
+        }
+        .value {
+          font-size: 3.42675rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%;
+        }
+        .digits {
+          font-size: 1.42781rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%;
+        }
+      }
+      .text-splits {
+        color: $masterclass-dark-grey;
+        font-size: 1.14225rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.37069rem;
+      }
+    }
+    .pricing-footer {
+      font-size: 1.875rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2.25rem;
+      display: inline;
+      @include devices(small-screen) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      @include devices(mobile) {
+        font-size: 1.1rem;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  //Section Classes
+  .masterclass-classes {
+    position: relative;
+    @include masterclass-background;
+    .class-bg-cyan {
+      background-color: $masterclass-bg-cyan;
+      .class-badge {
+        color: $masterclass-black;
+        font: {
+          size: 1.04344rem;
+          style: normal;
+          weight: 400;
+        }
+        line-height: normal;
+        margin: {
+          top: 1rem;
+          bottom: 1.5rem;
+        }
+        border: 1px solid $masterclass-black;
+        padding: 0.5rem;
+        display: inline-block;
+
+        counter-reset: class-badge;
+        &::before {
+          counter-increment: class-badge;
+          content: "Módulo " counter(class-badge);
+        }
+      }
+      .class-title {
+        color: $masterclass-black;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 1.75rem;
+        @include devices(tablet) {
+          font-size: 1.75rem;
+        }
+      }
+      .class-description {
+        color: $masterclass-black;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.88125rem;
+        @include devices(tablet) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .class-img {
+      height: auto;
+      min-height: 200px;
+      @include devices(mobile) {
+        height: 200px;
+      }
+    }
+    .masterclass-cta {
+      padding-bottom: 7rem;
+      .cta-title {
+        color: $color-white;
+        text-align: center;
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 4.1875rem;
+        @include devices(tablet) {
+          font-size: 3rem;
+          line-height: 3.5rem;
+        }
+      }
+      .cta-subtitle {
+        color: $color-white;
+        text-align: center;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 3.975rem;
+        @include devices(tablet) {
+          font-size: 1.8rem;
+          line-height: 2.5rem;
+        }
+      }
+      .cta-btn {
+        margin: {
+          left: auto;
+          right: auto;
+        }
+        .masterclass-btn {
+          padding: 1rem;
+          border-radius: 0.625rem;
+          border: 0.5px solid $color-white;
+          background: $masterclass-primary;
+          color: $color-white;
+          text-align: center;
+          font-size: 1.75rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 0.035rem;
+          text-transform: uppercase;
+          min-width: 300px;
+          width: 30vw;
+          &:hover {
+            background: $masterclass-primary-hover;
+          }
+        }
+      }
+    }
+  }
+}

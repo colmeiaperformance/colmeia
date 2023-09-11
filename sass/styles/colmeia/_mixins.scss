@@ -1,0 +1,24 @@
+@mixin devices($breakpoint) {
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @include devices(mobile) {
+      @content;
+    }
+  }
+}
+
+@mixin font-title-h2 {
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.2rem;
+  @include devices(tablet) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}

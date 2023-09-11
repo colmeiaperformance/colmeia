@@ -4,7 +4,6 @@
 // /********** DEFAULT Colmeia ***************/
 // /************************************/
 @import "styles/colmeia/_default";
-@import "styles/colmeia/_style-header";
 @import "styles/colmeia/_variables";
 
 /************************************/
@@ -43,3 +42,10 @@
 @import "styles/sections/_newsletter";
 @import "styles/sections/_products";
 @import "styles/sections/_services";
+
+
+/**
+* Colmeia LPs
+*/
+
+@import "styles/pages/_masterclass";

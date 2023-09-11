@@ -1,28 +1,28 @@
 //Brand colors
 //Primary
-$color-primary-dark: #00A69D;
+$color-primary-dark: #00a69d;
 $color-primary-medium: #4d797e;
-$color-primary-light: #71C3BD;
-$color-primary-blog: #00A59E;
-$color-breadcrumb: #00D0C5;
+$color-primary-light: #71c3bd;
+$color-primary-blog: #00a59e;
+$color-breadcrumb: #00d0c5;
 
 //Secondary
-$color-secondary-dark: #FF702E;
+$color-secondary-dark: #ff702e;
 
 //Solid colors
-$color-grey-dark: #353C42;
-$color-grey-light: #E7E7E7;
-$color-water-blue: #4F98A6;
+$color-grey-dark: #353c42;
+$color-grey-light: #e7e7e7;
+$color-water-blue: #4f98a6;
 $color-grey: #727272;
 $grey-menu-link: #606060;
-$grey-pagination: #C4C4C4;
-$color-grey-sidebar: #DDDDDD;
-$border-single: #E5E5E5;
-$grey-sobre: #F9F9F9;
+$grey-pagination: #c4c4c4;
+$color-grey-sidebar: #dddddd;
+$border-single: #e5e5e5;
+$grey-sobre: #f9f9f9;
 
 //Default colors
 $color-black: #000000;
-$color-white: #FFFFFF;
+$color-white: #ffffff;
 
 //Backgrounds
 .background-green-dark {
@@ -38,14 +38,14 @@ $color-white: #FFFFFF;
 }
 
 .background-mustard-dark {
-  background-color: $color-secondary-dark!important;
+  background-color: $color-secondary-dark !important;
 }
 
-.background-grey-light{
+.background-grey-light {
   background-color: $color-grey-light;
 }
 
-.background-grey-dark{
+.background-grey-dark {
   background-color: $color-grey-dark;
 }
 
@@ -58,9 +58,18 @@ $color-white: #FFFFFF;
 }
 
 .color-primary-dark {
-  color: $color-primary-dark!important;
+  color: $color-primary-dark !important;
 }
 
-.background-blog{
+.background-blog {
   background-color: $color-primary-blog;
 }
+
+//Masterclass
+$masterclass-primary: #0d6065;
+$masterclass-primary-hover: #20888f;
+$masterclass-cyan: #7df7ff;
+$masterclass-bg-cyan: #e2fdff;
+$masterclass-light-grey: #d9d9d9;
+$masterclass-dark-grey: #585858;
+$masterclass-black: #100f0f;

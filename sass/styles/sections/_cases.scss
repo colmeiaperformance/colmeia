@@ -67,7 +67,7 @@
       padding: 30px 40px;
       height: auto;
     }
-    .card:nth-last-child() {
+    .card:last-child() {
       @media (max-width: 991.98px) {
         margin-bottom: 50px;
       }
