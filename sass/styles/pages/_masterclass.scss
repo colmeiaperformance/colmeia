@@ -41,6 +41,12 @@
   background-blend-mode: multiply;
 }
 
+//General
+body {
+  counter-reset: extra-counter;
+  counter-reset: class-badge;
+}
+
 .page-masterclass {
   position: relative;
 
@@ -112,7 +118,6 @@
         line-height: normal;
       }
       ul.extra-container {
-        counter-reset: extra-counter;
         list-style-type: none;
         padding-left: 0;
         .card {
@@ -143,7 +148,7 @@
             padding: 1.25rem;
             min-width: 110px;
             &::before {
-              counter-increment: class-badge;
+              counter-increment: extra-counter;
               content: counter(extra-counter, decimal-leading-zero);
               font-size: 1.5rem;
             }
@@ -469,8 +474,6 @@
         border: 1px solid $masterclass-black;
         padding: 0.5rem;
         display: inline-block;
-
-        counter-reset: class-badge;
         &::before {
           counter-increment: class-badge;
           content: "Módulo " counter(class-badge);

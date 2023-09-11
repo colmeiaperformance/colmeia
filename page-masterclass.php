@@ -77,27 +77,9 @@ get_header(); ?>
             alt="">
         </div>
       </div>
-      <form class="form-fields" action="">
-        <div class="row">
-          <div class="form-floating col-12 col-lg-6 mb-3">
-            <input type="text" name="name" id="name" class="form-control" placeholder="Nome">
-            <label for="name" class="form-label">Nome</label>
-          </div>
-          <div class="form-floating col-12 col-lg-6 mb-3">
-            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
-            <label for="email" class="form-label">Email</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-floating col-12 col-lg-6 mb-3">
-            <input type="text" name="name" id="name" class="form-control" placeholder="Nome">
-            <label for="company" class="form-label">Empresa</label>
-          </div>
-          <div class="col-12 col-lg-6 mb-3">
-            <button type="submit" class="btn btn-masterclass">Inscreva-se</button>
-          </div>
-        </div>
-      </form>
+
+      <?php get_template_part( '/template-parts/forms/form-masterclass' ); ?>
+
     </div>
   </section>
   <section class="masterclass-new px-4">
