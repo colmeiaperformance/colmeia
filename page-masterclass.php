@@ -109,7 +109,7 @@ get_header(); ?>
   <section class="container-fluid masterclass-profs py-5 px-4">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 prof-card-container">
           <div class="prof-card"
             style="background-image:url('<?php echo get_template_directory_uri() . '/images/masterclass/prof1.jpg'; ?>');background-size:cover;background-position:center;">
             <div class="prof-bg"></div>
@@ -126,9 +126,9 @@ get_header(); ?>
               </div>
             </div>
           </div>
-          <!-- <div class="prof-btn">
-            <a class="btn btn-infos d-grid">Ver mais</a>
-          </div> -->
+          <div class="prof-btn">
+            <a class="btn btn-infos d-grid d-lg-none">Ver mais</a>
+          </div>
           <div class="prof-resume mt-4 mb-5">
             <strong>Fernando Terra —</strong> Profissional com 15 anos de experiência na área de marketing para o setor,
             com MBA de
@@ -136,7 +136,7 @@ get_header(); ?>
             Setor Elétrico.
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 prof-card-container">
           <div class="prof-card"
             style="background-image:url('<?php echo get_template_directory_uri() . '/images/masterclass/prof2.jpg'; ?>');background-size:cover;background-position:center;">
             <div class="prof-bg"></div>
@@ -147,14 +147,14 @@ get_header(); ?>
               </div>
             </div>
           </div>
-          <!-- <div class="prof-btn">
-            <a class="btn btn-infos d-grid">Ver mais</a>
-          </div> -->
+          <div class="prof-btn">
+            <a class="btn btn-infos d-grid d-lg-none">Ver mais</a>
+          </div>
           <div class="prof-resume mt-4 mb-5">
             <strong>Willian Thiago Crizostimo —</strong> CEO da BW8 Martech, agência com time de mais de 70 especialistas em Marketing Digital, Vendas, Automação e Performance. 
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 prof-card-container">
           <div class="prof-card"
             style="background-image:url('<?php echo get_template_directory_uri() . '/images/masterclass/prof3.jpg'; ?>');background-size:cover;background-position:center;">
             <div class="prof-bg"></div>
@@ -165,14 +165,14 @@ get_header(); ?>
               </div>
             </div>
           </div>
-          <!-- <div class="prof-btn">
-            <a class="btn btn-infos d-grid">Ver mais</a>
-          </div> -->
+          <div class="prof-btn">
+            <a class="btn btn-infos d-grid d-lg-none">Ver mais</a>
+          </div>
           <div class="prof-resume mt-4 mb-5">
             <strong>André Felber —</strong> Cofundador da ePowerbay, plataforma de Inteligência de Mercado para Projetos de Energia.
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 prof-card-container">
           <div class="prof-card"
             style="background-image:url('<?php echo get_template_directory_uri() . '/images/masterclass/prof4.jpg'; ?>');background-size:cover;background-position:center;">
             <div class="prof-bg"></div>
@@ -183,9 +183,9 @@ get_header(); ?>
               </div>
             </div>
           </div>
-          <!-- <div class="prof-btn">
-            <a class="btn btn-infos d-grid">Ver mais</a>
-          </div> -->
+          <div class="prof-btn">
+            <a class="btn btn-infos d-grid d-lg-none">Ver mais</a>
+          </div>
           <div class="prof-resume mt-4 mb-5">
             <strong>Valéria Lopes —</strong> CMO do Bonö Group, Um dos maiores grupos do setor de energia do Brasil.
           </div>

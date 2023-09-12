@@ -333,7 +333,8 @@ body {
         opacity: 0;
       }
       &:hover .prof-bg,
-      &:active .prof-bg {
+      &:active .prof-bg,
+      &.active > .prof-bg {
         transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03) all;
         background: linear-gradient(
           0deg,
@@ -344,6 +345,7 @@ body {
         opacity: 1;
       }
       .prof-badge {
+        opacity: 1;
         position: absolute;
         top: 0;
         right: 0;
@@ -359,19 +361,12 @@ body {
         letter-spacing: 0.0175rem;
         text-transform: uppercase;
         z-index: 6;
+        transition: 0.4s ease-in-out all;
       }
-      .prof-btn {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        transform: translateY(0px);
-        z-index: 5;
-      }
-      &:hover .prof-btn,
-      &:active .prof-btn {
-        transform: translateY(255px);
-        transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+      &:hover .prof-badge,
+      &:active .prof-badge,
+      &.active > .prof-badge {
+        opacity: 0;
       }
       .prof-infos {
         position: absolute;
@@ -388,14 +383,15 @@ body {
         line-height: 1rem;
         letter-spacing: 0.015rem;
         text-transform: uppercase;
-        transform: translateY(255px);
+        transform: translateY(450px);
         transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
         .prof-bio-text {
           padding: 0rem 1rem 1rem 1rem;
         }
       }
       &:hover .prof-infos,
-      &:active .prof-infos {
+      &:active .prof-infos,
+      &.active > .prof-infos {
         transform: translateY(0px);
       }
     }

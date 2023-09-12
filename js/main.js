@@ -87,3 +87,23 @@ jQuery(document).ready(function () {
     return false;
   });
 });
+
+//Btn do prof-card dentro da página masterclass
+jQuery(document).ready(function ($) {
+  // Quando o botão .btn-infos é clicado
+  $(".btn-infos").on("click", function () {
+    // Encontre o elemento .prof-card correspondente
+    var $profCard = $(this).closest(".prof-card-container").find(".prof-card");
+
+    // Verifique se a classe .active está presente no elemento .prof-card
+    if ($profCard.hasClass("active")) {
+      // Se estiver presente, remova a classe .active e mude o texto do botão para "Ver mais"
+      $profCard.removeClass("active");
+      $(this).text("Ver mais");
+    } else {
+      // Se não estiver presente, adicione a classe .active e mude o texto do botão para "Ver menos"
+      $profCard.addClass("active");
+      $(this).text("Ver menos");
+    }
+  });
+});

@@ -3356,7 +3356,7 @@ body {
   transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03) all;
   opacity: 0;
 }
-.page-masterclass .masterclass-profs .prof-card:hover .prof-bg, .page-masterclass .masterclass-profs .prof-card:active .prof-bg {
+.page-masterclass .masterclass-profs .prof-card:hover .prof-bg, .page-masterclass .masterclass-profs .prof-card:active .prof-bg, .page-masterclass .masterclass-profs .prof-card.active > .prof-bg {
   -webkit-transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03) all;
   transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03) all;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(17, 80, 85, 0.9)), color-stop(50%, rgba(32, 136, 143, 0.7)), to(rgba(32, 136, 143, 0.1)));
@@ -3364,6 +3364,7 @@ body {
   opacity: 1;
 }
 .page-masterclass .masterclass-profs .prof-card .prof-badge {
+  opacity: 1;
   position: absolute;
   top: 0;
   right: 0;
@@ -3380,21 +3381,11 @@ body {
   letter-spacing: 0.0175rem;
   text-transform: uppercase;
   z-index: 6;
+  -webkit-transition: 0.4s ease-in-out all;
+  transition: 0.4s ease-in-out all;
 }
-.page-masterclass .masterclass-profs .prof-card .prof-btn {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  z-index: 5;
-}
-.page-masterclass .masterclass-profs .prof-card:hover .prof-btn, .page-masterclass .masterclass-profs .prof-card:active .prof-btn {
-  -webkit-transform: translateY(255px);
-          transform: translateY(255px);
-  -webkit-transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
-  transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+.page-masterclass .masterclass-profs .prof-card:hover .prof-badge, .page-masterclass .masterclass-profs .prof-card:active .prof-badge, .page-masterclass .masterclass-profs .prof-card.active > .prof-badge {
+  opacity: 0;
 }
 .page-masterclass .masterclass-profs .prof-card .prof-infos {
   position: absolute;
@@ -3409,15 +3400,15 @@ body {
   line-height: 1rem;
   letter-spacing: 0.015rem;
   text-transform: uppercase;
-  -webkit-transform: translateY(255px);
-          transform: translateY(255px);
+  -webkit-transform: translateY(450px);
+          transform: translateY(450px);
   -webkit-transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
   transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
 .page-masterclass .masterclass-profs .prof-card .prof-infos .prof-bio-text {
   padding: 0rem 1rem 1rem 1rem;
 }
-.page-masterclass .masterclass-profs .prof-card:hover .prof-infos, .page-masterclass .masterclass-profs .prof-card:active .prof-infos {
+.page-masterclass .masterclass-profs .prof-card:hover .prof-infos, .page-masterclass .masterclass-profs .prof-card:active .prof-infos, .page-masterclass .masterclass-profs .prof-card.active > .prof-infos {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
