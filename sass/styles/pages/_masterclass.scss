@@ -41,6 +41,28 @@
   background-blend-mode: multiply;
 }
 
+@mixin pos($pos, $left: null, $top: null, $right: null, $bottom: null) {
+  position: $pos;
+  left: $left;
+  @if $top {
+    top: $top;
+  }
+  @if $left {
+    left: $left;
+  }
+  @if $right {
+    right: $right;
+  }
+  @if $bottom {
+    bottom: $bottom;
+  }
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
 //General
 body {
   counter-reset: extra-counter class-badge;
@@ -249,7 +271,8 @@ body {
         text-transform: uppercase;
         padding: 1.1rem;
         width: 100%;
-        &:hover {
+        &:hover,
+        &:active {
           background: $masterclass-primary-hover;
         }
       }
@@ -291,101 +314,101 @@ body {
   }
   //Section profs
   .masterclass-profs {
-    // .prof-card {
-    //   position: relative;
-    //   height: 100%;
-    //   background-size: cover;
-    //   background-position: top center;
-    //   background-repeat: no-repeat;
-    //   overflow: hidden;
-    //   border: 0;
-    //   .card-body{
-    //     .card-subbody {
-    //       position: relative;
-    //       opacity: 1;
-    //       transition: all ease-in-out 0.15s;
-
-    //       // make sure hidden text effect only shows on desktop
-    //       @media screen and (min-width: 750px) {
-    //         opacity: 0;
-    //         transform: translateY(-2em);
-    //       }
-    //     }
-    //   }
-    //   &:hover {
-    //     .card-subbody {
-    //       transform: translateY(0);
-    //       height: auto;
-    //       opacity: 1;
-    //     }
-    //   } // hover
-    //   .prof-badge {
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0;
-    //     display: inline;
-    //     background: rgba(100, 100, 100, 0.4);
-    //     backdrop-filter: blur(10px);
-    //     padding: 1rem;
-    //     color: $color-white;
-    //     font-size: 0.875rem;
-    //     font-style: normal;
-    //     font-weight: 600;
-    //     line-height: 1.3125rem;
-    //     letter-spacing: 0.0175rem;
-    //     text-transform: uppercase;
-    //   }
-    //   .prof-img-container {
-    //     .prof-img {
-    //       width: 100%;
-    //       height: auto;
-    //     }
-    //   }
-    //   .prof-bio-container {
-    //     transition: 0.3s ease-in-out all;
-    //     position: relative;
-    //     bottom: 0;
-    //     left: 0;
-    //     color: $color-white;
-    //     font-size: 0.75rem;
-    //     font-style: normal;
-    //     font-weight: 300;
-    //     line-height: 1.125rem;
-    //     letter-spacing: 0.015rem;
-    //     text-transform: uppercase;
-    //     &::before {
-    //       transition: 0.3s ease-in-out all;
-    //       content: "";
-    //       position: absolute;
-    //       top: 0;
-    //       left: 0;
-    //       width: 100%;
-    //       height: 100%;
-    //       opacity: 0;
-    //       background-image: linear-gradient(
-    //       180deg,
-    //       rgba(25, 30, 38, 0) 0%,
-    //       rgba(31, 37, 46, 0.64) 45.59%,
-    //       rgba(31, 37, 46, 0.89) 85%
-    //     );
-    //       background-blend-mode: multiply;
-    //     }
-    //     &:hover::before {
-    //       opacity: 0.5;
-    //     }
-    //     .prof-bio-text {
-    //       transition: 0.3s ease-in-out all;
-    //       position: absolute;
-    //       content: "";
-    //       bottom: 0;
-    //       left: 0;
-    //       opacity: 0;
-    //       &:hover {
-    //         opacity: 1 !important;
-    //       }
-    //     }
-    //   }
-    // }
+    .prof-card {
+      position: relative;
+      overflow: hidden;
+      border: 0;
+      height: 335px;
+      cursor: pointer;
+      @include devices(mobile) {
+        height: 315px;
+      }
+      .prof-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03) all;
+        opacity: 0;
+      }
+      &:hover .prof-bg,
+      &:active .prof-bg {
+        transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03) all;
+        background: linear-gradient(
+          0deg,
+          rgba(17, 80, 85, 0.9) 0%,
+          rgba(32, 136, 143, 0.7) 50%,
+          rgba(32, 136, 143, 0.1) 100%
+        );
+        opacity: 1;
+      }
+      .prof-badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline;
+        background: rgba(100, 100, 100, 0.4);
+        backdrop-filter: blur(10px);
+        padding: 1rem;
+        color: $color-white;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.3125rem;
+        letter-spacing: 0.0175rem;
+        text-transform: uppercase;
+        z-index: 6;
+      }
+      .prof-btn {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(0px);
+        z-index: 5;
+      }
+      &:hover .prof-btn,
+      &:active .prof-btn {
+        transform: translateY(255px);
+        transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+      }
+      .prof-infos {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        color: $color-white;
+        z-index: 5;
+        font: {
+          size: 0.75rem;
+          style: normal;
+          weight: 300;
+        }
+        line-height: 1rem;
+        letter-spacing: 0.015rem;
+        text-transform: uppercase;
+        transform: translateY(255px);
+        transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+        .prof-bio-text {
+          padding: 0rem 1rem 1rem 1rem;
+        }
+      }
+      &:hover .prof-infos,
+      &:active .prof-infos {
+        transform: translateY(0px);
+      }
+    }
+    .prof-btn {
+      .btn-infos {
+        background-color: $masterclass-primary;
+        color: $color-white;
+        &:hover,
+        &:active {
+          background-color: $masterclass-primary-hover;
+        }
+      }
+    }
     .prof-resume {
       color: $masterclass-dark-grey;
       font-size: 1rem;
@@ -568,7 +591,8 @@ body {
           text-transform: uppercase;
           min-width: 300px;
           width: 30vw;
-          &:hover {
+          &:hover,
+          &:active {
             background: $masterclass-primary-hover;
           }
         }

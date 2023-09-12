@@ -106,16 +106,15 @@ get_header(); ?>
       </div>
     </div>
   </section>
-  <section class="container-fluid masterclass-profs py-5 px-4 d-none">
+  <section class="container-fluid masterclass-profs py-5 px-4">
     <div class="container">
       <div class="row">
-        <div class="col">
-          <div class="prof-card">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prof-card"
+            style="background-image:url('<?php echo get_template_directory_uri() . '/images/masterclass/prof1.jpg'; ?>');background-size:cover;background-position:center;">
+            <div class="prof-bg"></div>
             <div class="prof-badge">Professor</div>
-            <div class="prof-img-container"><img class="prof-img"
-                src="<?php echo get_template_directory_uri() . '/images/masterclass/prof1.jpg'; ?>"
-                alt="Fernando Terra"></div>
-            <div class="prof-bio-container">
+            <div class="prof-infos">
               <div class="prof-bio-text">
                 Durante este período, assumiu várias posições estratégicas nas áreas de marketing,
                 comunicação integrada, pesquisa e gestão. Alcançou resultados inéditos em relação à percepção do
@@ -127,39 +126,73 @@ get_header(); ?>
               </div>
             </div>
           </div>
-          <div class="prof-resume">
+          <!-- <div class="prof-btn">
+            <a class="btn btn-infos d-grid">Ver mais</a>
+          </div> -->
+          <div class="prof-resume mt-4 mb-5">
             <strong>Fernando Terra —</strong> Profissional com 15 anos de experiência na área de marketing para o setor,
             com MBA de
             Gestão de Negócios para o
             Setor Elétrico.
           </div>
         </div>
-        <div class="col">
-          <div class="prof-card"></div>
-        </div>
-        <div class="col">
+        <div class="col-12 col-md-6 col-lg-3">
           <div class="prof-card"
-            style="background-image:url('https://images.unsplash.com/photo-1527862399980-b92febc270b3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1e171d0a6f3ff8c0d168e972c5009493&auto=format&fit=crop&w=800&q=60');">
-
-            <div class="card-body">
-              <div class="card-subbody">
-                <p class="prof-bio-text">Durante este período, assumiu várias posições estratégicas nas áreas de
-                  marketing,
-                  comunicação integrada, pesquisa e gestão. Alcançou resultados inéditos em relação à percepção do
-                  cliente,
-                  construção de marca e vendas.
-                  <br><br>
-                  Nos últimos 8 anos, esteve à frente, como fornecedor, de toda a presença digital da Enel X (site,
-                  redes
-                  sociais, Inbound Marketing, mídia e CRM) e mais recentemente prestando serviços para a Quanta Geração.
-                </p>
-              </div><!-- card img overlay -->
-            </div><!-- card body -->
+            style="background-image:url('<?php echo get_template_directory_uri() . '/images/masterclass/prof2.jpg'; ?>');background-size:cover;background-position:center;">
+            <div class="prof-bg"></div>
+            <div class="prof-badge">Professor</div>
+            <div class="prof-infos">
+              <div class="prof-bio-text">
+              Atuando em soluções de tecnologia e acelerando processos para encurtar distâncias entre as ações de marketing e o resultado de vendas. Em 2022 criou a ferramenta HOOK, um sistema para integrações que já está disponível na loja de APP da RD Station MKT, e também fundador da Plataforma Educacional MOLTI, que distribui conteúdo mensal para mais de 150 mil pessoas.
+              </div>
+            </div>
+          </div>
+          <!-- <div class="prof-btn">
+            <a class="btn btn-infos d-grid">Ver mais</a>
+          </div> -->
+          <div class="prof-resume mt-4 mb-5">
+            <strong>Willian Thiago Crizostimo —</strong> CEO da BW8 Martech, agência com time de mais de 70 especialistas em Marketing Digital, Vendas, Automação e Performance. 
           </div>
         </div>
-        <div class="col">
-          <div class="prof-card"></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prof-card"
+            style="background-image:url('<?php echo get_template_directory_uri() . '/images/masterclass/prof3.jpg'; ?>');background-size:cover;background-position:center;">
+            <div class="prof-bg"></div>
+            <div class="prof-badge">Professor</div>
+            <div class="prof-infos">
+              <div class="prof-bio-text">
+              Engenheiro hídrico formado pela Universidade Federal de Itajubá, com MBA pela FGV. Na plataforma ePowerBay, introduziu novos métodos de análise para Geração Centralizada, Distribuída e Mercado Livre. Como Diretor Técnico pelos últimos 8 anos, lidera inovações, tecnologias e análises estratégicas para o setor elétrico.
+              </div>
+            </div>
+          </div>
+          <!-- <div class="prof-btn">
+            <a class="btn btn-infos d-grid">Ver mais</a>
+          </div> -->
+          <div class="prof-resume mt-4 mb-5">
+            <strong>André Felber —</strong> Cofundador da ePowerbay, plataforma de Inteligência de Mercado para Projetos de Energia.
+          </div>
         </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prof-card"
+            style="background-image:url('<?php echo get_template_directory_uri() . '/images/masterclass/prof4.jpg'; ?>');background-size:cover;background-position:center;">
+            <div class="prof-bg"></div>
+            <div class="prof-badge">Professora</div>
+            <div class="prof-infos">
+              <div class="prof-bio-text">
+              Executiva de Marketing com mais de 20 anos de bagagem e passagem por empresas como Schneider-Electric, Bematech e 20th Century Fox na Alemanha. Especialista em Branding, foca hoje suas energias no Bonö Group, holding de empresas do setor de energia onde lidera as estratégias de Branding, Marketing & Comunicação e Employer Branding do grupo.
+              </div>
+            </div>
+          </div>
+          <!-- <div class="prof-btn">
+            <a class="btn btn-infos d-grid">Ver mais</a>
+          </div> -->
+          <div class="prof-resume mt-4 mb-5">
+            <strong>Valéria Lopes —</strong> CMO do Bonö Group, Um dos maiores grupos do setor de energia do Brasil.
+          </div>
+        </div>
+        
+        
+        
       </div>
     </div>
   </section>
