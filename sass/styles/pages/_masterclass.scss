@@ -41,6 +41,21 @@
   background-blend-mode: multiply;
 }
 
+@mixin masterclass-desconto-background {
+  background: url("images/masterclass/textures2.jpg"),
+    linear-gradient(270deg, rgba(13, 96, 101, 1) 0%, rgba(7, 42, 44, 1) 100%);
+  background:
+    url("images/masterclass/textures2.jpg"),
+    -moz-linear-gradient(270deg, rgba(13, 96, 101, 1) 0%, rgba(7, 42, 44, 1) 100%);
+  background:
+    url("images/masterclass/textures2.jpg"),
+    -webkit-linear-gradient(270deg, rgba(13, 96, 101, 1) 0%, rgba(7, 42, 44, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d6065",endColorstr="#072a2c",GradientType=1);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+}
+
 @mixin pos($pos, $left: null, $top: null, $right: null, $bottom: null) {
   position: $pos;
   left: $left;
@@ -68,7 +83,8 @@ body {
   counter-reset: extra-counter class-badge;
 }
 
-.page-masterclass {
+.page-masterclass,
+.page-masterclass-desconto {
   position: relative;
 
   .masterclass-green {
@@ -114,6 +130,9 @@ body {
         font-style: normal;
         font-weight: 900;
         line-height: normal;
+      }
+      .header-description {
+        font-size: 2.375rem;
       }
     }
 
@@ -223,15 +242,45 @@ body {
       }
     }
   }
+  .masterclass-desconto-header {
+    color: $color-white;
+    @include masterclass-desconto-background;
+    .header-badge {
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+    .header-title-container {
+      padding-left: 2rem;
+      border-left: 1px solid $color-white;
+      .header-title {
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+      .header-description {
+        font-size: 2.375rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.2;
+      }
+    }
+  }
   //Section form
   .masterclass-form {
     .form-img {
-      margin-top: -100px;
+      margin-top: -200px;
       width: 29vw;
     }
     .form-title {
       color: $masterclass-primary;
       @include font-title-h2;
+    }
+    .form-subtitle {
+      color: $masterclass-primary;
+      font-size: 2.5rem;
     }
     .form-description {
       font-size: 1.125rem;
@@ -284,8 +333,15 @@ body {
       }
     }
     @include devices(tablet) {
-      .form-title {
+      .form-title,
+      .form-subtitle {
         font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+    @include devices(mobile) {
+      .form-subtitle {
+        font-size: 1.5rem;
         line-height: 2.5rem;
       }
     }

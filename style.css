@@ -3085,23 +3085,27 @@ body {
   counter-reset: extra-counter class-badge;
 }
 
-.page-masterclass {
+.page-masterclass,
+.page-masterclass-desconto {
   position: relative;
   /*
   ** Sections
   */
 }
-.page-masterclass .masterclass-green {
+.page-masterclass .masterclass-green,
+.page-masterclass-desconto .masterclass-green {
   color: #0d6065;
 }
-.page-masterclass .highlight {
+.page-masterclass .highlight,
+.page-masterclass-desconto .highlight {
   display: inline-block;
   background-color: #0d6065;
   color: #ffffff;
   padding: 0.15rem;
   margin-bottom: 5px;
 }
-.page-masterclass .masterclass-header {
+.page-masterclass .masterclass-header,
+.page-masterclass-desconto .masterclass-header {
   color: #ffffff;
   background: url("images/masterclass/textures.png"), -webkit-gradient(linear, right top, left top, from(rgb(13, 96, 101)), to(rgb(7, 42, 44)));
   background: url("images/masterclass/textures.png"), linear-gradient(270deg, rgb(13, 96, 101) 0%, rgb(7, 42, 44) 100%);
@@ -3109,17 +3113,21 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d6065",endColorstr="#072a2c",GradientType=1);
   background-blend-mode: multiply;
 }
-.page-masterclass .masterclass-header .header-row .header-image {
+.page-masterclass .masterclass-header .header-row .header-image,
+.page-masterclass-desconto .masterclass-header .header-row .header-image {
   height: 70vh;
   min-height: 770px;
 }
-.page-masterclass .masterclass-header .header-content {
+.page-masterclass .masterclass-header .header-content,
+.page-masterclass-desconto .masterclass-header .header-content {
   margin-left: -13rem;
 }
-.page-masterclass .masterclass-header .header-content .header-badge {
+.page-masterclass .masterclass-header .header-content .header-badge,
+.page-masterclass-desconto .masterclass-header .header-content .header-badge {
   margin-bottom: 1rem;
 }
-.page-masterclass .masterclass-header .header-content .header-badge span {
+.page-masterclass .masterclass-header .header-content .header-badge span,
+.page-masterclass-desconto .masterclass-header .header-content .header-badge span {
   font-size: 1.25vw;
   font-style: normal;
   font-weight: 500;
@@ -3127,19 +3135,27 @@ body {
   border: 1px solid #ffffff;
   padding: 0.5rem;
 }
-.page-masterclass .masterclass-header .header-content .header-title {
+.page-masterclass .masterclass-header .header-content .header-title,
+.page-masterclass-desconto .masterclass-header .header-content .header-title {
   font-size: 3.75vw;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
 }
-.page-masterclass .masterclass-header .divider {
+.page-masterclass .masterclass-header .header-content .header-description,
+.page-masterclass-desconto .masterclass-header .header-content .header-description {
+  font-size: 2.375rem;
+}
+.page-masterclass .masterclass-header .divider,
+.page-masterclass-desconto .masterclass-header .divider {
   border-top: 1px solid #ffffff;
 }
-.page-masterclass .masterclass-header .header-extra {
+.page-masterclass .masterclass-header .header-extra,
+.page-masterclass-desconto .masterclass-header .header-extra {
   position: relative;
 }
-.page-masterclass .masterclass-header .header-extra::before {
+.page-masterclass .masterclass-header .header-extra::before,
+.page-masterclass-desconto .masterclass-header .header-extra::before {
   content: "";
   position: absolute;
   left: 0;
@@ -3149,17 +3165,20 @@ body {
   background: #7df7ff;
   opacity: 0.2;
 }
-.page-masterclass .masterclass-header .header-extra .extra-title {
+.page-masterclass .masterclass-header .header-extra .extra-title,
+.page-masterclass-desconto .masterclass-header .header-extra .extra-title {
   font-size: 2.917vw;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
-.page-masterclass .masterclass-header .header-extra ul.extra-container {
+.page-masterclass .masterclass-header .header-extra ul.extra-container,
+.page-masterclass-desconto .masterclass-header .header-extra ul.extra-container {
   list-style-type: none;
   padding-left: 0;
 }
-.page-masterclass .masterclass-header .header-extra ul.extra-container .card {
+.page-masterclass .masterclass-header .header-extra ul.extra-container .card,
+.page-masterclass-desconto .masterclass-header .header-extra ul.extra-container .card {
   background-color: transparent;
   border: none;
   border-radius: 0;
@@ -3171,11 +3190,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.page-masterclass .masterclass-header .header-extra ul.extra-container .extra-item {
+.page-masterclass .masterclass-header .header-extra ul.extra-container .extra-item,
+.page-masterclass-desconto .masterclass-header .header-extra ul.extra-container .extra-item {
   margin-bottom: 30px;
   position: relative;
 }
-.page-masterclass .masterclass-header .header-extra ul.extra-container .extra-item::before {
+.page-masterclass .masterclass-header .header-extra ul.extra-container .extra-item::before,
+.page-masterclass-desconto .masterclass-header .header-extra ul.extra-container .extra-item::before {
   content: "";
   position: absolute;
   bottom: -30px;
@@ -3185,57 +3206,108 @@ body {
   height: 1px;
   width: 90%;
 }
-.page-masterclass .masterclass-header .header-extra ul.extra-container .extra-item:last-child::before {
+.page-masterclass .masterclass-header .header-extra ul.extra-container .extra-item:last-child::before,
+.page-masterclass-desconto .masterclass-header .header-extra ul.extra-container .extra-item:last-child::before {
   background: transparent;
 }
-.page-masterclass .masterclass-header .header-extra ul.extra-container .extra-item .extra-counter {
+.page-masterclass .masterclass-header .header-extra ul.extra-container .extra-item .extra-counter,
+.page-masterclass-desconto .masterclass-header .header-extra ul.extra-container .extra-item .extra-counter {
   background: rgba(255, 255, 255, 0.1);
   padding: 1.25rem;
   min-width: 110px;
 }
-.page-masterclass .masterclass-header .header-extra ul.extra-container .extra-item .extra-counter::before {
+.page-masterclass .masterclass-header .header-extra ul.extra-container .extra-item .extra-counter::before,
+.page-masterclass-desconto .masterclass-header .header-extra ul.extra-container .extra-item .extra-counter::before {
   counter-increment: extra-counter;
   content: counter(extra-counter, decimal-leading-zero);
   font-size: 1.5rem;
 }
 @media only screen and (max-width: 992px) {
-  .page-masterclass .masterclass-header .header-row .header-image {
+  .page-masterclass .masterclass-header .header-row .header-image,
+  .page-masterclass-desconto .masterclass-header .header-row .header-image {
     height: 40vh;
     min-height: 30vh;
   }
-  .page-masterclass .masterclass-header .header-content {
+  .page-masterclass .masterclass-header .header-content,
+  .page-masterclass-desconto .masterclass-header .header-content {
     margin-left: initial;
     margin-top: -100px;
   }
-  .page-masterclass .masterclass-header .header-content .header-badge > span {
+  .page-masterclass .masterclass-header .header-content .header-badge > span,
+  .page-masterclass-desconto .masterclass-header .header-content .header-badge > span {
     font-size: 1rem;
   }
-  .page-masterclass .masterclass-header .header-content .header-title {
+  .page-masterclass .masterclass-header .header-content .header-title,
+  .page-masterclass-desconto .masterclass-header .header-content .header-title {
     font-size: 3rem;
   }
-  .page-masterclass .masterclass-header .header-extra::before {
+  .page-masterclass .masterclass-header .header-extra::before,
+  .page-masterclass-desconto .masterclass-header .header-extra::before {
     top: 16.5%;
   }
-  .page-masterclass .masterclass-header .header-extra .extra-title {
+  .page-masterclass .masterclass-header .header-extra .extra-title,
+  .page-masterclass-desconto .masterclass-header .header-extra .extra-title {
     font-size: 1.5rem;
   }
-  .page-masterclass .masterclass-header .header-extra ul.extra-container .extra-item:last-child::before {
+  .page-masterclass .masterclass-header .header-extra ul.extra-container .extra-item:last-child::before,
+  .page-masterclass-desconto .masterclass-header .header-extra ul.extra-container .extra-item:last-child::before {
     background: #ffffff;
   }
 }
 @media screen and (max-width: 576px) {
-  .page-masterclass .masterclass-header .header-extra::before {
+  .page-masterclass .masterclass-header .header-extra::before,
+  .page-masterclass-desconto .masterclass-header .header-extra::before {
     display: none;
   }
-  .page-masterclass .masterclass-header .divider {
+  .page-masterclass .masterclass-header .divider,
+  .page-masterclass-desconto .masterclass-header .divider {
     width: 90%;
   }
 }
-.page-masterclass .masterclass-form .form-img {
-  margin-top: -100px;
+.page-masterclass .masterclass-desconto-header,
+.page-masterclass-desconto .masterclass-desconto-header {
+  color: #ffffff;
+  background: url("images/masterclass/textures2.jpg"), -webkit-gradient(linear, right top, left top, from(rgb(13, 96, 101)), to(rgb(7, 42, 44)));
+  background: url("images/masterclass/textures2.jpg"), linear-gradient(270deg, rgb(13, 96, 101) 0%, rgb(7, 42, 44) 100%);
+  background: url("images/masterclass/textures2.jpg"), -webkit-linear-gradient(270deg, rgb(13, 96, 101) 0%, rgb(7, 42, 44) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d6065",endColorstr="#072a2c",GradientType=1);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+}
+.page-masterclass .masterclass-desconto-header .header-badge,
+.page-masterclass-desconto .masterclass-desconto-header .header-badge {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.page-masterclass .masterclass-desconto-header .header-title-container,
+.page-masterclass-desconto .masterclass-desconto-header .header-title-container {
+  padding-left: 2rem;
+  border-left: 1px solid #ffffff;
+}
+.page-masterclass .masterclass-desconto-header .header-title-container .header-title,
+.page-masterclass-desconto .masterclass-desconto-header .header-title-container .header-title {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.page-masterclass .masterclass-desconto-header .header-title-container .header-description,
+.page-masterclass-desconto .masterclass-desconto-header .header-title-container .header-description {
+  font-size: 2.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.page-masterclass .masterclass-form .form-img,
+.page-masterclass-desconto .masterclass-form .form-img {
+  margin-top: -200px;
   width: 29vw;
 }
-.page-masterclass .masterclass-form .form-title {
+.page-masterclass .masterclass-form .form-title,
+.page-masterclass-desconto .masterclass-form .form-title {
   color: #0d6065;
   font-size: 3.5rem;
   font-style: normal;
@@ -3243,35 +3315,48 @@ body {
   line-height: 4.2rem;
 }
 @media only screen and (max-width: 992px) {
-  .page-masterclass .masterclass-form .form-title {
+  .page-masterclass .masterclass-form .form-title,
+  .page-masterclass-desconto .masterclass-form .form-title {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
-.page-masterclass .masterclass-form .form-description {
+.page-masterclass .masterclass-form .form-subtitle,
+.page-masterclass-desconto .masterclass-form .form-subtitle {
+  color: #0d6065;
+  font-size: 2.5rem;
+}
+.page-masterclass .masterclass-form .form-description,
+.page-masterclass-desconto .masterclass-form .form-description {
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.6875rem;
   letter-spacing: 0.01688rem;
 }
-.page-masterclass .masterclass-form .form-fields .form-control {
+.page-masterclass .masterclass-form .form-fields .form-control,
+.page-masterclass-desconto .masterclass-form .form-fields .form-control {
   border-radius: 0.625rem;
   background: #d9d9d9;
 }
-.page-masterclass .masterclass-form .form-fields .form-control:focus {
+.page-masterclass .masterclass-form .form-fields .form-control:focus,
+.page-masterclass-desconto .masterclass-form .form-fields .form-control:focus {
   border: 1px solid #20888f;
 }
-.page-masterclass .masterclass-form .form-fields .form-control + .form-label {
+.page-masterclass .masterclass-form .form-fields .form-control + .form-label,
+.page-masterclass-desconto .masterclass-form .form-fields .form-control + .form-label {
   margin-left: 0.75rem;
 }
-.page-masterclass .masterclass-form .form-fields .form-control + .form-label:focus + .form-label {
+.page-masterclass .masterclass-form .form-fields .form-control + .form-label:focus + .form-label,
+.page-masterclass-desconto .masterclass-form .form-fields .form-control + .form-label:focus + .form-label {
   margin-left: 0.75rem;
 }
-.page-masterclass .masterclass-form .form-fields .form-label::after {
+.page-masterclass .masterclass-form .form-fields .form-label::after,
+.page-masterclass-desconto .masterclass-form .form-fields .form-label::after {
   background: transparent;
 }
-.page-masterclass .masterclass-form .form-fields .btn-masterclass {
+.page-masterclass .masterclass-form .form-fields .btn-masterclass,
+.page-masterclass-desconto .masterclass-form .form-fields .btn-masterclass {
   border-radius: 0.625rem;
   background: #0d6065;
   color: #ffffff;
@@ -3285,48 +3370,67 @@ body {
   padding: 1.1rem;
   width: 100%;
 }
-.page-masterclass .masterclass-form .form-fields .btn-masterclass:hover, .page-masterclass .masterclass-form .form-fields .btn-masterclass:active {
+.page-masterclass .masterclass-form .form-fields .btn-masterclass:hover, .page-masterclass .masterclass-form .form-fields .btn-masterclass:active,
+.page-masterclass-desconto .masterclass-form .form-fields .btn-masterclass:hover,
+.page-masterclass-desconto .masterclass-form .form-fields .btn-masterclass:active {
   background: #20888f;
 }
-.page-masterclass .masterclass-form .form-fields .alert-masterclass {
+.page-masterclass .masterclass-form .form-fields .alert-masterclass,
+.page-masterclass-desconto .masterclass-form .form-fields .alert-masterclass {
   font-size: 2rem;
 }
 @media only screen and (max-width: 576px) {
-  .page-masterclass .masterclass-form .form-fields .alert-masterclass {
+  .page-masterclass .masterclass-form .form-fields .alert-masterclass,
+  .page-masterclass-desconto .masterclass-form .form-fields .alert-masterclass {
     font-size: 2rem;
   }
 }
 @media only screen and (max-width: 992px) {
-  .page-masterclass .masterclass-form .form-title {
+  .page-masterclass .masterclass-form .form-title,
+  .page-masterclass .masterclass-form .form-subtitle,
+  .page-masterclass-desconto .masterclass-form .form-title,
+  .page-masterclass-desconto .masterclass-form .form-subtitle {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
-.page-masterclass .masterclass-new .new-title {
+@media only screen and (max-width: 576px) {
+  .page-masterclass .masterclass-form .form-subtitle,
+  .page-masterclass-desconto .masterclass-form .form-subtitle {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+.page-masterclass .masterclass-new .new-title,
+.page-masterclass-desconto .masterclass-new .new-title {
   font-size: 3.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 4.2rem;
 }
 @media only screen and (max-width: 992px) {
-  .page-masterclass .masterclass-new .new-title {
+  .page-masterclass .masterclass-new .new-title,
+  .page-masterclass-desconto .masterclass-new .new-title {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
 @media only screen and (max-width: 1199px) {
-  .page-masterclass .masterclass-new .new-title {
+  .page-masterclass .masterclass-new .new-title,
+  .page-masterclass-desconto .masterclass-new .new-title {
     font-size: 2.5rem;
     line-height: 3.2rem;
   }
 }
 @media only screen and (max-width: 576px) {
-  .page-masterclass .masterclass-new .new-title {
+  .page-masterclass .masterclass-new .new-title,
+  .page-masterclass-desconto .masterclass-new .new-title {
     font-size: 1.8rem;
     line-height: 2.3rem;
   }
 }
-.page-masterclass .masterclass-new .new-text {
+.page-masterclass .masterclass-new .new-text,
+.page-masterclass-desconto .masterclass-new .new-text {
   color: #585858;
   font-size: 1.125rem;
   font-style: normal;
@@ -3334,7 +3438,8 @@ body {
   line-height: 1.6875rem;
   letter-spacing: 0.0225rem;
 }
-.page-masterclass .masterclass-profs .prof-card {
+.page-masterclass .masterclass-profs .prof-card,
+.page-masterclass-desconto .masterclass-profs .prof-card {
   position: relative;
   overflow: hidden;
   border: 0;
@@ -3342,11 +3447,13 @@ body {
   cursor: pointer;
 }
 @media only screen and (max-width: 576px) {
-  .page-masterclass .masterclass-profs .prof-card {
+  .page-masterclass .masterclass-profs .prof-card,
+  .page-masterclass-desconto .masterclass-profs .prof-card {
     height: 315px;
   }
 }
-.page-masterclass .masterclass-profs .prof-card .prof-bg {
+.page-masterclass .masterclass-profs .prof-card .prof-bg,
+.page-masterclass-desconto .masterclass-profs .prof-card .prof-bg {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -3356,14 +3463,18 @@ body {
   transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03) all;
   opacity: 0;
 }
-.page-masterclass .masterclass-profs .prof-card:hover .prof-bg, .page-masterclass .masterclass-profs .prof-card:active .prof-bg, .page-masterclass .masterclass-profs .prof-card.active > .prof-bg {
+.page-masterclass .masterclass-profs .prof-card:hover .prof-bg, .page-masterclass .masterclass-profs .prof-card:active .prof-bg, .page-masterclass .masterclass-profs .prof-card.active > .prof-bg,
+.page-masterclass-desconto .masterclass-profs .prof-card:hover .prof-bg,
+.page-masterclass-desconto .masterclass-profs .prof-card:active .prof-bg,
+.page-masterclass-desconto .masterclass-profs .prof-card.active > .prof-bg {
   -webkit-transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03) all;
   transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03) all;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(17, 80, 85, 0.9)), color-stop(50%, rgba(32, 136, 143, 0.7)), to(rgba(32, 136, 143, 0.1)));
   background: linear-gradient(0deg, rgba(17, 80, 85, 0.9) 0%, rgba(32, 136, 143, 0.7) 50%, rgba(32, 136, 143, 0.1) 100%);
   opacity: 1;
 }
-.page-masterclass .masterclass-profs .prof-card .prof-badge {
+.page-masterclass .masterclass-profs .prof-card .prof-badge,
+.page-masterclass-desconto .masterclass-profs .prof-card .prof-badge {
   opacity: 1;
   position: absolute;
   top: 0;
@@ -3384,10 +3495,14 @@ body {
   -webkit-transition: 0.4s ease-in-out all;
   transition: 0.4s ease-in-out all;
 }
-.page-masterclass .masterclass-profs .prof-card:hover .prof-badge, .page-masterclass .masterclass-profs .prof-card:active .prof-badge, .page-masterclass .masterclass-profs .prof-card.active > .prof-badge {
+.page-masterclass .masterclass-profs .prof-card:hover .prof-badge, .page-masterclass .masterclass-profs .prof-card:active .prof-badge, .page-masterclass .masterclass-profs .prof-card.active > .prof-badge,
+.page-masterclass-desconto .masterclass-profs .prof-card:hover .prof-badge,
+.page-masterclass-desconto .masterclass-profs .prof-card:active .prof-badge,
+.page-masterclass-desconto .masterclass-profs .prof-card.active > .prof-badge {
   opacity: 0;
 }
-.page-masterclass .masterclass-profs .prof-card .prof-infos {
+.page-masterclass .masterclass-profs .prof-card .prof-infos,
+.page-masterclass-desconto .masterclass-profs .prof-card .prof-infos {
   position: absolute;
   content: "";
   bottom: 0;
@@ -3405,21 +3520,29 @@ body {
   -webkit-transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
   transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
-.page-masterclass .masterclass-profs .prof-card .prof-infos .prof-bio-text {
+.page-masterclass .masterclass-profs .prof-card .prof-infos .prof-bio-text,
+.page-masterclass-desconto .masterclass-profs .prof-card .prof-infos .prof-bio-text {
   padding: 0rem 1rem 1rem 1rem;
 }
-.page-masterclass .masterclass-profs .prof-card:hover .prof-infos, .page-masterclass .masterclass-profs .prof-card:active .prof-infos, .page-masterclass .masterclass-profs .prof-card.active > .prof-infos {
+.page-masterclass .masterclass-profs .prof-card:hover .prof-infos, .page-masterclass .masterclass-profs .prof-card:active .prof-infos, .page-masterclass .masterclass-profs .prof-card.active > .prof-infos,
+.page-masterclass-desconto .masterclass-profs .prof-card:hover .prof-infos,
+.page-masterclass-desconto .masterclass-profs .prof-card:active .prof-infos,
+.page-masterclass-desconto .masterclass-profs .prof-card.active > .prof-infos {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
-.page-masterclass .masterclass-profs .prof-btn .btn-infos {
+.page-masterclass .masterclass-profs .prof-btn .btn-infos,
+.page-masterclass-desconto .masterclass-profs .prof-btn .btn-infos {
   background-color: #0d6065;
   color: #ffffff;
 }
-.page-masterclass .masterclass-profs .prof-btn .btn-infos:hover, .page-masterclass .masterclass-profs .prof-btn .btn-infos:active {
+.page-masterclass .masterclass-profs .prof-btn .btn-infos:hover, .page-masterclass .masterclass-profs .prof-btn .btn-infos:active,
+.page-masterclass-desconto .masterclass-profs .prof-btn .btn-infos:hover,
+.page-masterclass-desconto .masterclass-profs .prof-btn .btn-infos:active {
   background-color: #20888f;
 }
-.page-masterclass .masterclass-profs .prof-resume {
+.page-masterclass .masterclass-profs .prof-resume,
+.page-masterclass-desconto .masterclass-profs .prof-resume {
   color: #585858;
   font-size: 1rem;
   font-style: normal;
@@ -3428,54 +3551,63 @@ body {
   letter-spacing: 0.02rem;
   text-transform: uppercase;
 }
-.page-masterclass .masterclass-profs .prof-resume strong {
+.page-masterclass .masterclass-profs .prof-resume strong,
+.page-masterclass-desconto .masterclass-profs .prof-resume strong {
   font-weight: 600;
 }
-.page-masterclass .masterclass-pricing .pricing-title {
+.page-masterclass .masterclass-pricing .pricing-title,
+.page-masterclass-desconto .masterclass-pricing .pricing-title {
   font-size: 3.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 4.2rem;
 }
 @media only screen and (max-width: 992px) {
-  .page-masterclass .masterclass-pricing .pricing-title {
+  .page-masterclass .masterclass-pricing .pricing-title,
+  .page-masterclass-desconto .masterclass-pricing .pricing-title {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
-.page-masterclass .masterclass-pricing .pricing-text .text-header {
+.page-masterclass .masterclass-pricing .pricing-text .text-header,
+.page-masterclass-desconto .masterclass-pricing .pricing-text .text-header {
   color: #585858;
   font-size: 1.73388rem;
   font-style: normal;
   font-weight: 400;
   line-height: 2.08069rem;
 }
-.page-masterclass .masterclass-pricing .pricing-text .text-price .currency {
+.page-masterclass .masterclass-pricing .pricing-text .text-price .currency,
+.page-masterclass-desconto .masterclass-pricing .pricing-text .text-price .currency {
   font-size: 1.285rem;
   font-style: normal;
   font-weight: 700;
   line-height: 1.542rem;
 }
-.page-masterclass .masterclass-pricing .pricing-text .text-price .value {
+.page-masterclass .masterclass-pricing .pricing-text .text-price .value,
+.page-masterclass-desconto .masterclass-pricing .pricing-text .text-price .value {
   font-size: 3.42675rem;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
 }
-.page-masterclass .masterclass-pricing .pricing-text .text-price .digits {
+.page-masterclass .masterclass-pricing .pricing-text .text-price .digits,
+.page-masterclass-desconto .masterclass-pricing .pricing-text .text-price .digits {
   font-size: 1.42781rem;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
 }
-.page-masterclass .masterclass-pricing .pricing-text .text-splits {
+.page-masterclass .masterclass-pricing .pricing-text .text-splits,
+.page-masterclass-desconto .masterclass-pricing .pricing-text .text-splits {
   color: #585858;
   font-size: 1.14225rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.37069rem;
 }
-.page-masterclass .masterclass-pricing .pricing-footer {
+.page-masterclass .masterclass-pricing .pricing-footer,
+.page-masterclass-desconto .masterclass-pricing .pricing-footer {
   font-size: 1.875rem;
   font-style: normal;
   font-weight: 700;
@@ -3483,18 +3615,21 @@ body {
   display: inline;
 }
 @media only screen and (max-width: 1199px) {
-  .page-masterclass .masterclass-pricing .pricing-footer {
+  .page-masterclass .masterclass-pricing .pricing-footer,
+  .page-masterclass-desconto .masterclass-pricing .pricing-footer {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 @media only screen and (max-width: 576px) {
-  .page-masterclass .masterclass-pricing .pricing-footer {
+  .page-masterclass .masterclass-pricing .pricing-footer,
+  .page-masterclass-desconto .masterclass-pricing .pricing-footer {
     font-size: 1.1rem;
     line-height: 2rem;
   }
 }
-.page-masterclass .masterclass-classes {
+.page-masterclass .masterclass-classes,
+.page-masterclass-desconto .masterclass-classes {
   position: relative;
   background: url("images/masterclass/textures.png"), -webkit-gradient(linear, right top, left top, from(rgb(13, 96, 101)), to(rgb(7, 42, 44)));
   background: url("images/masterclass/textures.png"), linear-gradient(270deg, rgb(13, 96, 101) 0%, rgb(7, 42, 44) 100%);
@@ -3502,10 +3637,12 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d6065",endColorstr="#072a2c",GradientType=1);
   background-blend-mode: multiply;
 }
-.page-masterclass .masterclass-classes .class-bg-cyan {
+.page-masterclass .masterclass-classes .class-bg-cyan,
+.page-masterclass-desconto .masterclass-classes .class-bg-cyan {
   background-color: #e2fdff;
 }
-.page-masterclass .masterclass-classes .class-bg-cyan .class-badge {
+.page-masterclass .masterclass-classes .class-bg-cyan .class-badge,
+.page-masterclass-desconto .masterclass-classes .class-bg-cyan .class-badge {
   color: #100f0f;
   font-size: 1.04344rem;
   font-style: normal;
@@ -3517,11 +3654,13 @@ body {
   padding: 0.5rem;
   display: inline-block;
 }
-.page-masterclass .masterclass-classes .class-bg-cyan .class-badge::before {
+.page-masterclass .masterclass-classes .class-bg-cyan .class-badge::before,
+.page-masterclass-desconto .masterclass-classes .class-bg-cyan .class-badge::before {
   counter-increment: class-badge;
   content: "Módulo " counter(class-badge);
 }
-.page-masterclass .masterclass-classes .class-bg-cyan .class-title {
+.page-masterclass .masterclass-classes .class-bg-cyan .class-title,
+.page-masterclass-desconto .masterclass-classes .class-bg-cyan .class-title {
   color: #100f0f;
   font-size: 2.5rem;
   font-style: normal;
@@ -3530,11 +3669,13 @@ body {
   margin-bottom: 1.75rem;
 }
 @media only screen and (max-width: 992px) {
-  .page-masterclass .masterclass-classes .class-bg-cyan .class-title {
+  .page-masterclass .masterclass-classes .class-bg-cyan .class-title,
+  .page-masterclass-desconto .masterclass-classes .class-bg-cyan .class-title {
     font-size: 1.75rem;
   }
 }
-.page-masterclass .masterclass-classes .class-bg-cyan .class-description {
+.page-masterclass .masterclass-classes .class-bg-cyan .class-description,
+.page-masterclass-desconto .masterclass-classes .class-bg-cyan .class-description {
   color: #100f0f;
   font-size: 1.25rem;
   font-style: normal;
@@ -3542,32 +3683,39 @@ body {
   line-height: 1.88125rem;
 }
 @media only screen and (max-width: 992px) {
-  .page-masterclass .masterclass-classes .class-bg-cyan .class-description {
+  .page-masterclass .masterclass-classes .class-bg-cyan .class-description,
+  .page-masterclass-desconto .masterclass-classes .class-bg-cyan .class-description {
     font-size: 1.1rem;
   }
 }
-.page-masterclass .masterclass-classes .class-bg-cyan .class-description .list-class > li {
+.page-masterclass .masterclass-classes .class-bg-cyan .class-description .list-class > li,
+.page-masterclass-desconto .masterclass-classes .class-bg-cyan .class-description .list-class > li {
   list-style-type: none;
 }
-.page-masterclass .masterclass-classes .class-bg-cyan .class-description .list-class > li::before {
+.page-masterclass .masterclass-classes .class-bg-cyan .class-description .list-class > li::before,
+.page-masterclass-desconto .masterclass-classes .class-bg-cyan .class-description .list-class > li::before {
   content: "·";
   font-size: 35px;
   vertical-align: sub;
   margin-right: 5px;
 }
-.page-masterclass .masterclass-classes .class-img {
+.page-masterclass .masterclass-classes .class-img,
+.page-masterclass-desconto .masterclass-classes .class-img {
   height: auto;
   min-height: 200px;
 }
 @media only screen and (max-width: 576px) {
-  .page-masterclass .masterclass-classes .class-img {
+  .page-masterclass .masterclass-classes .class-img,
+  .page-masterclass-desconto .masterclass-classes .class-img {
     height: 200px;
   }
 }
-.page-masterclass .masterclass-classes .masterclass-cta {
+.page-masterclass .masterclass-classes .masterclass-cta,
+.page-masterclass-desconto .masterclass-classes .masterclass-cta {
   padding-bottom: 7rem;
 }
-.page-masterclass .masterclass-classes .masterclass-cta .cta-title {
+.page-masterclass .masterclass-classes .masterclass-cta .cta-title,
+.page-masterclass-desconto .masterclass-classes .masterclass-cta .cta-title {
   color: #ffffff;
   text-align: center;
   font-size: 3.5rem;
@@ -3576,12 +3724,14 @@ body {
   line-height: 4.1875rem;
 }
 @media only screen and (max-width: 992px) {
-  .page-masterclass .masterclass-classes .masterclass-cta .cta-title {
+  .page-masterclass .masterclass-classes .masterclass-cta .cta-title,
+  .page-masterclass-desconto .masterclass-classes .masterclass-cta .cta-title {
     font-size: 3rem;
     line-height: 3.5rem;
   }
 }
-.page-masterclass .masterclass-classes .masterclass-cta .cta-subtitle {
+.page-masterclass .masterclass-classes .masterclass-cta .cta-subtitle,
+.page-masterclass-desconto .masterclass-classes .masterclass-cta .cta-subtitle {
   color: #ffffff;
   text-align: center;
   font-size: 3rem;
@@ -3590,16 +3740,19 @@ body {
   line-height: 3.975rem;
 }
 @media only screen and (max-width: 992px) {
-  .page-masterclass .masterclass-classes .masterclass-cta .cta-subtitle {
+  .page-masterclass .masterclass-classes .masterclass-cta .cta-subtitle,
+  .page-masterclass-desconto .masterclass-classes .masterclass-cta .cta-subtitle {
     font-size: 1.8rem;
     line-height: 2.5rem;
   }
 }
-.page-masterclass .masterclass-classes .masterclass-cta .cta-btn {
+.page-masterclass .masterclass-classes .masterclass-cta .cta-btn,
+.page-masterclass-desconto .masterclass-classes .masterclass-cta .cta-btn {
   margin-left: auto;
   margin-right: auto;
 }
-.page-masterclass .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn {
+.page-masterclass .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn,
+.page-masterclass-desconto .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn {
   padding: 1rem;
   border-radius: 0.625rem;
   border: 0.5px solid #ffffff;
@@ -3615,6 +3768,8 @@ body {
   min-width: 300px;
   width: 30vw;
 }
-.page-masterclass .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn:hover, .page-masterclass .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn:active {
+.page-masterclass .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn:hover, .page-masterclass .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn:active,
+.page-masterclass-desconto .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn:hover,
+.page-masterclass-desconto .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn:active {
   background: #20888f;
 }
