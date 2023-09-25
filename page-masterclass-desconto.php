@@ -7,16 +7,16 @@ get_header(); ?>
 <main class="page-masterclass-desconto">
   <section class="masterclass-desconto-header container-fluid gx-0">
     <header class="py-5">
-      <div class="header-extra py-5 px-4">
+      <div class="header-info py-5 px-3 px-lg-4">
         <div class="container">
           <div class="row">
-            <h2 class="header-badge">
+            <h2 class="header-badge pb-3">
               <strong>Novo</strong> curso:
             </h2>
           </div>
-          <div class="header-title-container col-12 col-lg-6">
+          <div class="header-title-container col-12 col-lg-8 col-xl-7 col-xxl-6">
             <div class="row">
-              <h1 class="header-title">"Marketing Digital para o Setor de Energia"</h1>
+              <h1 class="header-title pb-3">"Marketing Digital para o Setor de Energia"</h1>
             </div>
             <div class="row header-description">
               Aprenda a conquistar a energia das vendas: aquisição inteligente, awareness estratégico e marca forte.
@@ -34,7 +34,7 @@ get_header(); ?>
           </h2> -->
           <p class="form-subtitle col-12 pb-3 pt-5 py-lg-5">
             Preencha o <strong>formulário abaixo</strong> para receber condições especiais e mais informações sobre o
-            <strong>curso e o mercado de energia</strong>.
+            <strong>curso</strong>.
           </p>
         </div>
         <div class="col-12 col-lg-6 text-center">

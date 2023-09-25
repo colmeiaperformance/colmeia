@@ -267,6 +267,19 @@ body {
         line-height: 1.2;
       }
     }
+    @include devices(tablet){
+      .header-badge{
+        font-size: 2rem;
+      }
+      .header-title-container{
+        .header-title{
+          font-size: 3rem;
+        }
+        .header-description{
+          font-size: 1.8rem;
+        }
+      }
+    }
   }
   //Section form
   .masterclass-form {

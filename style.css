@@ -3301,6 +3301,20 @@ body {
   font-weight: 400;
   line-height: 1.2;
 }
+@media only screen and (max-width: 992px) {
+  .page-masterclass .masterclass-desconto-header .header-badge,
+  .page-masterclass-desconto .masterclass-desconto-header .header-badge {
+    font-size: 2rem;
+  }
+  .page-masterclass .masterclass-desconto-header .header-title-container .header-title,
+  .page-masterclass-desconto .masterclass-desconto-header .header-title-container .header-title {
+    font-size: 3rem;
+  }
+  .page-masterclass .masterclass-desconto-header .header-title-container .header-description,
+  .page-masterclass-desconto .masterclass-desconto-header .header-title-container .header-description {
+    font-size: 1.8rem;
+  }
+}
 .page-masterclass .masterclass-form .form-img,
 .page-masterclass-desconto .masterclass-form .form-img {
   margin-top: -200px;
