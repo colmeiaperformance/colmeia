@@ -267,15 +267,15 @@ body {
         line-height: 1.2;
       }
     }
-    @include devices(tablet){
-      .header-badge{
+    @include devices(tablet) {
+      .header-badge {
         font-size: 2rem;
       }
-      .header-title-container{
-        .header-title{
+      .header-title-container {
+        .header-title {
           font-size: 3rem;
         }
-        .header-description{
+        .header-description {
           font-size: 1.8rem;
         }
       }
@@ -530,7 +530,7 @@ body {
       }
     }
     .pricing-footer {
-      font-size: 1.875rem;
+      font-size: 2.03rem;
       font-style: normal;
       font-weight: 700;
       line-height: 2.25rem;
@@ -641,27 +641,27 @@ body {
           left: auto;
           right: auto;
         }
-        .masterclass-btn {
-          padding: 1rem;
-          border-radius: 0.625rem;
-          border: 0.5px solid $color-white;
-          background: $masterclass-primary;
-          color: $color-white;
-          text-align: center;
-          font-size: 1.75rem;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-          letter-spacing: 0.035rem;
-          text-transform: uppercase;
-          min-width: 300px;
-          width: 30vw;
-          &:hover,
-          &:active {
-            background: $masterclass-primary-hover;
-          }
-        }
       }
+    }
+  }
+  .masterclass-btn {
+    padding: 1rem;
+    border-radius: 0.625rem;
+    border: 0.5px solid $color-white;
+    background: $masterclass-primary;
+    color: $color-white;
+    text-align: center;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.035rem;
+    text-transform: uppercase;
+    min-width: 300px;
+    width: 30vw;
+    &:hover,
+    &:active {
+      background: $masterclass-primary-hover;
     }
   }
 }

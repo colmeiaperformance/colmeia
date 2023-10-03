@@ -3622,7 +3622,7 @@ body {
 }
 .page-masterclass .masterclass-pricing .pricing-footer,
 .page-masterclass-desconto .masterclass-pricing .pricing-footer {
-  font-size: 1.875rem;
+  font-size: 2.03rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.25rem;
@@ -3765,8 +3765,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.page-masterclass .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn,
-.page-masterclass-desconto .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn {
+.page-masterclass .masterclass-btn,
+.page-masterclass-desconto .masterclass-btn {
   padding: 1rem;
   border-radius: 0.625rem;
   border: 0.5px solid #ffffff;
@@ -3782,8 +3782,8 @@ body {
   min-width: 300px;
   width: 30vw;
 }
-.page-masterclass .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn:hover, .page-masterclass .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn:active,
-.page-masterclass-desconto .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn:hover,
-.page-masterclass-desconto .masterclass-classes .masterclass-cta .cta-btn .masterclass-btn:active {
+.page-masterclass .masterclass-btn:hover, .page-masterclass .masterclass-btn:active,
+.page-masterclass-desconto .masterclass-btn:hover,
+.page-masterclass-desconto .masterclass-btn:active {
   background: #20888f;
-}
+}/*# sourceMappingURL=style.css.map */

@@ -64,12 +64,10 @@ get_header(); ?>
       <div class="row">
         <div class="col-12 col-lg-6">
           <h2 class="form-title pt-5">
-            Inscreva-se para a masterclass gratuita
+            Curso: Marketing Digital para o Setor de Energia
           </h2>
-          <p class="form-description col-12 py-3 py-lg-5 text-body-secondary">
-            Terça-feira 26/09, às 11 horas, e conheça os principais tópicos que serão abordados no curso "Marketing
-            Digital para o Setor de Energia B2B
-          </p>
+          <!-- <p class="form-description col-12 py-3 py-lg-5 text-body-secondary">
+          </p> -->
         </div>
         <div class="col-12 col-lg-6 text-center">
           <img class="form-img img-fluid d-none d-lg-block mx-auto"
@@ -78,7 +76,7 @@ get_header(); ?>
         </div>
       </div>
 
-      <?php get_template_part('/template-parts/forms/form-masterclass'); ?>
+      <?php //get_template_part('/template-parts/forms/form-masterclass');?>
 
     </div>
   </section>
@@ -143,7 +141,10 @@ get_header(); ?>
             <div class="prof-badge">Professor</div>
             <div class="prof-infos">
               <div class="prof-bio-text">
-              Atuando em soluções de tecnologia e acelerando processos para encurtar distâncias entre as ações de marketing e o resultado de vendas. Em 2022 criou a ferramenta HOOK, um sistema para integrações que já está disponível na loja de APP da RD Station MKT, e também fundador da Plataforma Educacional MOLTI, que distribui conteúdo mensal para mais de 150 mil pessoas.
+                Atuando em soluções de tecnologia e acelerando processos para encurtar distâncias entre as ações de
+                marketing e o resultado de vendas. Em 2022 criou a ferramenta HOOK, um sistema para integrações que já
+                está disponível na loja de APP da RD Station MKT, e também fundador da Plataforma Educacional MOLTI, que
+                distribui conteúdo mensal para mais de 150 mil pessoas.
               </div>
             </div>
           </div>
@@ -151,7 +152,8 @@ get_header(); ?>
             <a class="btn btn-infos d-grid d-lg-none">Ver mais</a>
           </div>
           <div class="prof-resume mt-4 mb-5">
-            <strong>Willian Thiago Crizostimo —</strong> CEO da BW8 Martech, agência com time de mais de 70 especialistas em Marketing Digital, Vendas, Automação e Performance. 
+            <strong>Willian Thiago Crizostimo —</strong> CEO da BW8 Martech, agência com time de mais de 70
+            especialistas em Marketing Digital, Vendas, Automação e Performance. 
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 prof-card-container">
@@ -161,7 +163,10 @@ get_header(); ?>
             <div class="prof-badge">Professor</div>
             <div class="prof-infos">
               <div class="prof-bio-text">
-              Engenheiro hídrico formado pela Universidade Federal de Itajubá, com MBA pela FGV. Na plataforma ePowerBay, introduziu novos métodos de análise para Geração Centralizada, Distribuída e Mercado Livre. Como Diretor Técnico pelos últimos 8 anos, lidera inovações, tecnologias e análises estratégicas para o setor elétrico.
+                Engenheiro hídrico formado pela Universidade Federal de Itajubá, com MBA pela FGV. Na plataforma
+                ePowerBay, introduziu novos métodos de análise para Geração Centralizada, Distribuída e Mercado Livre.
+                Como Diretor Técnico pelos últimos 8 anos, lidera inovações, tecnologias e análises estratégicas para o
+                setor elétrico.
               </div>
             </div>
           </div>
@@ -169,7 +174,8 @@ get_header(); ?>
             <a class="btn btn-infos d-grid d-lg-none">Ver mais</a>
           </div>
           <div class="prof-resume mt-4 mb-5">
-            <strong>André Felber —</strong> Cofundador da ePowerbay, plataforma de Inteligência de Mercado para Projetos de Energia.
+            <strong>André Felber —</strong> Cofundador da ePowerbay, plataforma de Inteligência de Mercado para Projetos
+            de Energia.
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 prof-card-container">
@@ -179,7 +185,10 @@ get_header(); ?>
             <div class="prof-badge">Professora</div>
             <div class="prof-infos">
               <div class="prof-bio-text">
-              Executiva de Marketing com mais de 20 anos de bagagem e passagem por empresas como Schneider-Electric, Bematech e 20th Century Fox na Alemanha. Especialista em Branding, foca hoje suas energias no Bonö Group, holding de empresas do setor de energia onde lidera as estratégias de Branding, Marketing & Comunicação e Employer Branding do grupo.
+                Executiva de Marketing com mais de 20 anos de bagagem e passagem por empresas como Schneider-Electric,
+                Bematech e 20th Century Fox na Alemanha. Especialista em Branding, foca hoje suas energias no Bonö
+                Group, holding de empresas do setor de energia onde lidera as estratégias de Branding, Marketing &
+                Comunicação e Employer Branding do grupo.
               </div>
             </div>
           </div>
@@ -190,9 +199,9 @@ get_header(); ?>
             <strong>Valéria Lopes —</strong> CMO do Bonö Group, Um dos maiores grupos do setor de energia do Brasil.
           </div>
         </div>
-        
-        
-        
+
+
+
       </div>
     </div>
   </section>
@@ -214,6 +223,9 @@ get_header(); ?>
             <p class="highlight">
               Com certificado de conclusão
             </p>
+          </div>
+          <div class="cta-btn pt-4">
+            <a target="_blank" href="https://www.asaas.com/c/652207984113" type="button" class="btn masterclass-btn">Compre agora</a>
           </div>
         </div>
         <div class="col-12 col-lg-6 order-1 order-lg-2">
@@ -340,7 +352,7 @@ get_header(); ?>
         <div class="cta-subtitle py-4 py-lg-5">Domine as técnicas de marketing para
           o setor de energia B2B</div>
         <div class="cta-btn text-center">
-          <a href="#masterclass-form" type="button" class="btn masterclass-btn">Inscreva-se</a>
+          <a target="_blank" href="https://www.asaas.com/c/652207984113" type="button" class="btn masterclass-btn">Compre agora</a>
         </div>
       </div>
     </div>
