@@ -546,6 +546,28 @@ body {
     }
   }
 
+  //Section Video
+  .masterclass-video {
+    position: relative;
+    @include masterclass-background;
+    margin-bottom: 200px;
+    @include devices(mobile) {
+      margin-bottom: 100px;
+    }
+    .video-title {
+      @include font-title-h2;
+    }
+    .video-container > .youtube-video {
+      border: 9px solid $color-white;
+      aspect-ratio: 16/9;
+      width: 100%;
+      margin-bottom: -100px;
+      @include devices(mobile) {
+        margin-bottom: -50px;
+      }
+    }
+  }
+
   //Section Classes
   .masterclass-classes {
     position: relative;

@@ -5,7 +5,8 @@
 
 get_header(); ?>
 <main class="page-masterclass">
-  <section class="masterclass-header container-fluid gx-0">
+  <!-- Header -->
+  <section class="container-fluid masterclass-header gx-0">
     <header>
       <div class="row header-row">
         <div class="header-image col-12 col-lg-7"
@@ -59,7 +60,9 @@ get_header(); ?>
       </div>
     </div>
   </section>
-  <section id="masterclass-form" class="masterclass-form container-fluid px-4">
+  <!-- END Header -->
+  <!-- Form -->
+  <section class="container-fluid masterclass-form px-4" id="masterclass-form">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
@@ -80,7 +83,9 @@ get_header(); ?>
 
     </div>
   </section>
-  <section class="masterclass-new px-4">
+  <!-- END Form -->
+  <!-- New Course -->
+  <section class="container-fluid masterclass-new px-4">
     <div class="container py-5">
       <div class="row">
         <div class="col-12 col-lg-6">
@@ -104,6 +109,8 @@ get_header(); ?>
       </div>
     </div>
   </section>
+  <!-- END New Course -->
+  <!-- Instructors -->
   <section class="container-fluid masterclass-profs py-5 px-4">
     <div class="container">
       <div class="row">
@@ -205,6 +212,8 @@ get_header(); ?>
       </div>
     </div>
   </section>
+  <!-- END Instructors -->
+  <!-- Price -->
   <section class="container-fluid masterclass-pricing py-5 px-4">
     <div class="container">
       <div class="row">
@@ -225,7 +234,8 @@ get_header(); ?>
             </p>
           </div>
           <div class="cta-btn pt-4">
-            <a target="_blank" href="https://www.asaas.com/c/652207984113" type="button" class="btn masterclass-btn">Compre agora</a>
+            <a target="_blank" href="https://www.asaas.com/c/652207984113" type="button"
+              class="btn masterclass-btn">Compre agora</a>
           </div>
         </div>
         <div class="col-12 col-lg-6 order-1 order-lg-2">
@@ -236,6 +246,25 @@ get_header(); ?>
       </div>
     </div>
   </section>
+  <!-- END Price -->
+  <!-- Video -->
+  <section>
+    <div class="container-fluid masterclass-video pt-5 px-4">
+      <div class="container">
+        <div class="row text-white">
+          <h2 class="video-title pt-3">Perdeu a nossa Masterclass?</h2>
+          <p class="py-4">Assista agora e fique por dentro dos temas que farão parte do curso.</p>
+          <div class="video-container text-center">
+            <!-- <embed src="https://www.youtube.com/watch?v=H1Q8fC3ei2s" type="video"> -->
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/H1Q8fC3ei2s?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;playsinline=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END Video -->
+  <!-- Classes -->
   <section class="container-fluid masterclass-classes px-4">
     <div class="container">
       <div class="row pt-5">
@@ -352,11 +381,13 @@ get_header(); ?>
         <div class="cta-subtitle py-4 py-lg-5">Domine as técnicas de marketing para
           o setor de energia B2B</div>
         <div class="cta-btn text-center">
-          <a target="_blank" href="https://www.asaas.com/c/652207984113" type="button" class="btn masterclass-btn">Compre agora</a>
+          <a target="_blank" href="https://www.asaas.com/c/652207984113" type="button"
+            class="btn masterclass-btn">Compre agora</a>
         </div>
       </div>
     </div>
   </section>
+  <!-- END Classes -->
 </main>
 
 

@@ -3642,6 +3642,49 @@ body {
     line-height: 2rem;
   }
 }
+.page-masterclass .masterclass-video,
+.page-masterclass-desconto .masterclass-video {
+  position: relative;
+  background: url("images/masterclass/textures.png"), -webkit-gradient(linear, right top, left top, from(rgb(13, 96, 101)), to(rgb(7, 42, 44)));
+  background: url("images/masterclass/textures.png"), linear-gradient(270deg, rgb(13, 96, 101) 0%, rgb(7, 42, 44) 100%);
+  background: url("images/masterclass/textures.png"), -webkit-linear-gradient(270deg, rgb(13, 96, 101) 0%, rgb(7, 42, 44) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d6065",endColorstr="#072a2c",GradientType=1);
+  background-blend-mode: multiply;
+  margin-bottom: 200px;
+}
+@media only screen and (max-width: 576px) {
+  .page-masterclass .masterclass-video,
+  .page-masterclass-desconto .masterclass-video {
+    margin-bottom: 100px;
+  }
+}
+.page-masterclass .masterclass-video .video-title,
+.page-masterclass-desconto .masterclass-video .video-title {
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.2rem;
+}
+@media only screen and (max-width: 992px) {
+  .page-masterclass .masterclass-video .video-title,
+  .page-masterclass-desconto .masterclass-video .video-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+.page-masterclass .masterclass-video .video-container > .youtube-video,
+.page-masterclass-desconto .masterclass-video .video-container > .youtube-video {
+  border: 9px solid #ffffff;
+  aspect-ratio: 16/9;
+  width: 100%;
+  margin-bottom: -100px;
+}
+@media only screen and (max-width: 576px) {
+  .page-masterclass .masterclass-video .video-container > .youtube-video,
+  .page-masterclass-desconto .masterclass-video .video-container > .youtube-video {
+    margin-bottom: -50px;
+  }
+}
 .page-masterclass .masterclass-classes,
 .page-masterclass-desconto .masterclass-classes {
   position: relative;
